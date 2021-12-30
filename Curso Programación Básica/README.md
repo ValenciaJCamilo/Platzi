@@ -9,7 +9,7 @@
 > Fecha de finalización: Noviembre 22, 2021
 
 ------------
-
+- Puedes ver el **curso** [aquí](https://platzi.com/clases/computacion-basica/ "aquí")
 - Puedes ver mis **apuntes**  [aquí](https://www.notion.so/Programaci-n-b-sica-a286d6471ae84cddbbf8eab1b7a5d45d "aquí")
 
 - Puedes ver mi **diploma** [aquí](https://platzi.com/p/Valenciajcamilo/curso/1050-programacion-basica/diploma/detalle/ "aquí")
