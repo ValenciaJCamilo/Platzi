@@ -11,7 +11,7 @@
 ------------
 - Puedes ver el **curso** [aquí](https://platzi.com/clases/prework-linux/ "aquí")
 
-- Puedes ver mis **apuntes**  [aquí](https://steep-bridge-4be.notion.site/Prework-Configuraci-n-de-Entorno-de-Desarrollo-en-Linux-e4797328f4b7422ea85059a5be03c2ed "aquí") 
+- Puedes ver mis **apuntes**  [aquí](https://steep-bridge-4be.notion.site/Prework-Configuraci-n-de-Entorno-de-Desarrollo-en-Linux-e4797328f4b7422ea85059a5be03c2ed "aquí") <br>
 *Estos apuntes no están del todo completo en los demás cursos, debido a que yo trabajo en una máquina Windows.*
 
 - Puedes ver mi **diploma** [aquí](https://platzi.com/p/Valenciajcamilo/curso/2383-prework-linux/diploma/detalle/ "aquí")
