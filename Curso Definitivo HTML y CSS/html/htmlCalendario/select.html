@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 19</title>
+</head>
+<body>
+    <h1>Select</h1>
+    <p>Para poder hacer un Select existen dos opciones:<br></p>
+        <ol>
+            <li>Forma con <b>pocas opciones</b> mediante la etiqueta <b>select</b></li>
+            <li>Forma con <b>muchas opciones</b> mediante la etiqueta <b>input list</b></li>
+        </ol>
+    <main>
+        <fieldset>
+            <legend><b>Primera forma </b> (Pocas opciones)</legend>
+            <p>
+                Esta es usada en el momento en que las opciones de selección no son muchas, de forma que el usuario
+                pueda hacer scroll de manera moderada.
+            </p>
+            <select name="cursos" id="">
+                <option hidden="true">Selecciona una opción</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML5">HTML5</option>
+                <option value="CSS3">CSS3</option>
+                <option value="Web Standards">Web Standards</option>
+            </select>
+            <input type="submit" value="Enviar">
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Segunda forma </b> (Muchas opciones)</legend>
+            <p>
+                Esta es usada al momento en que las opciones de selección son demasiadas, de forma que el usuario pueda escribir y a medida que 
+                este digita, las opciones vayan apareciendo. Esto es bueno ya que evita el cansancio de estar haciendo scroll por mucho tiempo
+            </p>
+            <input list="cursos" placeholder="Cursos. Ej: CSS3">
+            <datalist id="cursos">
+                <option value="JavaScript"></option>
+                <option value="HTML5"></option>
+                <option value="CSS3"></option>
+                <option value="Web Standards"></option>
+            </datalist>
+        </fieldset>
+    </main>
+</body>
+</html>

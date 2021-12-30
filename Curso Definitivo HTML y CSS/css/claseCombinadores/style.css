@@ -1,0 +1,26 @@
+/*HERMANO DIRECTO: Todas aquellas <p> que sean hermanos directos de h2, es decir,
+que le sigan después*/
+h2 + p
+{
+    color: red;
+}
+
+/*HERMANO GENERAL: Todas las etiquetas <p> que se encuentren al mismo nivel 
+de la etiqueta<h2>*/
+h2 ~ p
+{
+    color:aqua;
+}
+
+/*HIJA DIRECTA: La etiqueta <p> que sea hija directa de <div>, es decir, le pondrá
+color a todos aquellos <p> que se encuentren dentro de un padre <div>*/
+div > p
+{
+    color:green;
+}
+
+/*DESCENDIENTE: Se le aplicará estilo a absolutamente todos los p*/
+body p
+{
+    color: rgb(197, 177, 0);
+}

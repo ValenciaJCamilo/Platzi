@@ -1,0 +1,193 @@
+/*Con estas opciones reseteo los valores de estilo
+por defecto del navegador*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Lo que estoy haciendo aquí es agregar el fondo 
+a todo lo que se encuentre dentro del body*/
+body {
+  /*Cargo la imagen*/
+  background-image: url("./img/bgr.jpg");
+  /*Con esto se le da cobertura total del fondo*/
+  background-size: cover;
+  /*Con esto se le dice al fondo que el fondo no se
+    repita*/
+  background-repeat: no-repeat;
+  /*La posición del fondo tanto en X como en Y será centrado*/
+  background-position: center center;
+  /*Con esto podemos hacer que al momento de cambiar el tamaño
+    de la página, el fondo se redimensione. Responsive*/
+  background-attachment: fixed;
+  /*Le añado un background color para que cuando se esté 
+    cargando, se vea un color agradable*/
+  background-color: #38ef7d;
+}
+
+/*Teniendo todo dentro de un main, lo que hago es que centro 
+toda mi tarjeta creada en Y*/
+main {
+  /*vw = viewport width*/
+  width: 100vw;
+  /*vw = viewport height*/
+  height: 100vh;
+  /*Con esto se oscurece un poco la imagen de fondo
+  background-color: rgba(81, 81, 81, .5);*/
+  /*Establecemos el display Flexbox*/
+  display: flex;
+  /*Con esto centro en Y*/
+  align-items: center;
+  /*Con esto centro en X*/
+  justify-content: center;
+}
+
+/*Este es el estilo completo de la tarjeta contenedora*/
+.target {
+  /*Se establece el tamaño de la tarjeta*/
+  width: 600px;
+  height: 520px;
+  /*Se establece el color de la tarjeta*/
+  background-color: rgb(228, 228, 228);
+  /*Propiedad para bordear los border*/
+  border-radius: 20px;
+  /*Propiedad para que los bordes de la imagen también
+            tengan el mismo borde del border-radius*/
+  overflow: hidden;
+}
+
+/*Aquí establezco para que la imagen se adapte al 
+tamaño de la tarjeta*/
+.header {
+  /*Establezco que el ancho sea el 100% de la 
+  tarjeta contenedora*/
+  width: 100%;
+  /*Acá establezco el alto de la imagen del footer*/
+  height: 25%;
+  /*En este caso el overflow me serirá para delimitar 
+  la imagen en Y*/
+  overflow: hidden;
+  /*Me ayuda para que se centre en X y la imagen 
+  no se salga de la tarjeta*/
+  position: relative;
+  /*El top se usa para poder establecer 
+  desde donde se iniciará*/
+  top: 0;
+}
+
+/*Acá personalizo a mi gusto la imagen*/
+.header img {
+  /*Lo que hago aquí es decir que la imagen tenga
+  el mismo tamaño que la tarjeta*/
+  width: 100%;
+  /*Con estas dos propiedades puedo elegir la posición
+  exacta de la imagen*/
+  position: absolute;
+  top: -1rem;
+}
+
+.target p {
+  text-align: center;
+}
+
+.target p:nth-child(2) {
+  color: peru;
+}
+
+/*Se establece el estilo de todo el section*/
+.information {
+    width: 100%;
+    height: 29rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information .picture{
+    width: 33%;
+    position: absolute;
+    top: -110px;
+   
+}
+
+.information .picture img {
+    width: 100%;
+    border-radius: 100px;
+    border: 2px solid rgb(228, 228, 228)
+}
+
+.information .info
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.information .info h1
+{
+    color: #4E5F64;
+    font-size: 3.5rem;
+    font-weight: 700;
+    /*Me ayuda a bajar el texto*/
+    margin-top: 85px;
+    /*Me ayuda a dar un espacio entre letra y letra*/
+    letter-spacing: 0.2px;
+    /*Propiedad para mantener mi texto centrado*/
+    text-align: center;
+}
+
+.information .info h3
+{
+    color: #94A8B2;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.information .info h4
+{
+    text-align: center;
+    color:#627077;
+    margin-top: 10px;
+}
+
+/*Aquí hago uso de flexbox para poner 
+alineados los iconos*/
+.information .social-net 
+{
+    display: flex;
+    /*Se despegan un poco los iconos del texto*/
+    margin-top: 40px;
+    border-radius: 100px;
+    border: 2px dashed #627077;
+    text-align: center;
+}
+
+/*Aquí le cambio el tamaño a los iconos*/
+.information .social-net img 
+{
+    height: 3rem;
+}
+
+/*Texto de "Contáctame"
+Se superpone por encima del borde de las
+redes sociales */
+.contact 
+{
+    grid: flex;
+    position:absolute;
+    text-align: center;
+    color: #627077;
+    margin-top: 230px;
+    background-color: rgb(228, 228, 228);
+    padding:9px;
+} 
+
+/*Cambio en el espaciado entre cada icono*/
+.information .social-net .btn {
+    width: 4rem;
+    height: 5rem;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,28 @@
+/*Aquí reseteamos los valores de estilos por defectos que nos traen
+los navegadores, de forma que podamos trabajar nuestro estilo libremente*/
+*
+{
+    padding:0;
+    margin:0;
+    /*El box-sizing lo que hace es decir que se sume el padding
+    con el width del elemento, de forma que si se agrega más padding
+    el valor se suma automáticamente
+    Hace el cálculo automático para que los cambios queden justos*/
+    box-sizing: border-box;
+}
+
+
+
+main
+{
+    /*Indica cuan ancho será el contenedor del proyecto*/
+    width:100%;
+    /*Indica cuan alto será el contenedor del proyecto*/
+    height: 500px;
+    /*Hace que el borde sea visible*/
+    border:10px solid grey;
+    /*Espacio hacia adentro, un relleno. Primer digito arriba y abajo
+    segundo digito izquierda y derecha. Un solo digito es para todos
+    Para ser más específico, podemos usar left,right, top o bottom*/
+    padding:20px 35px;
+}

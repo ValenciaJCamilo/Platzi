@@ -1,0 +1,99 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c1,.c2,.c3,.c4,.c5
+{
+    width: 100%;
+    min-width: 150px;
+    height: 150px;
+}
+
+.c1
+{
+    background-color: chartreuse;
+}
+.c2
+{
+    background-color: papayawhip
+}
+.c3
+{
+    background-color: pink;
+}
+.c4
+{
+    background-color: palegreen;
+}
+.c5
+{
+    background-color: palevioletred;
+}
+/*Si la pantalla es menor de 600px, el sitio cogerá el estilo de arriba.
+Una vez sobrepase esos 600px cogerá el estilo dentro de este media querie*/
+@media (min-width:600px)
+{
+    .c1
+    {
+        width: 25%;
+        order: 1;
+    }
+    .c2
+    {
+        width: 75%;
+        order: 2;
+    }
+    .c3
+    {
+        width: 100%;
+        order: 3;
+    }
+    .c4
+    {
+        width: 100%;
+        order: 4;
+    }
+    .c5
+    {
+        width: 100%;
+        order: 5;
+    }
+}
+
+@media (min-width:800px)
+{
+    .c1
+    {
+        width: 30%;
+    }
+    .c2
+    {
+        width: 40%;
+    }
+    .c3
+    {
+        width: 30%;
+    }
+    .c4
+    {
+        width: 50%;
+    }
+    .c5
+    {
+        width: 50%;
+    }
+}

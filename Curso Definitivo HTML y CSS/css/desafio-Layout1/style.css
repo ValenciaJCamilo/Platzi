@@ -1,0 +1,254 @@
+/*Importo la tipografía de Valorant*/
+@import url('http://fonts.cdnfonts.com/css/valorant');
+
+/*------SECCIÓN GENERAL------*/
+/*Seteo los valores por defecto*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Establezco el valor del font-size 
+para poder trabajar comodamente con rem*/
+html {
+  font-size: 62.5%;
+}
+
+/*Defino en todo el boxy el tamaño de letra*/
+body {
+  font-size: 1.6rem;
+  /*Lo pongo para que cuando el diseño se dañe, 
+  el color siga teniendo el mismo de toda la página y la 
+  esencia permanezca*/
+  background-color:#0d1a20;
+}
+
+/*------SECCIÓN DEL HEADER------*/
+/*Aplico estilos al header y de paso al footer que es lo mismo*/
+header {
+  /*Pone en negro el color de fondo de la barra de navegación*/
+  background-color: black;
+  /*Propiedad flex para modificar más facilmente mis cajas*/
+  display: flex;
+  /*Con esto separo el logo del texto*/
+  justify-content: space-between;
+  /*Con esto centro en Y(para este caso) los ítems (logo y texto)*/
+  align-items: center;
+  /*Establezco la altura de la barra de navegación. La pongo en auto para que 
+    se vaya adaptando según el tamaño de la pantalla cambie*/
+  height: auto;
+  font-family: DINNextW05-Bold, arial, georgia, sans-serif;
+
+}
+
+.header-logo {
+  /*Cambio el tamaño del logo para que no ocupe toda la pantalla*/
+  width: 100px;
+  /*Le doy un margen para separarlo de la izquierda de la pantalla
+    de modo que no se vea pegado*/
+  margin: 2rem;
+}
+
+.nav-bar ul {
+  /*Me ayuda para ahora darle un flex al texto hecho de la 
+    lista desordenada.*/
+  display: flex;
+  /*Le doy un wrap para que si el tamaño de la pantalla cambia, 
+    el texto se vaya posicionando uno debajo del otro*/
+  flex-wrap: wrap;
+  /*Le quito el punto que trae por defecto cada uno de los items*/
+  list-style: none;
+}
+
+.nav-bar a {
+  /*Establezco el color del texto de la lista en blanco*/
+  color: white;
+  /*Le quito la línea por defecto que trae la lista cuando es un link*/
+  text-decoration: none;
+  /*Cambio el tamaño de la letra*/
+  font-size: 1.4rem;
+  /*Les aplico un margin para separar cada uno de los items de la lista*/
+  margin: 1.2rem;
+  /*Le aplica una negrita al texto para que se vea mejor*/
+  font-weight: bold;
+}
+
+/*Esto es para que cuando se pase por encima del texto de la lista de navegación*/
+.nav-bar a:hover {
+  /*Cambia el color de fondo del texto para que cuadre con el del fondo del borde*/
+  background-color: rgb(122, 122, 122);
+  /*Se le da un bordeado redondo*/
+  border-radius: 0.8rem;
+  /*Se establece el borde*/
+  border: 0.5rem solid rgb(122, 122, 122);
+}
+
+/*------SECCIÓN PRINCIPAL------*/
+main {
+  display: flex;
+}
+/*************ASIDE*************/
+.main-aside {
+  /*Establezco el flex*/
+  display: flex;
+  /*Establezco las imagenes en columna*/
+  flex-direction: column;
+  /*Establezco el color de fondo del aside*/
+  background: linear-gradient(to bottom, black, #0d1a20);
+  justify-content: space-evenly;
+}
+
+.main-aside img {
+  /*Le doy bordes redondeados a las imagenes*/
+  border-radius: 1rem;
+  /*Separo del borde las imagenes*/
+  margin: 10px;
+  /*Establezco el tamaño de las imagenes*/
+  width: 30rem;
+}
+
+/*Animación para cuando se pase el mouse por encima 
+de los items del aside*/
+.main-aside img:hover {
+  width: 33rem;
+  transition: all 0.1s ease;
+}
+
+/***********SECTION***********/
+.main-content video
+{
+    /*Se usa para que cuando se ponga la pantalla cmás pequeña
+    el vídeo mantenga el tamaño completo*/
+    object-fit: cover;
+    /*Lo uso para que el vídeo ocupe el 100% del ancho y alto de su caja*/
+    width:100%;
+    height: 100%;
+    /*Le pongo opacidad al vídeo para que se pueda visualizar mejor*/
+    opacity: 30%;
+    /*Esto es para usar el video y poder ponerle texto encima*/
+    position: absolute;
+}
+
+.main-content
+{
+    /*Esto es para aprovechar el 100% del tamaño en pantalla*/
+    width:100%;
+    /*Esto es para poder poner el texto encima del vídeo*/
+    position: relative;
+}
+
+.main-content h1
+{
+    /*Con esto ajusto la posición en Y del título*/
+    padding-top: 15%;
+    /*Establezco el tamaño del texto*/
+    font-size: 15rem;
+    /*Defino el color del tótulo*/
+    color:white;
+    font-family: "Valorant",'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.main-content h4
+{
+    padding:10px;
+    margin:20px;
+    color:white;
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+/*-----BOTÓN PERSONALIZADO------*/
+.btn-3 {
+    background: #0d1a20;
+    background: linear-gradient(0deg, #152933 0%, #081114 100%);
+    line-height: 50px;
+    padding: 0;
+    border: none;
+    position: relative;
+    color:white;
+    font-size: 2rem;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 30px;
+    width: 15%;
+    left: 42%;
+    font-weight: 600;
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #0d1a20;
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: #0d1a20;
+     background-color: white;
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: #0d1a20;
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+
+
+/*------SECCIÓN DEL FOOTER------*/
+/*Retoques al footer*/
+.footer-end {
+    color: white;
+    background-color: #0d1a20;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height:auto;
+    padding: 0 5rem;
+    margin-top: 3rem;
+    font-family: DINNextW05-Bold, arial, georgia, sans-serif;
+  }

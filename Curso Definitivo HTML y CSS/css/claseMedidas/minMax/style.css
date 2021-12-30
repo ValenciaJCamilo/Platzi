@@ -1,0 +1,38 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*Le ponemos de color de fondo un rosado al espacio
+total que ocupe la pantalla. Esto es gracias a vw y vh*/
+main
+{
+    width:100vw;
+    height:100vh;
+    background-color: palevioletred;
+}
+
+/*Contenedor Flexible*/
+section
+{
+    /*Aquí decimos que el section tenga un ancho del 80% del total 
+    del vieport width, por eso hay unos border */
+    width:80%;
+    /*Si la pantalla llega a encogerse hasta que llegue a 320, empezará
+    a dejar de tener los bordes*/
+    min-width: 320px;
+    /*Si la pantalla llega a estirarse a partir de 500px, entonces esta 
+    dejará de tener ese borde de 80%*/
+    max-width: 600px;
+    /*Lo usamos para que el texto no se salga del contenedor*/
+    min-height:400px;
+    /*Se establece el color de fondo del section para que se diferencia*/
+    background-color: rebeccapurple;
+    /*Quiere decir: de arriba a abajo no le agregue nada
+    pero de izquierda a derecha que se ajuste de forma automática.
+    Básicamente nos ajusta en X el contenido */
+    margin:0 auto;
+}
+

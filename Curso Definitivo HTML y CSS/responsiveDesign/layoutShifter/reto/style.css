@@ -1,0 +1,161 @@
+/*----------VARIABLES A USAR----------*/
+:root
+{
+    --primary-font:'Commissioner', sans-serif;
+}
+
+
+/*----------ESTABLEZCO LOS VALROES PREDETERMINADOS----------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: var(--primary-font)
+}
+
+
+/*----------HEADER----------*/
+/*Separo el logo del texto*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0F1923;
+}
+/*Pongo la lista en una fila*/
+.header-nav-list {
+    display: flex;
+    list-style: none;
+}
+/*Centro en Y la lista para que deje de estar pegada al borde superior*/
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+/*Le pongo el estilo al texto de la barra de navegación*/
+.header-nav-list a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+/*Le doy un espaciado a cada item de la lista*/
+.header-nav-list li {
+    margin-right: 2rem;
+}
+/*Separo del borde izquiero la imagen logo*/
+.header-img-container {
+    padding-left: 2rem;
+}
+/*Establezco el tamaño del logo*/
+.header-img-container img{
+    width: 7rem;
+}
+
+
+/*----------MAIN----------*/
+/*Hago flex a las tarjetas y pongo color de fondo degradado*/
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(15,25,35);
+    background: linear-gradient(180deg, rgba(15,25,35,1) 0%, rgba(16,59,99,1) 12%, rgba(17,79,136,1) 25%, rgba(18,108,189,1) 40%, rgba(18,133,236,1) 51%, rgba(123,187,245,1) 68%, rgba(178,215,249,1) 79%, rgba(247,251,254,1) 92%, rgba(255,255,255,1) 100%);
+    width: 100%;
+}
+/*Separo del borde las tarjetas, además les doy un margen entre ellas*/
+.main-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Separo de los lados las imagenes*/
+.main-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    align-items: center;
+    width: 80%;
+}
+/*Le doy un color a cada una de las tarjetas*/
+.bg-color-1 {
+    background-color: rgb(220, 224, 155); 
+}
+.bg-color-2 {
+    background-color: #D7D1CF;
+}
+.bg-color-3 {
+    background-color: #26F8D0;
+}.bg-color-4 {
+    background-color: #ccffff;
+}
+.bg-color-5 {
+    background-color: #ECE8E1;
+}
+.bg-color-6 {
+    background-color: #FE8BFE;
+}
+/*Separo el texto de las tarjetas para que tenga padding*/
+.main-article-content {
+    width: 95%;
+    padding: 2rem;
+}
+/*Estilo del título de las tarjetas*/
+.main-article-content h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+/*Estilo del párrafo de las tarjetas*/
+.main-article-content p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.65rem;
+}
+/*Estilo a las imagenes*/
+.main-aticle-image {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.main-aticle-image img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+
+/*----------FOOTER----------*/
+/*Se estiliza el footer para que se vea bien*/
+.footer-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 1.5rem;
+}
+
+/*Ajuste al tamaño de los iconos*/
+.footer-container-image img {
+    width: 4rem;
+}
+/*Estilo al nombre*/
+div h5{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+

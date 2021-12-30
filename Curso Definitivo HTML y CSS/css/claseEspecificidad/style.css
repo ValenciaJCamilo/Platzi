@@ -1,0 +1,43 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1
+{
+    color:purple;
+    font-family: serif;
+    margin-bottom: 10px;;
+}
+
+.page-header__title
+{
+    font-family: cursive;
+}
+
+.page-header__nav
+{
+    margin-top:10px;
+    list-style-type:none;
+    padding-left: 0;
+}
+
+.page-header__nav li
+{
+    display:inline-block;
+}
+
+.page-header__nav a
+{
+    color: white;
+    background-color:#13a4a4;
+    padding:5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.page-header__nav .blog
+{
+    background-color: red;
+}

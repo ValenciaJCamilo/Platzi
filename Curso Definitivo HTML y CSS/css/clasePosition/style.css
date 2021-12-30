@@ -1,0 +1,26 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.parent
+{
+    border:2px purple dotted;
+    display: inline-block;
+}
+
+.box
+{
+    display:inline-block;
+    background-color: red;
+    width:100px;
+    height:100px;
+}
+
+#two
+{
+    background-color: aqua;
+}
+

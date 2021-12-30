@@ -1,0 +1,61 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-size: 1.6rem;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.3rem dashed black;
+}
+
+.box
+{
+    /*10rem=100px*/
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+}
+
+.box1
+{
+    background-color: papayawhip;
+}
+
+.box2
+{
+    background-color: palegreen;
+}
+
+.box3
+{
+    background-color: paleturquoise;
+}
+
+.box4
+{
+    background-color: palevioletred;
+}
+
+.box5
+{
+    background-color: plum;
+}
+
+.box6
+{
+    background-color: purple;
+}

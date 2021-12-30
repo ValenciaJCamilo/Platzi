@@ -1,0 +1,85 @@
+/*Etiqueta para pegar todo al borde de la página*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #FF9501;
+    padding: 1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+  }
+
+.main-nav
+{
+    /*Sirve para pegar más arribita la lista creada*/
+    margin-top: 10px;
+    /*Sirve para quitar el puntico de la lista*/
+    list-style:none;
+    /*División externa, en este caso para la izquierda*/
+    padding-left: 0;
+    /*Agrega un color de fondo al nav*/
+    background-color: rgb(255, 255, 255);
+    /*Pone todo a la derecha*/
+    text-align: right;
+    /*Hace el grosor del contenedor más grande*/
+    padding:15px;
+}
+
+.header__logo
+{
+    max-width: 3.5rem;
+    border-radius: 50%;
+}
+
+.main-nav__item
+{
+    /*Nos ayuda para que salgan todos los textos seguidos*/
+    display:inline-block;
+    display:inline-block;
+}
+
+
+.main-nav__item a
+{
+    /*Es para el color de texto*/
+    color:#272C96;
+    /*Es para separar cada uno de los textos y darles espaciados*/
+    padding: 5px;
+    /*Le quitamos la línea de debajo*/
+    text-decoration: none;
+}
+
+/*
+Acá entran las pseudoclases (Van con dos puntos [:])
+El hover hace referencia de que el mouse esté encima del elemento
+*/
+.main-nav__item a:hover
+{
+    color: white;
+    border-radius: 1px;
+    background-color: #FF9501;
+}
+
+/*
+Otra pseudoclase es active, que es cuando se da clic al elemento
+*/
+.main-nav__item a:active
+{
+    color: white;
+    border-radius: 1px;
+    background-color: #FF9501;
+}
+
+/*
+Acá entran los pseudoelementos (Van con 2 dos puntos [::])
+
+.main-nav__item a::after{
+    content: " | ";
+}
+*/
