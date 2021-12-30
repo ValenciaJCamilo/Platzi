@@ -3,7 +3,9 @@
 # Programación Básica
 
 > *Docente: Freddy Vega*
+> <br>
 > Fecha de inicio: Noviembre 11, 2021
+> <br>
 > Fecha de finalización: Noviembre 22, 2021
 
 ------------
