@@ -1,0 +1,29 @@
+body
+{
+  text-align: center;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/989/414/large_2x/women-hand-with-pencil-by-hand-on-white-paper-at-white-background-free-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+h1
+{
+  font-family: monospace;
+  color: Green;
+}
+
+p
+{
+  font-family: Georgia, Cambria, Times, "Times New Roman";
+  color: Purple;
+}
+
+input.medidasPapel
+{
+width: 50px;
+}
+
+input.botonMedidas
+{
+width: 70px;
+}

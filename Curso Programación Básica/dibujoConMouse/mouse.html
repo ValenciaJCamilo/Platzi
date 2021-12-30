@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dibujando con mouse</title>
+    <!--Así es como se invoca el arvhivo CSS-->
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+  </head>
+  <body>
+      <h1>Detectar eventos del mouse con JavaScript</h1>
+      <p>
+        Para comenzar, selecciona el color de la pluma
+        <input type="color" id="selecionar_color"> <br>
+      </p>
+      <p>
+        Escribe el ancho y el alto de tu papel: <br>
+        Ancho:<input type="text" class="medidasPapel" id="anchoHoja" />
+        Alto:<input type="text" class="medidasPapel" id="altoHoja" />
+        <input type="button"class="botonMedidas" value="Listo" id="botonMedidas" /> <br>
+        <h4>¡Excelente! Si ya tienes todo listo, puedes empezar a dibujar</h4>
+      <canvas width="400" height="400" id="area_de_dibujo"></canvas>
+      <script src="eventos.js"></script>
+  </body>
+</html>

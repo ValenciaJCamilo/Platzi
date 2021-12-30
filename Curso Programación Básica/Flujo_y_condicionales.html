@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Peso en otro planeta </title>
+    <style>
+      body
+      {
+        background-image: url("https://opengameart.org/sites/default/files/styles/medium/public/Parallax100_0.png");
+        background-size: 10%;
+        text-align:center;
+        background-attachment: fixed;
+        color:white;
+      }
+      h1
+      {
+        text-transform:uppercase;
+        font-family:Impact;
+        color: #c7c7c7;
+        border-bottom: 3px double #ffffff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1> ¿Sabes cuánto pesas en otro planeta? ¡Averígüalo! </h1>
+    <p> En la tierra pesas distinto que en otros planetas como lo puede ser Marte y Jupiter </p>
+    <p> Con este programa sencillo podrás conocer tu peso en esos dos otros planetas :D </p>
+    <script>
+      /*prompt nos sirve para preguntar al usuario*/
+      var usuario = prompt("Ingresa tu peso: ");
+      /*parseInt me ayuda a convertir el String en entero*/
+      var planeta = parseInt(prompt("Selecciona el planeta:\n 1. Marte \n 2. Jupiter  "));
+      /*parseFloat me ayuda a convertir el String en decimal*/
+      var peso = parseFloat(usuario);
+      var g_tierra = 9.8,
+          g_marte = 3.7,
+          g_jupiter = 24.8,
+          peso_final;
+      if(planeta == 1)
+      {
+          peso_final = peso * g_marte / g_tierra;
+          peso_final = (peso_final.toFixed(2));
+          document.write("Tu peso en Marte es <strong>" +peso_final + " Kg </strong>");
+      }
+      else if (planeta == 2)
+      {
+          peso_final = peso * g_jupiter / g_tierra;
+          peso_final = (peso_final.toFixed(2));
+          document.write("Tu peso en Jupiter es <strong>" +peso_final + " Kg </strong>");
+      }
+      else if (planeta !=1 && planeta !=2)
+      {
+        document.write("No has seleccionado una opción válida :(");
+      }
+    </script>
+  </body>
+</html>

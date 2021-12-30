@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dibujando en el DOM</title>
+    <style media="screen">
+      body
+      {
+        text-align: center;
+        color: white;
+        background-color: black;
+        font-family: Verdana;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dibujo en Canvas :)</h1>
+    <p>
+      ¿Cuántas líneas deseas?
+      <input type="text" id=texto_lineas />
+      <input type="button" value="Dibujar" id="boton" />
+    </p>
+    <canvas width="300" height="300" id="dimension"></canvas>
+    <p>Acá estará el <strong>dibujo</strong></p>
+    <script src="dibujo.js"></script>
+  </body>
+</html>

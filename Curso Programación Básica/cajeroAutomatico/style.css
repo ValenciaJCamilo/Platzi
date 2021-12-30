@@ -1,0 +1,52 @@
+h1{
+    font-size: 5em;
+    font-family: monospace;
+    text-align: center;
+    color: blue;
+    border-style: dashed;
+    border-color: green;
+    border-width: 5px;
+}
+
+h3{
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+.boton{
+    width: 100px;
+    height: 40px;
+    font-family: monospace;
+    color: blue;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: rgb(155, 212, 158);
+    justify-content: center
+}
+
+.ingreso{
+    background-color: rgba(red, green, blue, alpha);
+    height: 30px;
+    width: 250px;
+    color: rgb(0, 84, 122);
+    font-size: 30px;
+    text-align: center;
+}
+
+#resultado{
+    font-size: 20px;
+    font-family: monospace;
+    color: gray;
+}
+body{
+    text-align: center;
+}
+
+img {
+    height: 150px;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }

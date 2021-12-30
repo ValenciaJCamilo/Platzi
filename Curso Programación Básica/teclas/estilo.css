@@ -1,0 +1,16 @@
+body
+{
+  text-align: center;
+  background-image: url("https://www.redrocketcreative.com/wp-content/uploads/Background-Keyboard.jpg");
+  background-repeat: space;
+}
+h1
+{
+  font-family: monospace;
+  color: Blue;
+}
+p
+{
+  font-family: Georgia, Cambria, Times, "Times New Roman";
+  color: Green;
+}
