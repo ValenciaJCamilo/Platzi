@@ -12,5 +12,5 @@
 
 - Puedes ver mi **diploma** [aquí](https://platzi.com/p/Valenciajcamilo/curso/1050-programacion-basica/diploma/detalle/ "aquí")
 
-<p align="center">
+
 [![Gif ](https://media2.giphy.com/media/13HgwGsXF0aiGY/giphy.gif "Gif ")](https://media2.giphy.com/media/13HgwGsXF0aiGY/giphy.gif "Gif ")
