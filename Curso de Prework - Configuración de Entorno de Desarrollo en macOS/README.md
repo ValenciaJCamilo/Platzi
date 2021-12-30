@@ -11,7 +11,7 @@
 ------------
 - Puedes ver el **curso** [aquí](https://platzi.com/clases/prework-macos/ "aquí")
 
-- Puedes ver mis **apuntes**  [aquí](https://steep-bridge-4be.notion.site/Prework-Configuraci-n-de-Entorno-de-Desarrollo-en-macOS-2b621c011c914e068843866c734660e3 "aquí") 
+- Puedes ver mis **apuntes**  [aquí](https://steep-bridge-4be.notion.site/Prework-Configuraci-n-de-Entorno-de-Desarrollo-en-macOS-2b621c011c914e068843866c734660e3 "aquí") <br>
 *Estos apuntes no están del todo completo en los demás cursos, debido a que yo trabajo en una máquina Windows.*
 
 - Puedes ver mi **diploma** [aquí](https://platzi.com/p/Valenciajcamilo/curso/2214-prework-macos/diploma/detalle/ "aquí")
