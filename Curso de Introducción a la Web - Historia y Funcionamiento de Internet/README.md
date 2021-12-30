@@ -1,4 +1,4 @@
-[![Banner](https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-internet-home-earth-banner-image_169058.jpg "Banner")](https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-internet-home-earth-banner-image_169058.jpg "Banner")
+[![Banner](https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-technology-life-internet-banner-background-image_209906.jpg "Banner")](https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-technology-life-internet-banner-background-image_209906.jpg "Banner")
 
 # Introducción a la Web: Historia y Funcionamiento de Internet
 
