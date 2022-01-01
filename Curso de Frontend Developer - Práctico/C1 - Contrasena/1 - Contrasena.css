@@ -120,8 +120,8 @@ body
   border:none;
   /*Redondeamos el borde a 8px*/
   border-radius: 8px;
-  /*Le cambiamos la altura a los inputs a 30px*/
-  height: 30px;
+  /*Le cambiamos la altura a los inputs a 35px*/
+  height: 35px;
   /*Cambiamos el tamaño de letra*/
   font-size: var(--md);
   /*Le damos un pading de 6px a la caja para que no quede pegado el texto con la caja*/
