@@ -15,5 +15,5 @@ Se puede apreciar que acá se muestra el logo. Esto es debido a que el width de 
 ------------
 
 
-Y ahora, si la pantalal es superior a 640px, entonces el logo desaparecerá
+Y ahora, si la pantalla es superior a 640px, entonces el logo desaparecerá
 [![Img2](https://i.ibb.co/r0YVFSS/pss2.jpg "Img2")](https://i.ibb.co/r0YVFSS/pss2.jpg "Img2")
