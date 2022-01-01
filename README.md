@@ -1,8 +1,8 @@
 [![Banner](https://pbs.twimg.com/media/DctxewYWsAEg1AZ?format=jpg&name=4096x4096 "Banner")](https://pbs.twimg.com/media/DctxewYWsAEg1AZ?format=jpg&name=4096x4096 "Banner")
 ------------
-<h4 align="center">Puedes ver mi perfil de Platzi:</h3>
+<h4 align="center">Aquí podrás ver mi perfil de Platzi</h3>
 <h3 align="center">https://platzi.com/p/Valenciajcamilo/ </h3>
-<h4 align="center">en donde encontrarás todos los cursos que he realizado 💚 </h3>
+<h4 align="center">Podrás ver todos los cursos que he realizado 💚 </h3>
 
 ------------
 
