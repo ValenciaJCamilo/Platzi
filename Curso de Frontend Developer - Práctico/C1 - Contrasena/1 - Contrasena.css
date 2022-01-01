@@ -7,9 +7,9 @@
     --hospital-green2:#356cb4;
     --white-color:#ffffff;
     --black-color:#000000;
-    --sm: 1.5rem;
-    --md: 1.7rem;
-    --lg: 1.9rem;
+    --sm: 18px;
+    --md: 20px;
+    --lg: 24px;
 }
 
 /*Tipo de letra de todo el proyecto*/
@@ -17,18 +17,13 @@ body
 {
     font-family: 'Quicksand', sans-serif;
 }
+
 /*Seteo los valores por defecto de estilo del navegador*/
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/*1REM=10px*/
-html
-{
-    font-size: 62.5%;
 }
 
 /*Estilo del contenedor padre*/
@@ -50,16 +45,16 @@ html
     /*Título y subtitulo auto, es decir, que tome el tamaño que desee*/
     grid-template-rows: auto 1fr auto;
     /*Un ancho de 300px*/
-    width: 31rem;
+    width: 300px;
 }
 
 /*Estilo del logo*/
 .logo
 {
   /*Aumentamos el tamaño del logo*/
-  width: 15rem;
+  width: 150px;
   /*Le ponemos margen para hacer una separación entre él y el título*/
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
   /*Centramos en la GRID que tenemos el logo */
   justify-self: center;
   /*Esto lo ponemos para que NO APAREZCA EN DESKTOP*/
@@ -72,7 +67,7 @@ html
   /*Ajustamos el tamaño de letra*/
   font-size: var(--lg);
   /*Separamos el texto del subtítulo */
-  margin-bottom:1.2rem;
+  margin-bottom:12px;
   /*Centramos el texto*/
   text-align: center;
 }
@@ -91,7 +86,7 @@ html
   /*Evitamos el cruce con el márgen del párrafo por defecto*/
   margin-top: 0;
   /*Separamos del formulario el párrafo*/
-  margin-bottom: 3.2rem;
+  margin-bottom: 32px;
 }
 
 /*Estilo del form*/
@@ -102,7 +97,7 @@ html
   /*Le cambiamos la dirección*/
   flex-direction: column;
   /*Ponemos un márgen en la parte de abajo. 12px*/
-  margin-bottom: 1.2rem;
+  margin-bottom: 12px;
 }
 
 /*Estilo del label*/
@@ -113,7 +108,7 @@ html
   /*Ponemos una negrita*/
   font-weight: bold;
   /*4 píxeles siguiente el estándar*/
-  margin-bottom: 0.4rem;
+  margin-bottom: 4px;
 }
 
 /*Estilo del input (campo)*/
@@ -124,15 +119,15 @@ html
   /*Quitamos el borde por defecto*/
   border:none;
   /*Redondeamos el borde a 8px*/
-  border-radius: 0.8rem;
+  border-radius: 8px;
   /*Le cambiamos la altura a los inputs a 30px*/
-  height: 3rem;
+  height: 30px;
   /*Cambiamos el tamaño de letra*/
   font-size: var(--md);
   /*Le damos un pading de 6px a la caja para que no quede pegado el texto con la caja*/
-  padding: 0.6rem;
+  padding: 6px;
   /*Le pongo un márgen inferior de 20px a los inputs para que tengan un espaciado entre ellos */
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 /*Estilizamos el botón*/
@@ -141,7 +136,7 @@ html
   /*Establecemos el color del botón*/
   background-color: var(--hospital-green1);
   /*Le damos unos bordes de 8px*/
-  border-radius: 0.8rem;
+  border-radius: 8px;
   /*Quitamos los border por defecto*/
   border:none;
   /*Establecemos el color del texto*/
@@ -156,7 +151,7 @@ html
   /*Le damos una negrita al texto*/
   font-weight: bold;
   /*Ponemos más alto el botón, es decir, "engrosarlo" en Y*/
-  height: 5rem;
+  height: 50px;
 }
 
 .primary-button:hover
