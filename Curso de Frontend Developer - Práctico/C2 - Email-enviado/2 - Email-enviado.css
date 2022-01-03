@@ -91,46 +91,6 @@ body
   margin-bottom: 32px;
 }
 
-/*Estilo del form*/
-.form
-{
-  /*Con flex se posicionan uno al lado del otro*/
-  display: flex;
-  /*Le cambiamos la dirección*/
-  flex-direction: column;
-  /*Ponemos un márgen en la parte de abajo. 12px*/
-  margin-bottom: 12px;
-}
-
-/*Estilo del label*/
-.label
-{
-  /*Cambiamos el tamaño de la fuente*/
-  font-size: var(--sm);
-  /*Ponemos una negrita*/
-  font-weight: bold;
-  /*4 píxeles siguiente el estándar*/
-  margin-bottom: 4px;
-}
-
-/*Estilo del input (campo)*/
-.input
-{
-  /*Cambiamos el color de fondo de los campos*/
-  background-color: var(--text-input);
-  /*Quitamos el borde por defecto*/
-  border:none;
-  /*Redondeamos el borde a 8px*/
-  border-radius: 8px;
-  /*Le cambiamos la altura a los inputs a 35px*/
-  height: 35px;
-  /*Cambiamos el tamaño de letra*/
-  font-size: var(--md);
-  /*Le damos un pading de 6px a la caja para que no quede pegado el texto con la caja*/
-  padding: 6px;
-  /*Le pongo un márgen inferior de 20px a los inputs para que tengan un espaciado entre ellos */
-  margin-bottom: 20px;
-}
 
 /*Estilizamos el botón*/
 .primary-button
@@ -159,6 +119,42 @@ body
 .primary-button:hover
 {
   background-color: var(--hospital-green2)
+}
+
+
+.email-image
+{
+  width:132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: var(--text-input);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.email-image img
+{
+  width:80px;
+}
+
+.resend
+{
+  font-size: var(--sm);
+  text-align: center;
+  margin-top: 28px;
+}
+
+.resend span
+{
+  color:var(--background-color);
+}
+
+.resend a
+{
+  color:var(--hospital-green1);
+  text-decoration: none;
 }
 
 
