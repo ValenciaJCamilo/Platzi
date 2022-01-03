@@ -1,10 +1,12 @@
-## 6. Home: HTML 💀
+## 6. Página de inicio: CSS 🖌️
 
 ------------
 
-##### Acá se crea la estructura del menú principal.En la siguiente clase se realiza el diseño CSS. 
+##### Acá se crea la estructura de la página de inicio: CSS
 
-[![img](https://i.ibb.co/hgdbLDL/img.jpg "img")](https://i.ibb.co/hgdbLDL/img.jpg "img")
+De esta manera es como se visualizaría en mobile
+[![img](https://i.ibb.co/NpBqMTD/mobile.jpg "img")](https://i.ibb.co/NpBqMTD/mobile.jpg "img")
 ------------
 
-
+Y así es como se visualizaría en Desktop
+[![img](https://i.ibb.co/gyK1Yxm/pc.jpg "img")](https://i.ibb.co/gyK1Yxm/pc.jpg "img")
