@@ -14,6 +14,5 @@ Se puede apreciar que acá se muestra el logo, y además, el botón de sign up e
 
 ------------
 
-
 Y ahora, si la pantalla es superior a 640px, entonces el logo desaparecerá y el botón se ajustará
 [![Img2](https://i.ibb.co/GJKDWy3/pc.jpg "Img2")](https://i.ibb.co/GJKDWy3/pc.jpg "Img2")
