@@ -52,6 +52,8 @@ de manera automática*/
   /*Propiedad para que la imagen se adecue al tamaño predeterminado que le establecemos.
     Sirve para que la imagen no se encoja automáticamente*/
   object-fit: cover;
+  /*Para que al pasar por la tarjeta salga la manito*/
+  cursor:pointer;
 }
 
 /*Se alínea el texto con el carrito de compras*/
