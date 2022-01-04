@@ -1,0 +1,170 @@
+/*Variables base para el proyecto*/
+:root {
+    --background-color: #a0a0a0;
+    --text-input: #e9e9e9;
+    --hospital-green1: #4083db;
+    --hospital-green2: #356cb4;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --sm: 16px;
+    --md: 19px;
+    --lg: 22px;
+  }
+  
+  /*Tipo de letra de todo el proyecto*/
+  body {
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  /*Centrar un poco todo el contenido*/
+  .product-detail {
+    width: 360px;
+    padding: 24px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+  }
+
+  /*Esto es para poder alinear el tótulo con la flecha para ir atrás*/
+  .title-container {
+    display: flex;
+  }
+  
+  /*Estilo de la flecha*/
+  .title-container img {
+    /*Con esto podemos rotar la imagen*/
+    transform: rotate(180deg);
+    /*Margen hacia la derecha para separarlo un poco del título*/
+    margin-right: 16px;
+  }
+  
+  /*Estílo del título*/
+  .title {
+    /*Tamaño de fuente*/
+    font-size: var(--lg);
+    /*Negrita*/
+    font-weight: bold;
+  }
+
+  /*Contenedor principal del total de la orden*/
+  .order {
+    /*Hacemos uso de Grid*/
+    display: grid;
+    /*Esto nos ayuda para alinear el texto con el número*/
+    grid-template-columns: auto 1fr;
+    /*Gap para espaciado*/
+    gap: 16px;
+    /*Centramos*/
+    align-items: center;
+    /*Color de fondo del contenedor*/
+    background-color: var(--text-input);
+    /*Esto es para separar del botón de Checkout*/
+    margin-bottom: 24px;
+    /*Damos un bordeado*/
+    border-radius: 8px;
+    /*Padding para separar internamente el contenido. Primero Y y luego X*/
+    padding: 0 24px;
+  }
+
+  /*Estilo del título*/
+  .order p span:nth-child(1) {
+    /*Tamaño del texto*/
+    font-size: var(--md);
+    /*Negrita*/
+    font-weight: bold;
+  }
+
+  /*Estilo del costo total */
+  .order p:nth-child(2) {
+    /*Lo llevamos al final del contenedor*/
+    text-align: end;
+    /*Texto en negrita*/
+    font-weight: bold;
+  }
+
+  
+  /*Contenedor principal del contenido de la compra*/
+  .shopping-cart {
+    /*Uso de grid para alinear*/
+    display: grid;
+    /*
+    1. Valor para alinear el título del producto
+    2. Valor para alinear textos
+    3. Valor para un pequeño margin
+    4. Valor para la X
+    */ 
+    grid-template-columns: auto 1fr auto auto;
+    /*Espaciado general*/
+    gap: 16px;
+    /*Margen inferior entre cada artículo*/
+    margin-bottom: 24px;
+    /*Centramos*/
+    align-items: center;
+  }
+  
+  /*Estilo del contenedor de la imagen*/
+  .shopping-cart figure {
+    margin: 0;
+  }
+
+  /*Estilo de la imagen*/
+  .shopping-cart figure img {
+    /*Alto y ancho*/
+    width: 80px;
+    height: 80px;
+    /*Se redondean los bordes*/
+    border-radius: 20px;
+    /*Cover para no deformar la imagen*/
+    object-fit: cover;
+  }
+
+  /*Estilo al título del producto*/
+  .shopping-cart p:nth-child(2) {
+    color: var(--background-color);
+  }
+
+  /*Estilo al valor del artículo*/
+  .shopping-cart p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: bold;
+  }
+  
+
+/*Estilizamos el botón Checkout*/
+.primary-button
+{
+  /*Establecemos el color del botón*/
+  background-color: var(--hospital-green1);
+  /*Le damos unos bordes de 8px*/
+  border-radius: 8px;
+  /*Quitamos los border por defecto*/
+  border:none;
+  /*Establecemos el color del texto*/
+  color:var(--white-color);
+  /*Establecemos el ancho del botón para que ocupe el 100% en X*/
+  width:100%;
+  /*Nos ayuda para que al momento de pasar el cursor por encima, la flecha cambie
+  y pase a ser uma manita, de forma que sepamos que es un elemento para dar clic*/
+  cursor: pointer;
+  /*Establecemos el tamaño de funte del texto*/
+  font-size: var(--md);
+  /*Le damos una negrita al texto*/
+  font-weight: bold;
+  /*Ponemos más alto el botón, es decir, "engrosarlo" en Y*/
+  height: 50px;
+}
+
+/*Estilo al momento de pasar el cursor encima del botón*/
+.primary-button:hover
+{
+  background-color: var(--hospital-green2)
+}
+
+
+
+/*Estilo para el cambio de pantalla*/
+  @media (max-width: 640px) {
+    .product-detail {
+      width: 100%;
+    }
+  }
