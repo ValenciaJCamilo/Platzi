@@ -28,6 +28,8 @@
 12. [Curso de Frontend Developer - Práctico](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Frontend%20Developer%20-%20Pr%C3%A1ctico "Curso de Frontend Developer Práctico")
 13. [Curso Definitivo de HTML y CSS](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Definitivo%20HTML%20y%20CSS "Curso Definitivo de HTML y CSS")
 
+[![Gif](https://onlylinks.pro/wp-content/uploads/2021/01/main-qimg-fa7b4bdc3b2f73e749e5c2c646d4ae13.gif "Gif")](https://onlylinks.pro/wp-content/uploads/2021/01/main-qimg-fa7b4bdc3b2f73e749e5c2c646d4ae13.gif "Gif")
+
 ------------
 
 <h2>Escuela de JavaScript <img src="https://static.platzi.com/media/learningpath/badges/a1755d74-68aa-4341-9efb-44902dda50f0.jpg" width="30px"></h2>
@@ -39,6 +41,4 @@
 4. [Curso de Frontend Developer](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Frontend%20Developer "Curso de Frontend Developer")
 5. [Curso de Frontend Developer - Práctico](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Frontend%20Developer%20-%20Pr%C3%A1ctico "Curso de Frontend Developer Práctico")
 
-------------
-
-[![Gif](https://i.pinimg.com/originals/6c/7e/c7/6c7ec7cbb462babe074fe20ec479fbf8.gif "Gif")](https://i.pinimg.com/originals/6c/7e/c7/6c7ec7cbb462babe074fe20ec479fbf8.gif "Gif")
+[![Gif](https://soyhorizonte.com/wp-content/uploads/2020/10/JS.gif "Gif")](https://soyhorizonte.com/wp-content/uploads/2020/10/JS.gif "Gif")
