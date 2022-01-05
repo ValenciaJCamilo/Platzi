@@ -15,4 +15,4 @@
 
 - Puedes ver mi **diploma** [aquí](# "aquí") *En proceso*
 
-[![Gif](https://i.gifer.com/T9r9.gif "Gif")](https://i.gifer.com/T9r9.gif "Gif")
+[![Gif](https://media1.giphy.com/media/110dhxfJebYOTm/giphy.gif "Gif")](https://media1.giphy.com/media/110dhxfJebYOTm/giphy.gif "Gif")
