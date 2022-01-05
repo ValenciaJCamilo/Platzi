@@ -1,0 +1,108 @@
+/*Establezco variables*/
+:root
+{
+    --background-color: white;
+    --button-color: white;
+    --text-nav-button-color:black;
+    --footer-color:#292929;
+}
+
+/*Seteamos los valores por defecto en el body*/
+body
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    /*Equivalente a 13px*/
+    font-size: 0.8125rem;
+    /*Tipo de letra por defecto del navegador*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Color de fondo de TODA la página*/
+    background-color: var(--background-color);
+}
+
+/*Estilo para la etiqueta header*/
+header
+{
+    /*Esto es para que ocupe el 100 del ancho de la pantalla*/
+    width:100%;
+    /*Establecemos una altura de 60px*/
+    height: 3.75rem;
+}
+
+/*Esto es para poder mandar los elementos de la lista a la parte derecha*/
+header nav
+{
+    display: flex;
+    justify-content: end;
+}
+
+/*Estilos del contenedor UL de la lista*/
+header nav .nav-right-section
+{
+    /*Ancho de 250px*/
+    width: 15.625rem;
+    /*Altura exacta de la de Google. 36px*/
+    height: 2.25rem;
+    /*Display flex para alinear los items */
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center ;
+}
+
+/*Estilos de la etiqueta a HEADER*/
+nav .nav-right-section a
+{
+    /*Margen a la derecha de 15px. Esto es para separar cada uno de los diferentes a*/
+    margin-right: 14px;
+    /*Se establcece el color del texto*/
+    color:var(--text-nav-button-color);
+    /*Texto en negrita*/
+    font-weight: bold;
+}
+
+/*A absolutamente todas las etiquetas le quitamos la línea*/
+a
+{
+    /*Elimina la línea decoradora*/
+    text-decoration: none;
+    /*Para que al pasar el mouse por encima, se ponga la manito.*/
+    cursor:pointer;
+}
+
+/*Esto es para que al momento de pasar el cursor por encima, se aplique la línea decorativa, justo como lo tiene Google*/
+a:hover
+{
+    text-decoration: underline;
+}
+
+/*Estilo para el ícono del Navbar
+Es importante mencionar que si se cambia el color a DarkMode, el ícono
+también deberá ser reemplazado, es decir, se tiene que buscar otra URL*/
+nav .nav-right-section .menu-icon
+{
+    /*Cargamos la imagen*/
+    background-image: url("https://static.thenounproject.com/png/756729-200.png");
+    /*Quiero que la imagen quede en el centro*/
+    background-position: center;
+    /*Tamaño*/
+    background-size: contain;
+    /*A la imagen se le pone un ancho de 28px*/
+    width: 1.75rem;
+    /*A la imagen se le pone un alto de 28px*/
+    height: 1.75rem;
+    /*Para que al momento de pasar el cursor por encima, se cambie a una manito*/
+    cursor: pointer;
+    /*Separación con "Imágenes". Hacia la izquierda 5px*/
+    margin-left: 0.3125rem;
+}
+
+/*Estilo para la foto de perfil del Navbar*/
+nav .nav-right-section img
+{
+    /*Imagen redondeada*/
+    border-radius: 50%;
+    /*Separación hacia la izquierda del ícono de menú*/
+    margin-left: 1.25rem;
+}
