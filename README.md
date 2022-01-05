@@ -27,6 +27,7 @@
 11. [Curso de Frontend Developer](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Frontend%20Developer "Curso de Frontend Developer")
 12. [Curso de Frontend Developer - Práctico](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Frontend%20Developer%20-%20Pr%C3%A1ctico "Curso de Frontend Developer Práctico")
 13. [Curso Definitivo de HTML y CSS](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Definitivo%20HTML%20y%20CSS "Curso Definitivo de HTML y CSS")
+14. [Curso Práctico de HTML y CSS](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Pr%C3%A1ctico%20de%20HTML%20y%20CSS "Curso Práctico de HTML y CSS")
 
 [![Gif](https://onlylinks.pro/wp-content/uploads/2021/01/main-qimg-fa7b4bdc3b2f73e749e5c2c646d4ae13.gif "Gif")](https://onlylinks.pro/wp-content/uploads/2021/01/main-qimg-fa7b4bdc3b2f73e749e5c2c646d4ae13.gif "Gif")
 
@@ -42,3 +43,11 @@
 5. [Curso de Frontend Developer - Práctico](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Frontend%20Developer%20-%20Pr%C3%A1ctico "Curso de Frontend Developer Práctico")
 
 [![Gif](https://soyhorizonte.com/wp-content/uploads/2020/10/JS.gif "Gif")](https://soyhorizonte.com/wp-content/uploads/2020/10/JS.gif "Gif")
+
+------------
+
+<h2>Bases de Datos <img src="https://static.platzi.com/media/learningpath/badges/10.png" width="30px"></h2>
+
+1. [Curso de Fundamentos de Bases de Datos](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Fundamentos%20de%20Bases%20de%20Datos "Curso de Fundamentos de Bases de Datos")
+
+[![Gif](https://lh4.googleusercontent.com/A8Awrv13jAf66rIsQlfr3GDy8Y38JSQymElszPvV5-UoplsAkqdMKI8rwZup4LVWu6JLRSkYMRNZJ0_vRnAMlkhI7SGAJeaWLhL89PQ9O3jvwZGU6_mmxYdWjZ33GvUDwU1ahh0T "Gif")](https://lh4.googleusercontent.com/A8Awrv13jAf66rIsQlfr3GDy8Y38JSQymElszPvV5-UoplsAkqdMKI8rwZup4LVWu6JLRSkYMRNZJ0_vRnAMlkhI7SGAJeaWLhL89PQ9O3jvwZGU6_mmxYdWjZ33GvUDwU1ahh0T "Gif")
