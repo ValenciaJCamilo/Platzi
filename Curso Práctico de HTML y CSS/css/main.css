@@ -1,3 +1,4 @@
+/*----------------------------ESTILOS INICIALES----------------------*/
 /*Establezco variables*/
 :root
 {
@@ -21,6 +22,9 @@ body
     background-color: var(--background-color);
 }
 
+
+
+/*----------------------------ESTILOS NAVBAR----------------------*/
 /*Estilo para la etiqueta header*/
 header
 {
@@ -54,12 +58,10 @@ header nav .nav-right-section
 /*Estilos de la etiqueta a HEADER*/
 nav .nav-right-section a
 {
-    /*Margen a la derecha de 15px. Esto es para separar cada uno de los diferentes a*/
-    margin-right: 14px;
+    /*Margen a la derecha de 16px. Esto es para separar cada uno de los diferentes a*/
+    margin-right: 1rem;
     /*Se establcece el color del texto*/
     color:var(--text-nav-button-color);
-    /*Texto en negrita*/
-    font-weight: bold;
 }
 
 /*A absolutamente todas las etiquetas le quitamos la línea*/
@@ -94,8 +96,10 @@ nav .nav-right-section .menu-icon
     height: 1.75rem;
     /*Para que al momento de pasar el cursor por encima, se cambie a una manito*/
     cursor: pointer;
-    /*Separación con "Imágenes". Hacia la izquierda 5px*/
-    margin-left: 0.3125rem;
+    /*Separación con "Imágenes". Hacia la izquierda 10px*/
+    margin-left: 0.625rem;
+    /*Esto me ayuda para cambiarle un poco el color (Es la opacidad pero para este caso funciona)*/
+    opacity: 57%;
 }
 
 /*Estilo para la foto de perfil del Navbar*/
@@ -106,3 +110,175 @@ nav .nav-right-section img
     /*Separación hacia la izquierda del ícono de menú*/
     margin-left: 1.25rem;
 }
+
+
+
+/*----------------------------ESTILOS MAIN----------------------*/
+/*Estilo al main*/
+main
+{
+    /*Esto es para separar de la barra de navegación.*/
+    margin-top: 9rem;
+    /*Centramos todo el contenido*/
+    text-align: center;
+}
+
+/******** SECCIÓN 1: Logo *********/
+main .main-logo img
+{
+    /*Tamaño de la imagen. 435px*/
+    width:27.1875rem;
+    /*Margenes en Y y márgenes en X*/
+    margin:0 auto;
+    /*Esto es para dar margen inferior y separar de la barra de búsqueda*/
+    margin-bottom: 40px;
+}
+
+/******** SECCIÓN 2: Barra de búsqueda *********/
+main .main-input 
+{
+    /*Valor mágico para centrar la barra con el logo.528px*/
+    width: 528px;
+    /*Margenes para que se ajusten automáticamente en X*/
+    margin: 0 auto;
+    /*Esto es para separar un poco los la barra con los botones*/
+    margin-bottom: 35px;
+}
+
+/*Estilos al contenedor*/
+main .main-input-container 
+{
+    /*Mismo ancho que el main-input*/
+    width: 528px;
+    /*Bordes de 24px, como Google*/
+    border-radius: 24px;
+    /*Se pone una línea de borde, con un color*/
+    border: 1px solid #dfe1e5;
+    /*Esto es para centrar todo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Efecto en la barra de búsqueda al momento de pasar el cursor por encima*/
+main .main-input-container:hover 
+{
+    /*Este es el efecto para la sombra*/
+    box-shadow: 0 1px 6px 0 #20212447;
+    /*Otro color de borde, algo transparente*/
+    border-color:#dfe1e500;
+}
+
+/*Estilos al campo de input*/
+main .main-input input 
+{
+    /*Cambiamos el ancho. 450px*/
+    width: 450px;
+    /*Esto define el ancho de la barra*/
+    height: 40px;
+    /*Sin borde*/
+    border: none;
+    /*Sin outline para que no se ponga ningún color al seleccionar el campo*/
+    outline: none;
+}
+
+/*Estilos al icono de búsqueda*/
+main .main-input .search-icon
+{
+    /*Para importar el ícono de búsqueda*/
+    background-image: url("https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png");
+    /*Para que la imagen no se repita*/
+    background-repeat: no-repeat;
+    /*Posición*/
+    background-position: center;
+    /*Tamaño para que sea el mismo tamaño del contenedor*/
+    background-size: contain;
+    /*Ancho*/
+    width:20px;
+    /*Alto*/
+    height: 20px;
+    /*Le cambiamos la opacidad para ajustar un poco el color*/
+    opacity: 38%;
+    /*Lo separo un poco del indicador para escribir*/
+    margin-right: 7px;
+}
+
+/*Estilos al ícono de voz*/
+main .main-input .mic-icon
+{
+     /*Para importar el ícono de búsqueda*/
+     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png");
+     /*Para que la imagen no se repita*/
+     background-repeat: no-repeat;
+     /*Posición*/
+     background-position: center;
+     /*Tamaño para que sea el mismo tamaño del contenedor*/
+     background-size: contain;
+     /*Ancho*/
+     width:20px;
+     /*Alto*/
+     height: 20px;
+     /*A diferencia del de búsquead, este si tiene manito porque sí realiza una acción*/
+     cursor:pointer;
+}
+
+/*Estilo al texto al momento de estar buscando. Se modifica el tamaño de letra*/
+main .main-input .main-input-text
+{
+    font-size: 1.1rem;
+}
+
+/******** SECCIÓN 3: Botones de búsqueda *********/
+/*Estilo al contenedor principal */
+main .main-buttons
+{
+    /*Display flex para posicionarlos en la misma línea*/
+    display: flex;
+    /*Los centro en X*/
+    justify-content: center;
+    /*Le doy un margen inferior de 20px para separarlo del texto de "Ofrecido por*/
+    margin-bottom: 1.25rem;
+}
+
+/*Estilo de los botones*/
+main .main-buttons button
+{
+    /*Añado un padding para dar un espaciado interno en los botones*/
+    padding: 10px 14px;
+    /*Establezco un tamaño de texto de botones de 15px*/
+    font-size: 0.9375rem;
+    /*Doy un margen en la izquierda y en la derecha para separar los botones*/
+    margin: 0 8px 0 8px;
+    /*Elimino los bordes por defecto*/
+    border:none;
+    /*Añado cursor pointer para indicar que se puede dar clic*/
+    cursor:pointer;
+    /*Bordeo un poquito los botones*/
+    border-radius: 5%;
+}
+
+/*Estilo de los botones cuando el cursor se pasa por encima*/
+main .main-buttons button:hover
+{  
+      /*Este es el efecto para la sombra*/
+      box-shadow: 1px 1px 10px 1px #20212447;
+}
+
+/******** SECCIÓN 4: Texto "Ofrecido por Google en: English" *********/
+/*Con esto centramos y alineamos el texto*/
+main .main-final-text
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Esto me ayuda para darle un espaciado al texto p y al hipervínculo a*/
+main .main-final-text div
+{
+    margin: 0 2px 0 2px;
+}
+
+
+
+/*----------------------------ESTILOS FOOTER----------------------*/
