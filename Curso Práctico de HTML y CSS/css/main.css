@@ -100,6 +100,14 @@ nav .nav-right-section .menu-icon
     margin-left: 0.625rem;
     /*Esto me ayuda para cambiarle un poco el color (Es la opacidad pero para este caso funciona)*/
     opacity: 57%;
+    border: 4px solid #ffffff;
+}
+
+/*Efecto al momento de pasar por encima el mouse en el icono de menú*/
+nav .nav-right-section .menu-icon:hover {
+    border-radius: 50%;
+    background-color:#dbdbdb;
+    border: 4px solid #dbdbdb;
 }
 
 /*Estilo para la foto de perfil del Navbar*/
@@ -110,8 +118,6 @@ nav .nav-right-section img
     /*Separación hacia la izquierda del ícono de menú*/
     margin-left: 1.25rem;
 }
-
-
 
 /*----------------------------ESTILOS MAIN----------------------*/
 /*Estilo al main*/
@@ -127,7 +133,7 @@ main
 main .main-logo img
 {
     /*Tamaño de la imagen. 435px*/
-    width:27.1875rem;
+    width:365px;
     /*Margenes en Y y márgenes en X*/
     margin:0 auto;
     /*Esto es para dar margen inferior y separar de la barra de búsqueda*/
@@ -282,3 +288,71 @@ main .main-final-text div
 
 
 /*----------------------------ESTILOS FOOTER----------------------*/
+footer
+{
+    /*Ancho del footer*/
+    width:100%;
+    /*Esto es para aseguerar que siempre se quede en el final de la página*/
+    position:fixed;
+    bottom:0;
+}
+
+footer div
+{
+    margin: 10px 0 10px 0;
+}
+
+/*Estilo del país*/
+footer .footer-country
+{
+    /*Establezco un tamaño de texto del país de 15px*/
+    font-size: 0.9375rem;
+    /*Color de texto*/
+    color: #5f6368;
+    /*Lo separo del margen de la izquierda. 40px*/
+    margin-left: 2.7rem;
+    align-items: center;
+}
+
+/*Esto me ayuda para separar la lista izquirda de la derecha*/
+footer .footer-options
+{
+    /*Uso de GRID*/
+    display:grid;
+    /*Esto es para decir que serán dos columnas*/
+    grid-template-columns: 1fr 1fr;
+    /*Esto es para realizar la línea separadora entre los dos footer*/
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul
+{
+    /*Un poco de margen para separar del borde*/
+    margin:10px;
+    /*Quitamos el estilo del punto de la lista*/
+    list-style: none;
+    /*Establezco un tamaño de texto de 15px*/
+    font-size: 0.9375rem;
+    /*Uso de flex para posicionar todo en una sola línea*/
+    display: flex;
+    /*Reseteamos el padding de UL*/
+    padding-left: 0;
+}
+
+footer .footer-left
+{
+    justify-self: left;
+    margin-left: 30px;
+}
+
+footer .footer-right
+{
+    justify-self: right;
+    margin-right: 30px;
+}
+
+footer ul li a
+{
+    margin: 10px;
+    color: #5f6368;
+}
