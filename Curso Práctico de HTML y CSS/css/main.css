@@ -339,18 +339,21 @@ footer ul
     padding-left: 0;
 }
 
+/*Esto es para poner en la parte izquierda la lista*/
 footer .footer-left
 {
     justify-self: left;
     margin-left: 30px;
 }
 
+/*Esto es para poner en la parte derecha la lista*/
 footer .footer-right
 {
     justify-self: right;
     margin-right: 30px;
 }
 
+/*Esto es para los estilos de letra de las listas*/
 footer ul li a
 {
     margin: 10px;
