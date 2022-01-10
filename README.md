@@ -51,3 +51,15 @@
 1. [Curso de Fundamentos de Bases de Datos](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Fundamentos%20de%20Bases%20de%20Datos "Curso de Fundamentos de Bases de Datos")
 
 [![Gif](https://lh4.googleusercontent.com/A8Awrv13jAf66rIsQlfr3GDy8Y38JSQymElszPvV5-UoplsAkqdMKI8rwZup4LVWu6JLRSkYMRNZJ0_vRnAMlkhI7SGAJeaWLhL89PQ9O3jvwZGU6_mmxYdWjZ33GvUDwU1ahh0T "Gif")](https://lh4.googleusercontent.com/A8Awrv13jAf66rIsQlfr3GDy8Y38JSQymElszPvV5-UoplsAkqdMKI8rwZup4LVWu6JLRSkYMRNZJ0_vRnAMlkhI7SGAJeaWLhL89PQ9O3jvwZGU6_mmxYdWjZ33GvUDwU1ahh0T "Gif")
+
+------------
+
+<h2>Data Engineer <img src="https://static.platzi.com/media/learningpath/badges/b446bfc8-ecbc-45d0-9381-2314d902bec2.jpg" width="30px"></h2>
+
+1. [Curso de Fundamentos de Ingeniería de Software](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Fundamentos%20de%20Ingenier%C3%ADa%20de%20Software "Curso de Fundamentos de Ingeniería de Software")
+2. [Curso de Básico de Python](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20B%C3%A1sico%20de%20Python "Curso de Básico de Python")
+3. [Curso de Introducción a la Terminal y Línea de Comandos](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Introducci%C3%B3n%20a%20la%20Terminal%20y%20L%C3%ADnea%20de%20Comandos "Curso de Introducción a la Terminal y Línea de Comandos")
+4. [Curso Profesional de Git y GitHub](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Profesional%20de%20Git%20y%20GitHub "Curso Profesional de Git y GitHub")
+
+[![Gif](https://www.mjvinnovation.com/wp-content/uploads/2021/07/Etapas-do-Data-Science-para-aplicar-na-sua-empresa.gif "Gif")](https://www.mjvinnovation.com/wp-content/uploads/2021/07/Etapas-do-Data-Science-para-aplicar-na-sua-empresa.gif "Gif")
+
