@@ -9,9 +9,6 @@ if __name__ == '__main__':
     run() """
 
 # CON ESTO IMPRIMIMOS LOS CARACTERES DE LA FRASE EN MAYÚSCULAS Y REEMPLAZAMOS LOS ESPACIOS POR -
-from typing import Mapping
-
-
 def run():
     frase = input("Escribe una frase:")
     for caracter in frase:
