@@ -63,3 +63,13 @@
 
 [![Gif](https://www.mjvinnovation.com/wp-content/uploads/2021/07/Etapas-do-Data-Science-para-aplicar-na-sua-empresa.gif "Gif")](https://www.mjvinnovation.com/wp-content/uploads/2021/07/Etapas-do-Data-Science-para-aplicar-na-sua-empresa.gif "Gif")
 
+
+------------
+
+<h2>Seguridad Informática <img src="https://static.platzi.com/media/learningpath/badges/Badge-seguridad-informatica.png" width="30px"></h2>
+
+1. [Guía para aprender Seguridad Informática](https://github.com/ValenciaJCamilo/Platzi/tree/main/Gu%C3%ADa%20para%20Aprender%20Seguridad%20Inform%C3%A1tica "Guía para aprender Seguridad Informática")
+
+
+[![Gif](https://static.wixstatic.com/media/97b295_5aaf0d7863b54c419b592beb587f93ee~mv2.gif "Gif")](https://static.wixstatic.com/media/97b295_5aaf0d7863b54c419b592beb587f93ee~mv2.gif "Gif")
+
