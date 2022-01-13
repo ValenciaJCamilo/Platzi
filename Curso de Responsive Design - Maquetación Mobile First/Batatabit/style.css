@@ -1,0 +1,174 @@
+/*
+Agregando estilos:
+    1. Posicionamiento --> static, absolute, relative, fixed
+    2. Modelo de caja (Box model) --> margin, border, padding, content
+    3. Tipografía --> tipos, tamaños de fuente, etc
+    4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+    5. Otros --> reglas CSS y más
+*/
+/*------------------------------ESTILOS GENERALES------------------------*/
+:root 
+{
+  --primary-color: #f7931a;
+  --primary-color-soft: #ffe9d5;
+  --secondary-color: #1a9af7;
+  --secondary-color: #e7f5ff;
+  --warm-color: #282623;
+  --warm2-color: #201e1c;
+  --light-color-darker: #bababa;
+  --background-color: #faf8f7;
+  --light-color: #fff;
+}
+
+/*Reinicio de estilos para tener  100% de control*/
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos para poder trabajar con medidas REM*/
+html
+{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/*------------------------------ESTILOS HEADER------------------------*/
+header {
+  display: flex;
+  /*Alinear por columna*/
+  flex-direction: column;
+  justify-content: center;
+  /*Ancho del 100% de la pantalla*/
+  width: 100%;
+  /*Tamaño mínimo*/
+  min-width: 320px;
+  /*Altura*/
+  height: 334px;
+  /*Centrar texto*/
+  text-align: center;
+  /*Color de fondo*/
+  background: linear-gradient(232deg, var(--warm2-color), var(--primary-color));
+  /*Tamaño para que el efecto se aplique*/
+  background-size: 400%400%;
+  /*Estilos de animación*/
+  -webkit-animation: bgAnimateBitcoin 20s ease infinite;
+  -moz-animation: bgAnimateBitcoin 20s ease infinite;
+  animation: bgAnimateBitcoin 20s ease infinite;
+}
+@-webkit-keyframes bgAnimateBitcoin {
+  0%{background-position:0%50%}
+  50%{background-position:100%50%}
+  100%{background-position:0%50%}
+}
+@-moz-keyframes bgAnimateBitcoin {
+  0%{background-position:0%50%}
+  50%{background-position:100%50%}
+  100%{background-position:0%50%}
+}
+@keyframes bgAnimateBitcoin {
+  0%{background-position:0%50%}
+  50%{background-position:100%50%}
+  100%{background-position:0%50%}
+}
+
+/*Usando especificidad para el diseño de la imagen(logo)*/
+header img
+{
+  width:150px;
+  height: 24px;
+  /*Lo separamos del borde superior*/
+  margin-top: 60px;
+  /*Al hacer uso de flex, esta es la forma de centrar un elemento que tenga un contenedor padre con este display*/
+  align-self: center;
+}
+
+.header--title-container
+{
+  /*Ancho de 90%*/
+  width:90%;
+  /*No se hará más pequeño que esto*/
+  min-width: 288px;
+  /*No se hará más grande que esto*/
+  max-width: 900px;
+  /*Altura*/
+  height: 218px;
+  /*Márgen superior para separarlo del logo*/
+  margin-top: 40px;
+  /*Centro del texto*/
+  text-align: center;
+  /*Centro del contenedor para que ocupe lo mismo en ambos lados de X*/
+  align-self: center;
+}
+
+/*Estilo del título <h1>*/
+.header--title-container h1
+{
+  /*Tamaño de fuente de 24px*/
+  font-size: 2.4rem;
+  /*Color del texto*/
+  color: var(--light-color);
+  /*Tamañi en negrita*/
+  font-weight: bold;
+  /*Interlineado del título*/
+  line-height: 2.6rem;
+}
+
+/*Estilo del párrafo <p>*/
+.header--title-container p
+{
+  font-size: 1.4rem;
+  margin-top: 25px;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--primary-color-soft);
+}
+
+/*Estilos del botón*/
+.header--title-container .header--button
+{
+  /*Junto al contenedor padre (header) que es relative, podemos posicionarlo encima*/
+  position: absolute;
+  /*Cuando estamos en absolute podemos usar top, bottom, left y right*/
+  /*Esto es para centrar el botón. Inicia en 50% y se le resta la mitad del width(229/2)*/
+  left: calc(50% - 118px);
+  /*Altura del botón*/
+  top: 272px;
+  /*Separamos el botón del párrafo*/
+  margin-top: 35px;
+  display: block;
+  /*Espaciado interno entre el botón y el texto*/
+  padding:15px;
+  width: 229px;
+  height:48px;
+  /*Color de fondo del botón*/
+  background-color: var(--background-color);
+  /*Sombra*/
+  box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
+  /*En caso de que exista un borde definido*/
+  border:none;
+  /*Redondeo de los bordes*/
+  border-radius: 5px;
+  /*Tamaño de fuente*/
+  font-size: 1.4rem;
+  /*Peso de fuente*/
+  font-weight: bold;
+  /*Quitamos la decoración del texto*/
+  text-decoration: none;
+  /*Color de la letra*/
+  color:var(--warm2-color);
+}
+
+/*Icono del botón*/
+.header--button span
+{
+  display: inline-block;
+  width: 13px;
+  height:8px;
+  /*Separamos la flecha del texto*/
+  margin-left:10px;
+  /*Llamamos el icono de la flecha*/
+  background-image: url('./assets/icons/down-arrow.svg');
+}
