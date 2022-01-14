@@ -462,7 +462,7 @@ main
   min-width: 288px;
   max-width: 400px;
   /*Alto de la tarjeta*/
-  height: 150px;
+  height: fit-content;
   /*Margen para centrar*/
   margin: 15px auto;
   /*Padding para dar espaciado interno*/
@@ -528,4 +528,28 @@ main
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
+}
+
+/*------------------------------ESTILOS SECCIÓN COMODÍN------------------------*/
+/*Estilo de la imagen*/
+.bitcoin-img-container
+{
+  width: 100%;
+  min-width: 320px;
+  height: 60vh;
+  background-image:url("./assets/img/bitcoinbaby4x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Estilo del texto*/
+.bitcoin-img-container h2
+{
+  padding-top: 60px;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color:var(--light-color);
 }
