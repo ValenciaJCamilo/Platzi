@@ -13,12 +13,14 @@
     <title>Batatabit</title>
     <link rel="shortcut icon" href="./assets/icons/batata.svg" />
     <link rel="stylesheet" href="./style.css">
+    <!--Librería de scroll-->
+    <script src="js/scrollreveal.js"></script>
   </head>
 
   <body>
     <!-------------SECCIÓN HEADER------------>
-    <header>
-      <img src="./assets/img/logo.svg" alt="Logo Batatabit"title="Logo Batatabit"/>
+    <header class="header">
+      <img src="./assets/img/logo.svg" alt="Logo Batatabit"title="Logo Batatabit" class="logo-batatabit"/>
       <div class="header--title-container">
         <!--Nuestras páginas web deben tener solo un <h1>. Esto es por temas de SEO(Search Engine Optimization)-->
         <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
@@ -27,7 +29,7 @@
           tendencias.
         </p>
         <!--La etiqueta <span> es un comodín que nos ayuda a posicionar íconos que van dentro de otra etiqueta-->
-        <a href="#" class="header--button">Conoce Nuestros Planes<span></span></a>
+        <a href="#plans" class="header--button">Conoce Nuestros Planes<span></span></a>
       </div>
     </header>
 
@@ -44,7 +46,8 @@
         </div>
         <!--SECCIÓN DE TABLAS-->
         <section class="main-tables-container">
-          <!--Contenedor de la tabla #1-->
+          <section class="main-tables-slider">
+           <!--Contenedor de la tabla #1-->
           <div class="main-currency-table">
             <p class="currency-table--title">Monedas</p>
             <!--Contenedor solo tabla-->
@@ -104,6 +107,7 @@
               <p><b>Actualizado:</b> 13 Enero 3:57</p>
             </div>
           </div>
+          </section>
         </section>
       </section>
 
@@ -146,12 +150,47 @@
       <section class="bitcoin-img-container">
         <h2>Conócelo hoy</h2>
       </section>
-      <section></section>
+
+      <!--SECCIÓN DE PLANES-->
+      <section id="plans" class="main-plans-container">
+        <div class="plans--title">
+          <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+          <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+          <!--Esta sección es para trabajar el scroll horizontal-->
+          <section class="plans-container--slider">
+            <article class="plans-container--card basico-container">
+              <div class="plan-info-container">
+                <h3 class="plan-card--title basico-texto">Plan Mensual</h3>
+                <p class="plan-card--price"><sup>$</sup>19</p>
+                <p class="plan-card--saving">Actualiza tu pago en los meses que desees.</p>
+                <button class="plan-card--ca basico-button">Escoger este <span class="basico-span"></span></button>
+              </div>
+            </article>
+            <article class="plans-container--card anual-container">
+              <p class="recommended">Recomendado</p>
+              <div class="plan-info-container">
+                <h3 class="plan-card--title anual-texto">Plan Anual</h3>
+                <p class="plan-card--price"><sup>$</sup>105</p>
+                <p class="plan-card--saving">* Ahorras $123 comparado al plan básico.</p>
+                <button class="plan-card--ca anual-button">Escoger este <span class="anual-span"></span></button>
+              </div>
+            </article>
+            <article class="plans-container--card semestral-container">
+              <div class="plan-info-container">
+                <h3 class="plan-card--title semestral-texto">Plan Semestral</h3>
+                <p class="plan-card--price"><sup>$</sup>59</p>
+                <p class="plan-card--saving">* Ahorras $55 comparado al plan básico.</p>
+                <button class="plan-card--ca semestral-button">Escoger este <span class="semestral-span"></span></button>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
     </main>
 
-
-
     <!------------SECCIÓN FOOTER-------------->
-    <footer></footer>
+    <footer>
+      <script src="js/index.js"></script>
+    </footer>
   </body>
 </html>

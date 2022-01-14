@@ -19,6 +19,8 @@ Agregando estilos:
   --light-color-darker: #bababa;
   --background-color: #faf8f7;
   --light-color: #fff;
+  --basic-plan-color: rgb(68, 79, 109);
+  --semestral-plan-color: #5c5b59;
 }
 
 /*Reinicio de estilos para tener  100% de control*/
@@ -34,6 +36,9 @@ html
 {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    /*Scroll suave al dar clic en "Conoce Nuestros Planes"*/
+    scroll-behavior: smooth;
+
 }
 
 /*------------------------------ESTILOS HEADER------------------------*/
@@ -246,6 +251,7 @@ main
   font-weight: 500;
   line-height: 1.8rem;
   color: #757575;
+  scroll-snap-align: center;
 }
 
 /*Contenedor general padre de Monedas*/
@@ -257,20 +263,23 @@ main
   max-width: 500px;
   height:360px;
   /*De arriba a abajo no agrega marge, y en X lo calcula*/
-  margin: 0 auto;
+  margin: 0 30px;
   font-family: "Inter",sans-serif;
+  scroll-snap-align: center;
 }
+
+
 
 /*Modificamos el título*/
 .main-currency-table .currency-table--title, .main-commission-table .commission-table--title
 {
-  text-align: center;
   /*Separar título de la tabla*/
   margin-bottom: 15px;
   font-size: 1.8rem;
   color:var(--primary-color);
   font-weight: bold;
   margin-top: 30px;
+  line-height: 2.3rem;
 }
 
 .main-commission-table .commission-table--title
@@ -286,7 +295,9 @@ main
   max-width: 300px;
   height:250px;
   margin:0 auto;
-  
+  box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+  border-radius: 20px;
+  scroll-snap-align: center;
 }
 
 /*Estilo de la tabla como tal para que ocupe el 100% del tamaño de su contenedor padre (estilo anterior)*/
@@ -295,8 +306,7 @@ main
   width:100%;
   height:100%;
   border-radius: 20px;
-  box-shadow: 8px 4px 4px 4px rgba(89,73,30,0.16);
-  
+  box-shadow: 0 4px 8px rgba(89,73,30,0.16);
 }
 
 .currency-table--container td, .commission-table--container td
@@ -370,11 +380,11 @@ main
 /*Estilos del botón*/
 .currency-table--date, .commission-table--date
 {
-  width:max-content;
-  height: 30px;
-  margin: 15px auto;
+  width: 190px;
+  height: 31px;
+  margin: 0 auto;
   margin-top: 15px;
-  padding:8px;
+  padding: 8px;
   background-color: var(--primary-color-soft);
   border-radius: 8px;
 }
@@ -384,12 +394,11 @@ main
   background-color: var(--secondary-color-soft);
 }
 
-.currency-table--date p
+.currency-table--date p, .commission-table--date p
 {
   font-size: 1.2 rem;
   line-height: 1.5 rem;
   color:var(--warm-color);
-  font-weight: 300;
 }
 
 /*---------------------------ESTILOS SECCIÓN DE BENEFICIOS----------------------*/
@@ -552,4 +561,242 @@ main
   font-weight: bold;
   line-height: 2.6rem;
   color:var(--light-color);
+}
+
+/*------------------------------ESTILOS SECCIÓN PLANES------------------------*/
+/*Estilos del contenedor padre*/
+.main-plans-container
+{
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+/*Estilos de la sección del texto*/
+.plans--title
+{
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin:0 auto;
+  margin-bottom: 50px;
+}
+
+/*Estilos al título <h2>*/
+.plans--title h2
+{
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color:var(--warm2-color);
+}
+
+/*Estilos al párrafo <p>*/
+.plans--title p
+{
+  padding-top: 30px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color:#757575;
+}
+
+/*Estilos de la tarjeta*/
+.plans-container--card
+{
+  position: relative;
+  /*Sirve para el scroll horizontal*/
+  scroll-snap-align: center;
+  width:70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin:50px 30px 0;
+  padding:0 15px;
+  background-color: var(--light-color);
+  border-radius: 15px;
+  justify-items: center;
+}
+
+/*Bordes Plan Básico*/
+.basico-container
+{
+  box-shadow: 0 4px 8px var(--basic-plan-color);
+}
+/*Bordes Plan Anual*/
+.anual-container
+{
+  box-shadow: 0 4px 8px var(--primary-color);
+  z-index: 3;
+}
+/*Bordes Plan Semestral*/
+.semestral-container
+{
+  box-shadow: 0 4px 8px var(--semestral-plan-color);
+}
+
+/*Estilos de texto recomendado*/
+.plans-container--card .recommended
+{
+  /*Position absolute para el posicionamiento*/
+  position: absolute;
+  /*Anchi*/
+  width: 110px;
+  /*Alto*/
+  height:31px;
+  /*Color de fondo*/
+  background-color: var(--primary-color);
+  /*Color de texto*/
+  color:var(--light-color);
+  /*Tamaño de fuente*/
+  font-size: 1.4rem;
+  /*Espaciado interno para centrar el texto*/
+  padding: 8px;
+  /*Borde redondeado*/
+  border-radius: 8px;
+  /*Centrar en X. 120/60*/
+  left: calc(50% - 55px);
+  /*Posición en Y*/
+  top: -20px;
+}
+
+/*Título del plan*/
+.plan-card--title
+{
+  padding-top: 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+/*Texto plan básico*/
+.basico-texto
+{
+  color:var(--basic-plan-color);
+}
+/*Texto plan anual*/
+.anual-texto
+{
+  color:var(--primary-color);
+}
+/*Texto plan semestral*/
+.semestral-texto
+{
+  color:var(--semestral-plan-color);
+}
+
+/*Precio del plan*/
+.plan-info-container .plan-card--price {
+  position: relative;
+  padding: 3px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+}
+
+/*Estilo del <sup> signo dolar $*/
+.plan-info-container .plan-card--price sup
+{
+  font-size: 1.2rem;
+  font-weight: 300;
+  vertical-align: 25px;
+  padding-right: 5px;
+}
+
+/*Botón "Escoger este*/
+.plan-card--ca
+{
+  /*Alto*/
+  height: 48px;
+  /*Ancho*/
+  width: 150px;
+  /*Margen para separarlo del texto*/
+  margin-top: 20px;
+  /*Bordes redondeados*/
+  border-radius: 4px;
+  /*Texto en negrita*/
+  font-weight: bold;
+  /*Cursor para que sepan que se puede dar clic*/
+  cursor: pointer;
+  /*Tamaño de fuente*/
+  font-size: 1.4rem;
+  /*Interlineado*/
+  line-height: 1.8rem;
+  /*Color de texto*/
+  color:var(--warm2-color);
+  /*Fuente*/
+  font-family: 'DM Sans',sans-serif;
+}
+/*Plan básico botón*/
+.basico-button
+{
+  border-color: var(--basic-plan-color);
+}
+/*Plan anual botón*/
+.anual-button
+{
+  border-color: var(--primary-color);
+}
+/*Plan semestral botón*/
+.semestral-button
+{
+  border-color:var(--semestral-plan-color);
+}
+
+/*Estilo del ícono del botón*/
+.plan-card--ca span
+{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*Esto me sirve para centrar el ícono con el texto*/
+  vertical-align: text-bottom;
+}
+
+/*Plan básico flecha*/
+.plan-card--ca .basico-span
+{
+  background-image:url('./assets/icons/basic-right-arrow.svg');
+}
+/*Plan anual flecha*/
+.plan-card--ca .anual-span
+{
+  background-image:url('./assets/icons/recommended-right-arrow.svg');
+}
+/*Plan semestral flecha*/
+.plan-card--ca .semestral-span
+{
+  background-image:url('./assets/icons/semestral-right-arrow.svg');
+}
+
+/*Estilo contenedor para el scroll horizontal*/
+.plans-container--slider, .main-tables-slider{
+  display: flex;
+  /**/
+  height: 316px;
+  max-width: 100%;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.main-tables-slider{
+  height: 410px;
+  align-content: center;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+
+/*Estilos para cambiar la barra de scroll*/
+.plans-container--slider::-webkit-scrollbar, .main-tables-slider::-webkit-scrollbar {
+  background-color: var(--primary-color-soft);
+  height: 4px;
+}
+.plans-container--slider::-webkit-scrollbar-thumb, .main-tables-slider::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
 }
