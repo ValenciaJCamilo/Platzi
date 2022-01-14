@@ -7,12 +7,13 @@ Agregando estilos:
     5. Otros --> reglas CSS y más
 */
 /*------------------------------ESTILOS GENERALES------------------------*/
+/*Variables que voy a usar en varias partes del código*/
 :root 
 {
   --primary-color: #f7931a;
   --primary-color-soft: #ffe9d5;
   --secondary-color: #1a9af7;
-  --secondary-color: #e7f5ff;
+  --secondary-color-soft: #e7f5ff;
   --warm-color: #282623;
   --warm2-color: #201e1c;
   --light-color-darker: #bababa;
@@ -106,22 +107,22 @@ header img
 /*Estilo del título <h1>*/
 .header--title-container h1
 {
-  /*Tamaño de fuente de 24px*/
-  font-size: 2.4rem;
+  /*Tamaño de fuente de 26px*/
+  font-size: 2.6rem;
   /*Color del texto*/
   color: var(--light-color);
   /*Tamañi en negrita*/
   font-weight: bold;
   /*Interlineado del título*/
-  line-height: 2.6rem;
+  line-height: 2.8rem;
 }
 
 /*Estilo del párrafo <p>*/
 .header--title-container p
 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: 25px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.8rem;
   color: var(--primary-color-soft);
 }
@@ -171,4 +172,360 @@ header img
   margin-left:10px;
   /*Llamamos el icono de la flecha*/
   background-image: url('./assets/icons/down-arrow.svg');
+}
+
+
+/*---------------------------ESTILOS SECCIÓN DE INTERCAMBIOS----------------------*/
+/*Estilos del main*/
+main
+{
+  width:100%;
+  min-width: 320px;
+  /*Auto porque el mismo contenido va a ir definiendo la altura*/
+  height:auto;
+  /*Color de fondo*/
+  background-color:var(--light-color);
+}
+
+.main-exchange-container
+{
+  width:100%;
+  /*Auto porque el mismo contenido va a ir definiendo la altura*/
+  height:auto;
+  padding-top:80px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.main-exchange-container--title
+{
+  width:90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin:0 auto;
+}
+
+/*Imagen de fondo*/
+.main-exchange-container .backgroundImg
+{
+  /*Establecemos el tamaño de la imagen que es 200x200*/
+  width:200px; 
+  height: 200px;
+  margin:0 auto;
+  /*Separar imagen del texto*/
+  margin-bottom: 50px;
+  /*Cargamos la imagen*/
+  background-image: url(./assets/img/Bitcoin.svg);
+  /*Establecemos el tamaño completo de la imagen*/
+  background-size: cover;
+  /*Para que siempre esté centrado*/
+  background-position: center;
+  /*Para que no se repita*/
+  background-repeat: no-repeat;
+}
+
+/*Estilo del título <h2>*/
+.main-exchange-container--title h2
+{
+  /*Tamaño de fuente de 26px*/
+  font-size: 2.6rem;
+  /*Color del texto*/
+  color: var(--warm2-color);
+  /*Tamañi en negrita*/
+  font-weight: bold;
+  /*Interlineado del título*/
+  line-height: 2.8rem;
+}
+
+/*Estilo del párrafo p*/
+.main-exchange-container--title p
+{
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+/*Contenedor general padre de Monedas*/
+.main-currency-table, .main-commission-table
+{
+  /*La tabla no ocupa el 100%*/
+  width:70%;
+  min-width: 235px;
+  max-width: 500px;
+  height:360px;
+  /*De arriba a abajo no agrega marge, y en X lo calcula*/
+  margin: 0 auto;
+  font-family: "Inter",sans-serif;
+}
+
+/*Modificamos el título*/
+.main-currency-table .currency-table--title, .main-commission-table .commission-table--title
+{
+  text-align: center;
+  /*Separar título de la tabla*/
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color:var(--primary-color);
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.main-commission-table .commission-table--title
+{
+  color: var(--secondary-color);
+}
+
+/*Estilos del contenedor de la tabla*/
+.currency-table--container, .commission-table--container
+{
+  width:90%;
+  min-width: 230px;
+  max-width: 300px;
+  height:250px;
+  margin:0 auto;
+  
+}
+
+/*Estilo de la tabla como tal para que ocupe el 100% del tamaño de su contenedor padre (estilo anterior)*/
+.currency-table--container table, .commission-table--container table
+{
+  width:100%;
+  height:100%;
+  border-radius: 20px;
+  box-shadow: 8px 4px 4px 4px rgba(89,73,30,0.16);
+  
+}
+
+.currency-table--container td, .commission-table--container td
+{
+  width:50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color:var(--light-color-darker);
+  background-color:var(--light-color);
+}
+
+/*Bordes de la tabla
+/*Borde superior izquierdo*/
+.currency-table--container .table__top-left, .commission-table--container .table__top-left
+{
+  border-radius:15px 0 0 0;
+}
+/*Borde superior derecho*/
+.currency-table--container .table__top-right, .commission-table--container .table__top-right
+{
+  border-radius:0 15 0 0;
+}
+/*Borde inferior derecho*/
+.currency-table--container .table__bottom-right, .commission-table--container .table__bottom-right
+{
+  border-radius:0 0 15px 0;
+}
+/*Borde inferior izquierdo*/
+.currency-table--container .table__bottom-left, .commission-table--container .table__bottom-left
+{
+  border-radius:0 0 0 15px;
+}
+
+/*Estilo al texto derecho*/
+.currency-table--container .table__right, .commission-table--container .table__right
+{
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+  color: #757575; 
+}
+
+/*Flecha abajo*/
+.currency-table--container .down
+{
+  display: inline-block;
+  width:15px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url('./assets/icons/trending-down.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*Flecha arriba*/
+.currency-table--container .up
+{
+  display: inline-block;
+  width:15px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url('./assets/icons/trending-up.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/*Estilos del botón*/
+.currency-table--date, .commission-table--date
+{
+  width:max-content;
+  height: 30px;
+  margin: 15px auto;
+  margin-top: 15px;
+  padding:8px;
+  background-color: var(--primary-color-soft);
+  border-radius: 8px;
+}
+
+.commission-table--date
+{
+  background-color: var(--secondary-color-soft);
+}
+
+.currency-table--date p
+{
+  font-size: 1.2 rem;
+  line-height: 1.5 rem;
+  color:var(--warm-color);
+  font-weight: 300;
+}
+
+/*---------------------------ESTILOS SECCIÓN DE BENEFICIOS----------------------*/
+/*Estilo general del contenedor de beneficios*/
+.main-product-detail
+{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  background-color:var(--warm2-color);
+  /*Padding para generar espacio y no tener problema con las tarjetas*/
+  padding:20px 10px;
+}
+
+/*Estilo del logo separador de batata*/
+.product-detail-batata-logo
+{
+  /*Esto para poder posicionarlo sobre el borde*/
+  position: absolute;
+  /*Width y height para que aparezca*/
+  width:40px;
+  height: 25px;
+  /*Con esto lo centramos*/
+  top: -10px; /*Arriba*/
+	left: calc(50% - 20px); /*Izquierda*/
+  /*Importamos el ícono*/
+  background-image:url('./assets/icons/batata.svg')
+}
+
+/*Estilo general contenedor de texto <h2> y <p>*/
+.product-details--title
+{
+  width:90%;
+  min-width: 288px;
+  height: auto;
+  margin:0 auto;
+  margin-top: 50px;
+}
+
+/*Estilo de título principal*/
+.product-details--title h2
+{
+  color:var(--light-color);
+  font-size: 2.6rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+  line-height: 2.6rem;
+  text-align: center;
+
+}
+
+/*Estílo de párrafo principal*/
+.product-details--title p
+{
+  color:#808080;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 25;
+  line-height: 1.8rem;
+}
+
+/*Estilos de la tarjeta*/
+.product-detail--card
+{
+  /*Ancho de la tarjeta*/
+  width:90%;
+  min-width: 288px;
+  max-width: 400px;
+  /*Alto de la tarjeta*/
+  height: 150px;
+  /*Margen para centrar*/
+  margin: 15px auto;
+  /*Padding para dar espaciado interno*/
+  padding: 15px;
+  /*Color de fondo de la tarjeta*/
+  background-color: var(--warm-color);
+  /*Bordes de la tarjeta*/
+  border-radius: 5px;
+  /*Efecto de sombra*/
+  box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+}
+
+/*Estilos para los iconos de la tarjeta*/
+.product-detail--card  .product-detail-icon
+{
+  display:inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+/*Icono clock*/
+.product-detail--card .clock
+{
+  background-image: url(./assets/icons/clock.svg);
+}
+
+/*Icono eye*/
+.product-detail--card .eye
+{
+  background-image: url(./assets/icons/eye.svg);
+}
+
+/*Icono dollar/sign*/
+.product-detail--card .dollar-sign
+{
+  background-image: url(./assets/icons/dollar-sign.svg);
+}
+
+/*Icono check/circle*/
+.product-detail--card .check-circle
+{
+  background-image: url(./assets/icons/check-circle.svg);
+}
+
+/*Título de la tarjeta*/
+.product--card-title
+{
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color:var(--light-color);
+}
+
+/*Texto de la tarjeta*/
+.product--card-body
+{
+  color:#808080;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
 }
