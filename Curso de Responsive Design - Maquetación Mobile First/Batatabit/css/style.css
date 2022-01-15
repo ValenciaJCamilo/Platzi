@@ -38,7 +38,6 @@ html
     font-family: 'DM Sans', sans-serif;
     /*Scroll suave al dar clic en "Conoce Nuestros Planes"*/
     scroll-behavior: smooth;
-
 }
 
 /*------------------------------ESTILOS HEADER------------------------*/
@@ -176,7 +175,7 @@ header img
   /*Separamos la flecha del texto*/
   margin-left:10px;
   /*Llamamos el icono de la flecha*/
-  background-image: url('./assets/icons/down-arrow.svg');
+  background-image: url('../assets/icons/down-arrow.svg');
 }
 
 
@@ -220,7 +219,7 @@ main
   /*Separar imagen del texto*/
   margin-bottom: 50px;
   /*Cargamos la imagen*/
-  background-image: url(./assets/img/Bitcoin.svg);
+  background-image: url(../assets/img/Bitcoin.svg);
   /*Establecemos el tamaño completo de la imagen*/
   background-size: cover;
   /*Para que siempre esté centrado*/
@@ -357,7 +356,7 @@ main
   width:15px;
   height: 15px;
   margin-left: 10px;
-  background-image: url('./assets/icons/trending-down.svg');
+  background-image: url('../assets/icons/trending-down.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -370,7 +369,7 @@ main
   width:15px;
   height: 15px;
   margin-left: 10px;
-  background-image: url('./assets/icons/trending-up.svg');
+  background-image: url('../assets/icons/trending-up.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -426,7 +425,7 @@ main
   top: -10px; /*Arriba*/
 	left: calc(50% - 20px); /*Izquierda*/
   /*Importamos el ícono*/
-  background-image:url('./assets/icons/batata.svg')
+  background-image:url('../assets/icons/batata.svg')
 }
 
 /*Estilo general contenedor de texto <h2> y <p>*/
@@ -499,25 +498,25 @@ main
 /*Icono clock*/
 .product-detail--card .clock
 {
-  background-image: url(./assets/icons/clock.svg);
+  background-image: url(../assets/icons/clock.svg);
 }
 
 /*Icono eye*/
 .product-detail--card .eye
 {
-  background-image: url(./assets/icons/eye.svg);
+  background-image: url(../assets/icons/eye.svg);
 }
 
 /*Icono dollar/sign*/
 .product-detail--card .dollar-sign
 {
-  background-image: url(./assets/icons/dollar-sign.svg);
+  background-image: url(../assets/icons/dollar-sign.svg);
 }
 
 /*Icono check/circle*/
 .product-detail--card .check-circle
 {
-  background-image: url(./assets/icons/check-circle.svg);
+  background-image: url(../assets/icons/check-circle.svg);
 }
 
 /*Título de la tarjeta*/
@@ -546,7 +545,7 @@ main
   width: 100%;
   min-width: 320px;
   height: 60vh;
-  background-image:url("./assets/img/bitcoinbaby4x.jpg");
+  background-image:url("../assets/img/bitcoinbaby4x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -761,17 +760,17 @@ main
 /*Plan básico flecha*/
 .plan-card--ca .basico-span
 {
-  background-image:url('./assets/icons/basic-right-arrow.svg');
+  background-image:url('../assets/icons/basic-right-arrow.svg');
 }
 /*Plan anual flecha*/
 .plan-card--ca .anual-span
 {
-  background-image:url('./assets/icons/recommended-right-arrow.svg');
+  background-image:url('../assets/icons/recommended-right-arrow.svg');
 }
 /*Plan semestral flecha*/
 .plan-card--ca .semestral-span
 {
-  background-image:url('./assets/icons/semestral-right-arrow.svg');
+  background-image:url('../assets/icons/semestral-right-arrow.svg');
 }
 
 /*Estilo contenedor para el scroll horizontal*/
@@ -808,7 +807,7 @@ footer
 {
   display: flex;
   width: 100%;
-  height:150px;
+  height:110px;
   background-color:var(--primary-color);
 }
 
@@ -845,6 +844,6 @@ footer section
 
 .batata-footer
 {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
