@@ -6,22 +6,24 @@
 > <br>
 > Fecha de inicio: Enero 12, 2022
 > <br>
-> Fecha de finalización: 
+> Fecha de finalización: Enero 14,2022
 
 ------------
 - Puedes ver el **curso** [aquí](https://platzi.com/clases/mobile-first/ "aquí")
 
 - Puedes ver mis **apuntes**  [aquí](https://steep-bridge-4be.notion.site/Responsive-Design-Maquetaci-n-Mobile-First-5bba2790d438417b85c6c2494a9ef798 "aquí") 
 
-- Puedes ver mi **diploma** [aquí](# "aquí") 
+- Puedes ver mi **diploma** [aquí](https://platzi.com/p/Valenciajcamilo/course/2030-mobile-first/diploma/detalle/ "aquí") 
 
-- Puedes ver el **resultado final** [aquí](# "aquí") 
+- Puedes ver el **resultado final** [aquí](https://valenciajcamilo.github.io/Batatabit/ "aquí") 
 
 ------------
 
-#### En este curso creamos un diseño responsivo con HTML y CSS el cual se adapta según el tamaño de la pantalla. A continuación te dejo los resultados finales 😁
+#### En este curso creamos un diseño responsivo con HTML y CSS el cual se adapta según el tamaño de la pantalla. A continuación te dejo los resultados finales 😁.
+*Claramente viendo la página es mucho mejor la experiencia 👀*
 
-#### Vista desde un móvil
-#### Vista desde una tablet
-#### Vista desde un computador de escritorio
+#### - Vista desde un móvil
+[![Mobile](https://i.postimg.cc/kMhdS1s0/mobile.jpg "Mobile")](https://i.postimg.cc/kMhdS1s0/mobile.jpg "Mobile")
 
+#### - Vista desde una tablet/escritorio
+[![Desktop](https://i.postimg.cc/VvTQcv5f/Desktop.jpg "Desktop")](https://i.postimg.cc/VvTQcv5f/Desktop.jpg "Desktop")
