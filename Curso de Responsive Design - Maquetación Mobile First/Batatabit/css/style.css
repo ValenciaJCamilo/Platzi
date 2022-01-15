@@ -42,6 +42,7 @@ html
 
 /*------------------------------ESTILOS HEADER------------------------*/
 header {
+  position:relative;
   display: flex;
   /*Alinear por columna*/
   flex-direction: column;
@@ -167,7 +168,7 @@ header img
 }
 
 /*Icono del botón*/
-.header--button span
+.header--title-container .header--button span
 {
   display: inline-block;
   width: 13px;
@@ -176,6 +177,9 @@ header img
   margin-left:10px;
   /*Llamamos el icono de la flecha*/
   background-image: url('../assets/icons/down-arrow.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -184,7 +188,6 @@ header img
 main
 {
   width:100%;
-  min-width: 320px;
   /*Auto porque el mismo contenido va a ir definiendo la altura*/
   height:auto;
   /*Color de fondo*/
@@ -436,6 +439,7 @@ main
   height: auto;
   margin:0 auto;
   margin-top: 50px;
+  text-align: center;
 }
 
 /*Estilo de título principal*/
@@ -458,7 +462,7 @@ main
   text-align: center;
   font-weight: 500;
   font-size: 1.6rem;
-  margin-bottom: 25;
+  margin-bottom: 25px;
   line-height: 1.8rem;
 }
 
@@ -470,7 +474,7 @@ main
   min-width: 288px;
   max-width: 400px;
   /*Alto de la tarjeta*/
-  height: fit-content;
+  height: 152px;
   /*Margen para centrar*/
   margin: 15px auto;
   /*Padding para dar espaciado interno*/
@@ -546,9 +550,10 @@ main
   min-width: 320px;
   height: 60vh;
   background-image:url("../assets/img/bitcoinbaby2x.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 
 /*Estilo del texto*/
