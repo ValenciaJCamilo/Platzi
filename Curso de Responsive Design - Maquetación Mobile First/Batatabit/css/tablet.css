@@ -46,6 +46,7 @@ header img
 /*Imágen fondo: Efecto parallex*/
 .bitcoin-img-container
 {
+    background-image:url("../assets/img/bitcoinbaby4x.jpg");
     background-attachment: fixed;
 }
 
@@ -62,4 +63,3 @@ header img
   width: 110px;
   height: 110px;
 }
-

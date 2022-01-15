@@ -1,12 +1,13 @@
 window.sr=ScrollReveal();
 
-
+    /*Header*/
     sr.reveal('.header', {
         duration:1900,
         origin:'bottom',
         distance:'-100px'
     });
 
+    /*Main Logo Header*/
     sr.reveal('.logo-batatabit', {
         delay:700,
         rotate:{
@@ -15,21 +16,26 @@ window.sr=ScrollReveal();
         }
     });
 
+    /*Tasas de Cambios*/
     sr.reveal('.main-exchange-container', {
         duration:2500
     });
 
+    /*Slide izquierdo "Producto sin comparación" */
     sr.reveal('.product-detail--card', {
         duration:1500,
         origin:'left',
-        distance:'100px'
+        distance:'120px'
     });
 
+    /*Fondo conócelo hoy*/
     sr.reveal('.bitcoin-img-container', {
         duration:1500
     });
 
-    sr.reveal('.main-plans-container', {
-        duration:1500
+    /*Slide derecho Planes*/
+    sr.reveal('.plans-container--slider',{
+        duration:1500,
+        origin:'right',
+        distance:'140px'
     });
-    
