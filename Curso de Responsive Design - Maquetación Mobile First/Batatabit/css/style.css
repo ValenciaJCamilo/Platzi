@@ -138,16 +138,16 @@ header img
   /*Junto al contenedor padre (header) que es relative, podemos posicionarlo encima*/
   position: absolute;
   /*Cuando estamos en absolute podemos usar top, bottom, left y right*/
-  /*Esto es para centrar el botón. Inicia en 50% y se le resta la mitad del width(229/2)*/
-  left: calc(50% - 118px);
+  /*Esto es para centrar el botón. Inicia en 50% y se le resta la mitad del width(245/2)*/
+  left: calc(50% - 122px);
   /*Altura del botón*/
   top: 272px;
   /*Separamos el botón del párrafo*/
   margin-top: 35px;
   display: block;
   /*Espaciado interno entre el botón y el texto*/
-  padding:15px;
-  width: 229px;
+  padding:20px;
+  width: 245px;
   height:48px;
   /*Color de fondo del botón*/
   background-color: var(--background-color);
@@ -165,6 +165,7 @@ header img
   text-decoration: none;
   /*Color de la letra*/
   color:var(--warm2-color);
+  text-align: center;
 }
 
 /*Icono del botón*/
