@@ -6,7 +6,7 @@
 > <br>
 > Fecha de inicio: Enero 12, 2022
 > <br>
-> Fecha de finalización: Enero 14,2022
+> Fecha de finalización: Enero 14, 2022
 
 ------------
 - Puedes ver el **curso** [aquí](https://platzi.com/clases/mobile-first/ "aquí")
