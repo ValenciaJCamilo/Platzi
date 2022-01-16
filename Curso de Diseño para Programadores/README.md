@@ -15,4 +15,4 @@
 
 - Puedes ver mi **diploma** [aquí](https://platzi.com/p/Valenciajcamilo/course/1906-diseno-programadores/diploma/detalle/ "aquí")
 
-[![Gif](https://i.gifer.com/ITW0.gif "Gif")](https://i.gifer.com/ITW0.gif "Gif")
+[![Gif](https://cdn.dribbble.com/users/1732368/screenshots/6553872/web_developer.gif "Gif")](https://cdn.dribbble.com/users/1732368/screenshots/6553872/web_developer.gif "Gif")
