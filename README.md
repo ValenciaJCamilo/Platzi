@@ -29,6 +29,11 @@
 13. [Curso Definitivo de HTML y CSS](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Definitivo%20HTML%20y%20CSS "Curso Definitivo de HTML y CSS")
 14. [Curso Práctico de HTML y CSS](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Pr%C3%A1ctico%20de%20HTML%20y%20CSS "Curso Práctico de HTML y CSS")
 15. [Curso de Responsive Design: Maquetación Mobile First](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Responsive%20Design%20-%20Maquetaci%C3%B3n%20Mobile%20First "Curso de Responsive Design: Maquetación Mobile First")
+16. [Curso de Diseño para Developers](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Dise%C3%B1o%20para%20Programadores "Curso de Diseño para Developers")
+
+<h3>Intermedio</h3>
+
+1. [Curso Básico de JavaScript](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20B%C3%A1sico%20de%20JavaScript "Curso Básico de JavaScript")
 
 
 [![Gif](https://onlylinks.pro/wp-content/uploads/2021/01/main-qimg-fa7b4bdc3b2f73e749e5c2c646d4ae13.gif "Gif")](https://onlylinks.pro/wp-content/uploads/2021/01/main-qimg-fa7b4bdc3b2f73e749e5c2c646d4ae13.gif "Gif")
@@ -43,6 +48,10 @@
 3. [Curso de Prework: Configuración de Entorno de Desarrollo en macOS](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Prework%20-%20Configuraci%C3%B3n%20de%20Entorno%20de%20Desarrollo%20en%20macOS "Curso de Prework: Configuración de Entorno de Desarrollo en macOS")
 4. [Curso de Frontend Developer](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Frontend%20Developer "Curso de Frontend Developer")
 5. [Curso de Frontend Developer - Práctico](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Frontend%20Developer%20-%20Pr%C3%A1ctico "Curso de Frontend Developer Práctico")
+
+<h3>Intermedio</h3>
+
+1. [Curso Básico de JavaScript](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20B%C3%A1sico%20de%20JavaScript "Curso Básico de JavaScript")
 
 [![Gif](https://soyhorizonte.com/wp-content/uploads/2020/10/JS.gif "Gif")](https://soyhorizonte.com/wp-content/uploads/2020/10/JS.gif "Gif")
 
