@@ -12,7 +12,7 @@
 ### Durante el curso, se crean una serie de proyectos los cuales anclo a continuación:
 | Proyecto | Descripción | 
 | -- | -- |
-| [Figuras Geométricas](# "Figuras Geométricas") | En este proyecto creamos una especie de calculadora para poder hallar el perímetro y el área de ciertas figuras geométricas 📐 | 
+| [Figuras Geométricas](https://github.com/ValenciaJCamilo/Platzi/blob/main/Curso%20Pr%C3%A1ctico%20de%20JavaScript/js/figuras.js "Figuras Geométricas") | En este proyecto creamos una especie de calculadora para poder hallar el perímetro y el área de tres figuras geométricas 📐 | 
 | [Precios y descuentos](# "Precios y descuentos") | Calculaer descuentos 🛍️  | 
 | [Promedio,moda,mediana](# "Promedio,moda,mediana") | Ponderación 🔢| 
 | [Análisis Salarial](# "Análisis Salarial") | Dinero 🤑| 
