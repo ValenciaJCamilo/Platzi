@@ -1,0 +1,372 @@
+/*------------------------------ESTILOS GENERALES------------------------*/
+/*Variables que voy a usar en varias partes del código*/
+:root 
+{
+  --primary-color: #99d98c;
+  --primary-color-soft:  #fcdcb0;
+  --secondary-color: #76c893;
+  --secondary-color-soft: #d5e1df;
+  --warm-color: #34a0a4;
+  --warm2-color: #52b69a;
+  --light-color-darker: #bababa;
+  --background-color: #faf8f7;
+  --light-color: #fff;
+}
+
+/*Reinicio de estilos para tener  100% de control*/
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos para poder trabajar con medidas REM*/
+html
+{
+    font-size: 62.5%;
+    font-family: 'Commissioner', sans-serif;
+    /*Scroll suave al dar clic en "Conoce Nuestros Planes"*/
+    scroll-behavior: smooth;
+    /*Color de fondo gradiente*/
+    background: rgb(52,160,164);
+    background: linear-gradient(55deg, rgba(52,160,164,1) 22%, rgba(105,190,151,1) 69%, rgba(153,217,140,1) 100%);
+}
+
+body{
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+/*---------------------------ESTILOS HEADER----------------------*/
+/*Estilos header generales*/
+header {
+    position:relative;
+    display: flex;
+    /*Alinear por columna*/
+    flex-direction: column;
+    justify-content: center;
+    /*Ancho del 100% de la pantalla*/
+    width: 100%;
+    /*Tamaño mínimo*/
+    min-width: 320px;
+    /*Altura*/
+    height: 290px;
+    /*Centrar texto*/
+    text-align: center;
+    /*Color de fondo*/
+    background: linear-gradient(232deg, var(--warm-color), var(--primary-color));
+    /*Tamaño para que el efecto se aplique*/
+    background-size: 400%400%;
+    /*Estilos de animación*/
+    -webkit-animation: bgAnimateBitcoin 5s ease infinite;
+    -moz-animation: bgAnimateBitcoin 5s ease infinite;
+    animation: bgAnimateBitcoin 5s ease infinite;
+  }
+  @-webkit-keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+  @-moz-keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+  @keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+
+/*Estilos del contenedor del texto*/
+.header--title-container
+{
+  /*Ancho de 90%*/
+  width:90%;
+  /*No se hará más pequeño que esto*/
+  min-width: 288px;
+  /*No se hará más grande que esto*/
+  max-width: 900px;
+  /*Altura*/
+  height: 280px; 
+  /*Márgen superior para separarlo del logo*/
+  margin-top: 40px;
+  /*Centro del texto*/
+  text-align: center;
+  /*Centro del contenedor para que ocupe lo mismo en ambos lados de X*/
+  align-self: center;
+}
+
+/*Estilo del título KidiMath <h1>*/
+.header--title-container h1
+{
+  /*Tamaño de fuente*/
+  font-size: 6rem;
+  /*Color del texto*/
+  color: var(--light-color);
+  /*Tamañi en negrita*/
+  font-weight:bold;
+  /*Interlineado del título*/
+  line-height: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  letter-spacing: 4px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+  line-height: 0.88em;
+  outline:none;
+  animation: animate 12s linear infinite;
+}
+@keyframes animate
+{
+  0%,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%
+  {
+    color: #F27182;
+    text-shadow: none;
+  }
+  50%,40%,30%,20%,10%
+  {
+    color: #FECF66;
+    text-shadow: 
+    0 0 10px #f3576c,
+    0 0 20px #f3576c,
+    0 0 40px #f3576c,
+    0 0 80px #f3576c,
+    0 0 160px #f3576c;
+  }
+}
+
+/*Estilo del párrafo "Este es tu sitio ideal..." <p>*/
+.header--title-container p
+{
+  font-size: 2rem;
+  margin-top: 40px;
+  font-weight: 300;
+  line-height: 2.3rem;
+  color: var(--light-color);
+}
+
+/*---------------------------ESTILOS SECCIÓN DE INFORMACIÓN GENERAL----------------------*/
+/*Estilos main*/
+main
+{
+  width:100%;
+  /*Auto porque el mismo contenido va a ir definiendo la altura*/
+  height: auto;
+  /*Color de fondo*/
+  background-color:var(--secondary-color-soft);
+}
+
+/*Estilo general del contenedor de información principal*/
+.main-information-detail
+{
+  position: relative;
+  width: 100%;
+  height: (calc(100vh-280px-320px));
+  background-color:var(--secondary-color-soft);
+  /*Padding para generar espacio y no tener problema con las tarjetas*/
+  padding:20px 10px;
+}
+
+/*Estilo del logo separador de Cubo de Rubik*/
+.rubik-logo
+{
+  /*Estilos del logo*/
+  background-image:url('../assets/icons/rubik-cube.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*Esto para poder posicionarlo sobre el borde*/
+  position: absolute;
+  /*Esto es para centrar el botón. Inicia en 50% y se le resta la mitad del width(245/2)*/
+  left: calc(50% - 25px);
+  /*Altura del botón*/
+  top: -30px;
+  display: block;
+  width: 50px;
+  height:50px;
+}
+
+/*Estilo general contenedor de texto <h2> y <p>*/
+.program-details--title
+{
+  width:90%;
+  min-width: 288px;
+  min-height: calc(100vh -290px -110px);
+  margin:0 auto;
+  margin-top: 30px;
+}
+
+/*Estilo de título "¿Qué podrás hacer aquí?"*/
+.program-details--title h2
+{
+  color:#666666;
+  font-size: 2.6rem;
+  margin-bottom: 25px;
+  font-weight:bold;
+  line-height: 2.6rem;
+  text-align: center;
+}
+
+/*Estílo de párrafo principal "A continuación verás los pequeños..."*/
+.program-details--title p
+{
+  color:#808080;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.65rem;
+  margin-bottom: 25px;
+  line-height: 2rem;
+}
+
+/*Estilos de la tarjeta*/
+.program-detail--card
+{
+  /*Relative para poder posicionar*/
+  position: relative;
+  /*Ancho de la tarjeta*/
+  width:90%;
+  min-width: 288px;
+  max-width: 400px;
+  /*Alto de la tarjeta*/
+  height: 140px;
+  /*Margen para centrar*/
+  margin: 15px auto;
+  /*Padding para dar espaciado interno*/
+  padding: 15px;
+  /*Color de fondo de la tarjeta*/
+  background-color: var(--warm2-color);
+  /*Bordes de la tarjeta*/
+  border-radius: 15px;
+  /*Efecto de sombra*/
+  box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+  /*Espaciado entre tarjeta en relación al botón*/
+  margin-top: 40px;
+}
+
+/*Estilo de los botones de la tarjeta*/
+.program-detail--card .program-button
+{
+  /*Junto al contenedor padre que es relative, podemos posicionarlo encima*/
+  position: absolute;
+  /*Esto es para posicionar el botón. Inicia en 50% y se le resta la mitad del width*/
+  right: 1px;
+  /*Altura del botón*/
+  top: -26px;
+  /*Dimensiones*/
+  width: 50px;
+  height: 50px;
+  /*Sombra*/
+  /*box-shadow: 0px 4px 8px rgba(89,73,30,0.16);*/
+  /*En caso de que exista un borde definido*/
+  border:none;
+  /*Redondeo de los bordes*/
+  border-radius: 50%;
+}
+
+/*Estilos generales botón*/
+.program-button span
+{
+  display: inline-block;
+  width: inherit;
+  height:inherit;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/*Botón figuras geométricas*/
+.geometric-figure-button span
+{
+  background-image: url(../assets/icons/geometric-figure.png);
+}
+/*Botón precios y descuentos*/
+.discount-button span
+{
+  background-image: url(../assets/icons/discount.png);
+}
+/*Botón promedio,moda y mediana*/
+.promedio-button span
+{
+  background-image: url(../assets/icons/promedio.png);
+}
+/*Botón análisis salarial*/
+.salarial-button span
+{
+  background-image: url(../assets/icons/salario.png);
+}
+
+/*Título de la tarjeta*/
+.program--card-title
+{
+  margin-bottom: 18px;
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color:var(--light-color);
+  max-width: 340px;
+  min-width: 100px;
+}
+
+/*Texto de la tarjeta*/
+.program--card-body
+{
+  color:var(--light-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+
+/*------------------------------------ESTILOS FOOTER----------------------------------*/
+/*En este estilo separamos las redes sociales del logo*/
+footer
+{
+  display: flex;
+  width: 100%;
+  height:110px;
+  /*Color de fondo gradiente*/
+  background: rgb(52,160,164);
+  background: linear-gradient(55deg, rgba(52,160,164,1) 22%, rgba(105,190,151,1) 69%, rgba(153,217,140,1) 100%);
+  min-width: 320px;
+  margin-top: auto;
+}
+
+/*Mismos tamaños para ambos section*/
+footer section
+{
+  display: flex;
+  width:50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos para que las redes sociales salgan alineados*/
+.unorganized-media
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*Le quitamos el punto decorativo de las <ul>*/
+.unorganized-media li
+{
+  list-style: none;
+}
+
+/*Ajustamos tamaño de las redes sociales*/
+.unorganized-media img
+{
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+}
+
+.logo-footer
+{
+  width: 85px;
+  height: 85px;
+}

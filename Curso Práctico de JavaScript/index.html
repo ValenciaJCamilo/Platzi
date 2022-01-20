@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FUENTE DEL PROYECTO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Commissioner:wght@300&family=Exo+2:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--ÍCONO Y TÍTULO DE LA PESTAÑA DE NAVEGACIÓN-->
+    <title>KidiMath</title>
+    <link rel="shortcut icon" href="../assets/icons/rubik-cube.png" />
+    <!--ESTILO PRINCIPAL-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--Cargamos el siguiente estilo-->
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:930px)" />
+    <!--Librería de scroll-->
+    <script src="js/scrollreveal.js"></script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="header--title-container">
+        <!--Nuestras páginas web deben tener solo un <h1>. Esto es por temas de SEO(Search Engine Optimization)-->
+        <h1>KidiMath</h1>
+        <p>
+          Este es tu sitio ideal para que resuelvas de manera fácil y rápida algunos ejercicios matemáticos. 
+        </p>
+      </div>
+    </header>
+    <!--MAIN-->
+    <main>
+      <!--SECCIÓN DE INFORMACIÓN GENERAL-->
+      <section class="main-information-detail">
+        <!--Icono de cubo de rubik-->
+        <span class="rubik-logo"></span>
+        <!--Texto-->
+        <div class="program-details--title">
+          <h2>¿Qué podrás hacer aquí?</h2>
+          <p>
+            A continuación, verás las posibilidades que tienes con KidiMath. Puedes presionar el ícono superior de la derecha para que vayas directamente a la sección que deseas.
+          </p>
+        </div>
+        <!--Estructura para las tarjetas-->
+        <section class="program-cards--container">
+          <article class="program-detail--card">
+            <a href="./pages/figuras.html" class="program-button geometric-figure-button"><span></span></a>
+            <p class="program--card-title">Figuras geométricas</p>
+            <p class="program--card-body">
+              Calcula rápidamente el área y el perímetro de figuras como un cuadrado, triángulo o círculo.
+            </p>
+          </article>
+          <article class="program-detail--card">
+            <a href="#" class="program-button discount-button"><span></span></a>
+            <p class="program--card-title">Precios y descuentos</p>
+            <p class="program--card-body">
+              Descubre el valor en el que quedarían tus productos en caso tal en el que le apliques un porcentaje de descuento
+            </p>
+          </article>
+          <article class="program-detail--card">
+            <a href="#" class="program-button promedio-button"><span></span></a>
+            <p class="program--card-title">Promedio, moda y mediana</p>
+            <p class="program--card-body">
+              Verifica el promedio, moda y mediana de los datos numéricos que tú desees.
+            </p>
+          </article>
+          <article class="program-detail--card">
+            <a href="#" class="program-button salarial-button"><span></span></a>
+            <p class="program--card-title">Análisis salarial</p>
+            <p class="program--card-body">
+              Realiza un análisis salarial y descubre cómo varía toda la taza monetaria.
+            </p>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <!--Hipervínculos-->
+      <section>
+        <ul class="unorganized-media">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ValenciaJCamilo/"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="assets/icons/linkedin.png" alt="Linkedin"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/ValenciaJCamilo"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="assets/icons/github.png" alt="GitHub"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/Ragnarbalt"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="assets/icons/twitter.png" alt="Twitter"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <!--Logotipo/Isoptipo-->
+      <section>
+        <img src="./assets/icons/logo-footer.png" alt="" class="logo-footer" />
+      </section>
+      <script src="js/index.js"></script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+/*Título principal*/
+.header--title-container h1
+{
+  font-size: 10rem;
+  margin-top: -20px;
+}
+
+.header--title-container p
+{
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    margin-top: 80px;
+}
+
+
+
+/*Estilo de título "¿Qué podrás hacer aquí?"*/
+.program-details--title h2
+{
+  font-size: 3.3rem;
+}
+
+/*Estílo de párrafo principal "A continuación verás los pequeños..."*/
+.program-details--title p
+{
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+
+/*Estilos de la tarjeta*/
+.program-detail--card
+{
+  max-height: 126.5px;
+  /*Padding para dar espaciado interno*/
+  margin-top: 0 auto;
+}
+
+/*Estilos de la tarjeta*/
+.program-cards--container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 920px;
+    margin:0 auto;
+}
+
+/*Título de la tarjeta*/
+.program--card-title
+{
+  font-size: 2.3rem;
+}
+
+/*Texto de la tarjeta*/
+.program--card-body
+{
+  font-size: 1.8rem;
+}
+
+/*Estilos generales botón*/
+.program-button span
+{
+  width: 60px;
+  height:60px;
+}
+
+/*Redes sociales footer*/
+.unorganized-media img
+{
+  width: 50px;
+  height: 50px;
+}
+
+/*Logo footer*/
+.logo-footer
+{
+  width: 95px;
+  height: 95px;
+}
