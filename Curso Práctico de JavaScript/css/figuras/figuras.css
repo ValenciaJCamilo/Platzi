@@ -136,7 +136,7 @@ header {
 
 /*---------------------------ESTILOS SECCIÓN DE INFORMACIÓN GENERAL----------------------*/
 /*Seleccionar opción adecuada*/
-#triangulo,#circulo,#cuadrado
+#triangulo,#circulo
 {
     display:none;
 }
