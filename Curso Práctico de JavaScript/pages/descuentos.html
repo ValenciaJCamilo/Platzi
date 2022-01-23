@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FUENTE DEL PROYECTO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Commissioner:wght@300&family=Exo+2:ital,wght@1,700&display=swap"
+        rel="stylesheet"
+    />
+    <!--ÍCONO Y TÍTULO DE LA PESTAÑA DE NAVEGACIÓN-->
+    <title>Descuentos / KidiMath</title>
+    <link rel="shortcut icon" href="../assets/icons/rubik-cube.png" />
+    <!--ESTILO PRINCIPAL-->
+    <link rel="stylesheet" href="../css/descuentos/descuentos.css" />
+    <!--Cargamos el siguiente estilo-->
+    <link
+        rel="stylesheet"
+        href="../css/descuentos/descuentos-tablet.css"
+        media="(min-width:930px)"
+    />
+    <!--Librería de scroll-->
+    <script src="../js/scrollreveal.js"></script>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="header--title-container">
+        <!--Nuestras páginas web deben tener solo un <h1>. Esto es por temas de SEO(Search Engine Optimization)-->
+            <h1>Porcentajes y descuentos</h1>
+            <p>Descubre instantáneamente el valor total de tu compra, si a esta se le aplica un porcentaje de descuento.</p>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main>
+        <span class="descuento-logo"></span>
+    <!--SECCIÓN FIGURA CIRCULO-->
+        <section class="main-descuento--container" id="descuento">
+            <div class="main-descuento--info">
+                <h2 class="descuento--titulo">Conoce el precio de tu producto</h2>
+                <img src="../assets/img/discounts.png" alt="Imagen de descuento" title="Descuento" class="descuento-img">
+            </div>
+            <form action="" class="main-descuento--form">
+                <div class="txt_field"> 
+                    <div class="txt_field-valor">
+                        <label for="InputValor" class=txt_field--label>Valor $</label>
+                        <input type="number" id="InputValor" required class="txt_field--input valor">
+                    </div>
+                    <div class="txt_field-descuento">
+                        <label for="InputDescuento" class=txt_field--label>Descuento %</label>
+                        <input type="number" id="InputDescuento" required class="txt_field--input valor">                    </div>
+                <div class="buttons-descunto-container">
+                    <button type="button" onclick="aplicarDescuento()" class="button-descuento valor">Calcular</button>
+                </div>
+                <div class="contenedor-resultado">
+                    <p class="result" id="resultado-descuento">Aquí estará el resultado 🤑</p>    
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+    <!--Hipervínculos-->
+        <section>
+            <ul class="unorganized-media">
+            <li>
+                <a href="https://www.linkedin.com/in/ValenciaJCamilo/"target="_blank"rel="noreferrer noopener">
+                    <img src="../assets/icons/linkedin.png" alt="Linkedin"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/ValenciaJCamilo"target="_blank"rel="noreferrer noopener">
+                    <img src="../assets/icons/github.png" alt="GitHub"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/Valenciajcamilo"target="_blank"rel="noreferrer noopener">
+                    <img src="../assets/icons/twitter.png" alt="Twitter"/>
+                </a>
+            </li>
+            </ul>
+        </section>
+            <!--Logotipo/Isoptipo-->
+        <section>
+            <img src="../assets/icons/logo-footer.png" alt="" class="logo-footer" />
+        </section>
+        <script src="../js/index.js"></script>
+        <script src="../js/descuentos.js"></script>
+    </footer>
+</body>
+</html>

@@ -14,7 +14,7 @@ window.sr=ScrollReveal();
         }
     });
 
-    sr.reveal('.rubik-logo, .geometria-logo',{
+    sr.reveal('.rubik-logo, .geometria-logo, .descuento-logo',{
         delay:700,
         rotate:{
             x:1,
@@ -24,7 +24,7 @@ window.sr=ScrollReveal();
     
 
 
-    sr.reveal('.program-detail--card, .main-section--options, .main-section--figures',{
+    sr.reveal('.program-detail--card, .main-section--options, .main-section--figures, .main-descuento--info, .main-descuento--form',{
         duration:2000
     });
 

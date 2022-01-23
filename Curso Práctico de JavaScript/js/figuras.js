@@ -29,11 +29,18 @@ const btnCirAr = document.getElementById('CirAr');
 //---------------FORMULAS PARA EL CUADRAD0
 function perimetroCuadrado(ladoCua) {
     return ladoCua * 4;
-  }
-  
-  function areaCuadrado(ladoCua) {
-    return ladoCua * ladoCua;
-  }
+}
+
+function areaCuadrado(ladoCua) {
+    if (ladoCua>0)
+    {
+        return ladoCua * ladoCua;
+    }
+    else 
+    {
+        resCua.innerHTML = `Chistosito, por favor ingresa un valor válido 🙂`;
+    }
+}
 
 const resCua = document.getElementById('resultado-cuadrado');
 
@@ -41,26 +48,28 @@ const resCua = document.getElementById('resultado-cuadrado');
 btnCuaPer.addEventListener('click', function resPerimetroCuadrado() {
     const ladoCua = document.getElementById('InputCuadrado')
     let data = perimetroCuadrado(parseFloat(ladoCua.value))
-    if (data>0)
+    let res=data.toFixed(2);
+    if (res>0)
     {
-        resCua.innerHTML = `P = ${data.toFixed(2)} cm`  
+        resCua.innerHTML = `P = ${res} cm`  
     }
     else
     {
-        resCua.innerHTML = `Por favor, ingresa un número`;
+        resCua.innerHTML = `Chistosito, por favor ingresa un valor válido 🙂`  
     }
 })
 
 btnCuaAr.addEventListener('click', function reAreaCuadrado() {
     const ladoCua = document.getElementById('InputCuadrado')
     let data = areaCuadrado(parseFloat(ladoCua.value))
-    if (data>0)
+    let res1=data.toFixed(2);
+    if (res1>0)
     {
-        resCua.innerHTML = `A = ${data.toFixed(2)} cm^2`  
+        resCua.innerHTML = `A = ${res1} cm^2`  
     }
     else
     {
-        resCua.innerHTML = `Por favor, ingresa un número`;
+        resCua.innerHTML = `Chistosito, por favor ingresa un valor válido 🙂`;
     }
 })
 
@@ -71,9 +80,16 @@ function perimetroTriangulo(ladoTria) {
   }
   
   function areaTriangulo(ladoTria) {
-    let area=(Math.sqrt(3)/4)*ladoTria**2;
-    /*let dataTr=area.toFixed(2);*/
-    return area;
+    if (ladoTria>0)
+    {
+        let area=(Math.sqrt(3)/4)*ladoTria**2;
+        /*let dataTr=area.toFixed(2);*/
+        return area;
+    }
+    else
+    {
+        resTria.innerHTML = `Chistosito, por favor ingresa un valor válido 🙂`;
+    }
   }
   const resTria = document.getElementById('resultado-triangulo');
 
@@ -87,7 +103,7 @@ btnTriaPer.addEventListener('click', function resPerimetroTriangulo() {
     }
     else
     {
-        resTria.innerHTML = `Por favor, ingresa un número`;
+        resTria.innerHTML = `Chistosito, por favor ingresa un valor válido 🙂`;
     }
 })
 
@@ -100,7 +116,7 @@ btnTriaAr.addEventListener('click', function resAreaTriangulo() {
     }
     else
     {
-        resTria.innerHTML = `Por favor, ingresa un número`;
+        resTria.innerHTML = `Chistosito, por favor ingresa un valor válido 🙂`;
     }
 })
 
@@ -115,7 +131,14 @@ function diametroCirculo(radio) {
     return diametro * PI;
   }
   function areaCirculo(radio) {
-    return (radio * radio) * PI;
+    if (radio>0)
+    {
+        return (radio * radio) * PI;
+    }
+    else
+    {
+        resCir.innerHTML = `Chistosito, por favor ingresa un valor válido 🙂`;
+    }
   }
   const resCir = document.getElementById('resultado-circulo');
 
@@ -129,7 +152,7 @@ function diametroCirculo(radio) {
     }
     else
     {
-        resCir.innerHTML = `Por favor, ingresa un número`;
+        resCir.innerHTML = `Chistosito, por favor ingresa un valor válido 🙂`;
     }
 })
 
@@ -142,8 +165,6 @@ btnCirAr.addEventListener('click', function resAreaCirculo() {
     }
     else
     {
-        resCir.innerHTML = `Por favor, ingresa un número`;
+        resCir.innerHTML = `Chistosito, por favor ingresa un valor válido 🙂`;
     }
 })
-
-
