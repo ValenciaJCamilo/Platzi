@@ -1,0 +1,328 @@
+:root 
+{
+  --primary-color: #4f000b;
+  --light-color: #fff;
+}
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Commissioner', sans-serif;
+    scroll-behavior: smooth;
+    background:#ff546a;
+}
+
+body{
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+/*Estilos main*/
+main
+{
+  width:100%;
+  /*Auto porque el mismo contenido va a ir definiendo la altura*/
+  height: auto;
+  /*Color de fondo*/
+  background: #ff546a;
+  position:relative;
+}
+
+/*---------------------------ESTILOS HEADER----------------------*/
+/*Estilos header generales*/
+header {
+    position:relative;
+    display: flex;
+    /*Alinear por columna*/
+    flex-direction: column;
+    justify-content: center;
+    /*Ancho del 100% de la pantalla*/
+    width: 100%;
+    /*Tamaño mínimo*/
+    min-width: 320px;
+    /*Altura*/
+    height: 290px;
+    /*Centrar texto*/
+    text-align: center;
+    /*Color de fondo*/
+    background: linear-gradient(232deg, #ff546a, var(--primary-color));
+    /*Tamaño para que el efecto se aplique*/
+    background-size: 400%400%;
+    /*Estilos de animación*/
+    -webkit-animation: bgAnimateBitcoin 5s ease infinite;
+    -moz-animation: bgAnimateBitcoin 5s ease infinite;
+    animation: bgAnimateBitcoin 5s ease infinite;
+  }
+  @-webkit-keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+  @-moz-keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+  @keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+
+
+/*Estilos del contenedor del texto*/
+.header--title-container
+{
+  /*Ancho de 90%*/
+  width:90%;
+  /*No se hará más pequeño que esto*/
+  min-width: 288px;
+  /*No se hará más grande que esto*/
+  max-width: 900px;
+  /*Altura*/
+  height: 280px; 
+  /*Márgen superior para separarlo del logo*/
+  margin-top: 40px;
+  /*Centro del texto*/
+  text-align: center;
+  /*Centro del contenedor para que ocupe lo mismo en ambos lados de X*/
+  align-self: center;
+}
+
+/*Estilo del título Figuras Geométricas <h1>*/
+.header--title-container h1
+{
+  /*Tamaño de fuente*/
+  font-size: 4.5rem;
+  /*Color del texto*/
+  color: var(--light-color);
+  /*Tamañi en negrita*/
+  font-weight:700;
+  /*Interlineado del título*/
+  line-height: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  line-height: 0.88em;
+  outline:none;
+  letter-spacing: 1.6Px;
+  animation: animate 8s linear infinite;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.089));
+}
+
+@keyframes animate
+{
+  0%,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%
+  {
+    color: #ffd700;
+    text-shadow: none;
+  }
+  50%,40%,30%,20%,10%
+  {
+    color: #fff;
+    text-shadow: 
+    0 0 10px #ff9b54,
+    0 0 20px #ff9b54,
+    0 0 40px #ff9b54,
+    0 0 80px #ff9b54,
+    0 0 160px #ff9b54;
+  }
+}
+
+.header--title-container p
+{
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: 300;
+  line-height: 2.3rem;
+  color: papayawhip;
+}
+
+
+.contenedor-resultado, .result{
+  width: auto;
+}
+
+/*Estilo del logo separador de Cubo de Rubik*/
+.descuento-logo
+{
+  /*Estilos del logo*/
+  background-image:url('/assets/icons/discount.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*Esto para poder posicionarlo sobre el borde*/
+  position: absolute;
+  left: calc(50% - 25px);
+  /*Altura del botón*/
+  top: -30px;
+  display: block;
+  width: 50px;
+  height:50px;
+}
+
+/*------------------------------------ESTILOS MAIN----------------------------------*/
+.main-descuento--container
+{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    text-align: center;
+    width:100%;
+    align-self: center;
+    margin-top:30px;
+}
+
+.main-descuento--form
+{
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+}
+.descuento--titulo
+{
+    font-weight: 600;
+    font-size:2.6rem;
+    color:var(--light-color);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.descuento-img
+{
+    max-width:85%;
+    max-height: 85%;
+}
+
+.txt_field--label
+{
+    font-size:1.8rem;
+    margin-bottom:20px;
+    color:papayawhip;
+}
+
+.txt_field-valor,.txt_field-descuento
+{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt_field-valor
+{
+    margin-top: -30px;
+    margin-bottom: -0px;
+}
+
+.txt_field--input
+{
+    margin-top: -10px;
+    padding: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    color: #ff546a;
+    font-weight: bold;
+    font-size: 1.9rem;
+    border-style: none;
+    justify-content: center;
+    outline: none;
+    text-align: center;
+    width: 40%;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.button-descuento
+{
+    padding: 10px 0 10px 0;
+    width: 40%;
+    align-self: center;
+    text-align: center;
+    margin: 10px 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.button-descuento:hover
+{
+    color:var(--light-color);
+    background:#fd8282;
+    box-shadow: 0 0 10px white, 0 0 30px white, 0 0 50px white;
+    font-weight: bold;
+}
+
+.contenedor-resultado
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.result
+{
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 1.9rem;
+    color: papayawhip;
+    font-weight: 700;
+
+}
+/*------------------------------------ESTILOS FOOTER----------------------------------*/
+/*En este estilo separamos las redes sociales del logo*/
+footer
+{
+  display: flex;
+  width: 100%;
+  height:110px;
+  background: var(--primary-color);
+  background: linear-gradient(55deg, var(--primary-color) 22%, #ff546a 69%, #833d0c 100%);
+  min-width: 320px;
+  margin-top: auto;
+}
+
+/*Mismos tamaños para ambos section*/
+footer section
+{
+  display: flex;
+  width:50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos para que las redes sociales salgan alineados*/
+.unorganized-media
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.unorganized-media li
+{
+  list-style: none;
+}
+
+.unorganized-media img
+{
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+}
+
+.logo-footer
+{
+  width: 85px;
+  height: 85px;
+}
