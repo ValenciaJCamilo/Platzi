@@ -16,7 +16,7 @@ html
     font-size: 62.5%;
     font-family: 'Commissioner', sans-serif;
     scroll-behavior: smooth;
-    background:#ff546a;
+    background:white;
 }
 
 body{
@@ -31,7 +31,7 @@ main
   /*Auto porque el mismo contenido va a ir definiendo la altura*/
   height: auto;
   /*Color de fondo*/
-  background: #ff546a;
+  background: rgb(255, 255, 255);
   position:relative;
 }
 
@@ -120,18 +120,18 @@ header {
 {
   0%,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%
   {
-    color: #ffd700;
+    color:#fff;
     text-shadow: none;
   }
   50%,40%,30%,20%,10%
   {
     color: #fff;
     text-shadow: 
-    0 0 10px #ff9b54,
-    0 0 20px #ff9b54,
-    0 0 40px #ff9b54,
-    0 0 80px #ff9b54,
-    0 0 160px #ff9b54;
+    0 0 10px rgb(54, 54, 54),
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black,
+    0 0 160px black;
   }
 }
 
@@ -141,7 +141,7 @@ header {
   margin-top: 10px;
   font-weight: 300;
   line-height: 2.3rem;
-  color: papayawhip;
+  color: #fff;
 }
 
 
@@ -188,7 +188,7 @@ header {
 {
     font-weight: 600;
     font-size:2.6rem;
-    color:var(--light-color);
+    color:#3E3C55;
     text-align: center;
     margin-top: 30px;
 }
@@ -203,7 +203,7 @@ header {
 {
     font-size:1.8rem;
     margin-bottom:20px;
-    color:papayawhip;
+    color:#3E3C55;
 }
 
 .txt_field-valor,.txt_field-descuento
@@ -236,7 +236,7 @@ header {
     outline: none;
     text-align: center;
     width: 40%;
-    border: 1px solid whitesmoke;
+    border: 1px solid #3e3c5542;
     border-radius: 10px;
 }
 
@@ -254,12 +254,13 @@ header {
     font-size: 1.7rem;
     overflow: hidden;
     transition: 0.3s;
+    border:2px solid #3e3c5546;
 }
 
 .button-descuento:hover
 {
     color:var(--light-color);
-    background:#fd8282;
+    background:#3E3C55;
     box-shadow: 0 0 10px white, 0 0 30px white, 0 0 50px white;
     font-weight: bold;
 }
@@ -275,7 +276,7 @@ header {
     width: 80%;
     margin-bottom: 20px;
     font-size: 1.9rem;
-    color: papayawhip;
+    color: #3E3C55;
     font-weight: 700;
 
 }
