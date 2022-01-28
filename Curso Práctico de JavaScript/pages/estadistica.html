@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FUENTE DEL PROYECTO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Commissioner:wght@300&family=Exo+2:ital,wght@1,700&display=swap"
+        rel="stylesheet"
+    />
+    <!--ÍCONO Y TÍTULO DE LA PESTAÑA DE NAVEGACIÓN-->
+    <title>Estadística / KidiMath</title>
+    <link rel="shortcut icon" href="../assets/icons/rubik-cube.png" />
+    <!--ESTILO PRINCIPAL-->
+    <link rel="stylesheet" href="../css/estadistica/estadistica.css" />
+    <!--Cargamos el siguiente estilo-->
+    <link
+        rel="stylesheet"
+        href="../css/estadistica/estadistica-tablet.css"
+        media="(min-width:930px)"
+    />
+    <!--Librería de scroll-->
+    <script src="../js/scrollreveal.js"></script>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="header--title-container">
+        <!--Nuestras páginas web deben tener solo un <h1>. Esto es por temas de SEO(Search Engine Optimization)-->
+            <h1>Estadística</h1>
+            <p>En esta sección podrás calcular la media, mediana y moda de la cantidad de datos que tú desees.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-everything">
+          <span class="estadistica-logo"></span>
+            <!--SECCIÓN DE SELECCIONAR FIGURA-->
+            <h2 class="select-stats">Selecciona la opción que deseas</h2>
+            <section class="main-section--options">
+              <button class="botones-estadistica media" type="button" onclick="mostrarMedia();">Media</button>
+              <button class="botones-estadistica mediana" type="button" onclick="mostrarMediana();">Mediana</button>
+              <button class="botones-estadistica moda" type="button" onclick="mostrarModa();">Moda</button>
+            </section>
+    
+    
+            <section class="main-section--estadistica">
+              <!--SECCIÓN MEDIA-->
+              <section class="estadistica-container media" id="media">
+                <div class="estadistica-izquierda">
+                  <h2 class="estadistica-titulo media">Media</h2>
+                  <p class="descripcion-estadistica media">La media, también conocida como promedio, es la suma de todos los valores dividida en el total de los datos.</p>
+                  <img src="../assets/img/media.png" alt="Media" title="Media" class="estadisticas">
+                </div>
+                <form action="" class="estadistica-derecha">
+                  <div class="derecha">
+                    <div class="txt_field">
+                      <label for="numDatosMedia" class="txt_field--label media">¿Cuántos datos son?</label>
+                      <input type="number" id="numDatosMedia" required class="txt_field--input media">   
+                    </div>
+                    <div class="buttons-estadistica-container">
+                        <button type="button" onclick="aggInput()" class="button-est media">¡Vamos!</button>           
+                  </div>
+                </form>
+                <p class="descripcion-estadistica media">Una vez conozcas la cantidad total de datos que vas a calcular, empieza a digitar los valores en cada casilla.</p>
+                <form id="aggInputs" class=labels-media></form>
+                <p id="resultado" class="resultado"></p>
+              </section>
+
+              <!--SECCIÓN MEDIANA-->
+              <section class="estadistica-container mediana" id="mediana">
+                <div class="geometric-figure--tittle">
+                  <h2 class="estadistica-titulo mediana">Mediana</h2>
+                  <p class="descripcion-estadistica media">La mediana, es el valor que ocupa el lugar central de todos los datos cuando éstos están ordenados de menor a mayor.</p>
+                  <img src="../assets/img/mediana.png" alt="Mediana" title="Mediana" class="estadisticas">
+                </div>
+              <form action="">
+                <div class="txt_field">
+                  <label for="numDatosMediana" class=txt_field--label>¿Cuántos datos son?</label>
+                  <input type="number" id="numDatosMediana" required class="txt_field--input mediana">
+                </div>
+                <div class="buttons-figura-container">
+                  <button type="button" onclick="aggInput1()" class="button-est mediana">¡Vamos!</button>    
+                </div>
+                </form>
+                <p class="descripcion-estadistica mediana">Una vez conozcas la cantidad total de datos que vas a calcular, empieza a digitar los valores en cada casilla.</p>
+                <form id="aggInputs1" class=labels-media></form>
+                <p id="resultadoMediana" class="resultado"></p>
+              </section>
+
+              <!--SECCIÓN MODA-->
+              <section class="estadistica-container circulo" id="moda">
+                <div class="geometric-figure--tittle">
+                  <h2 class="estadistica-titulo moda">Moda</h2>
+                  <p class="descripcion-estadistica media">La moda, es el valor que con mayor frecuencia se repite en un grupo de datos.</p>
+                  <img src="../assets/img/moda.png" alt="Moda" title="Moda" class="estadisticas">
+                  <form action="">
+                    <div class="txt_field">
+                      <label for="numDatosModa" class=txt_field--label>¿Cuántos datos son?</label>
+                      <input type="number" id="numDatosModa" required class="txt_field--input moda">
+                    </div>
+                    <div class="buttons-figura-container">
+                      <button type="button" onclick="aggInput2()" class="button-est moda">¡Vamos!</button>    
+                    </div>
+                    </form>
+                    <p class="descripcion-estadistica moda">Una vez conozcas la cantidad total de datos que vas a calcular, empieza a digitar los valores en cada casilla.</p>
+                    <form id="aggInputs2" class=labels-media></form>
+                    <p id="resultadoModa" class="resultado"></p>
+                  </section>
+        </section>
+        
+      </main>
+  
+    <!--FOOTER-->
+    <footer class="footer">
+    <!--Hipervínculos-->
+        <section>
+            <ul class="unorganized-media">
+            <li>
+                <a href="https://www.linkedin.com/in/ValenciaJCamilo/"target="_blank"rel="noreferrer noopener">
+                    <img src="../assets/icons/linkedin.png" alt="Linkedin"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/ValenciaJCamilo"target="_blank"rel="noreferrer noopener">
+                    <img src="../assets/icons/github.png" alt="GitHub"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/Valenciajcamilo"target="_blank"rel="noreferrer noopener">
+                    <img src="../assets/icons/twitter.png" alt="Twitter"/>
+                </a>
+            </li>
+            </ul>
+        </section>
+            <!--Logotipo/Isoptipo-->
+        <section>
+            <img src="../assets/icons/logo-footer.png" alt="" class="logo-footer" />
+        </section>
+        <script src="../js/index.js"></script>
+        <script src="../js/estadistica.js"></script>
+    </footer>
+</body>
+</html>

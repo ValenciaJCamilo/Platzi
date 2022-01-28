@@ -14,7 +14,7 @@ window.sr=ScrollReveal();
         }
     });
 
-    sr.reveal('.rubik-logo, .geometria-logo, .descuento-logo',{
+    sr.reveal('.rubik-logo, .geometria-logo, .descuento-logo, .estadistica-logo',{
         delay:700,
         rotate:{
             x:1,
@@ -24,7 +24,7 @@ window.sr=ScrollReveal();
     
 
 
-    sr.reveal('.program-detail--card, .main-section--options, .main-section--figures, .main-descuento--info, .main-descuento--form',{
+    sr.reveal('.program-detail--card, .main-section--options, .main-section--figures, .main-descuento--info, .main-descuento--form, .main-section--estadistica',{
         duration:2000
     });
 

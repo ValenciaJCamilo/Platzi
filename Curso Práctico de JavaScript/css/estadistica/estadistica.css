@@ -1,0 +1,554 @@
+:root 
+{
+  --primary-color: #072227;
+  --light-color: #fff;
+}
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Commissioner', sans-serif;
+    scroll-behavior: smooth;
+    background:white;
+}
+
+body{
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+/*Estilos main*/
+main
+{
+  width:100%;
+  /*Auto porque el mismo contenido va a ir definiendo la altura*/
+  height: auto;
+  /*Color de fondo*/
+  background: rgb(255, 255, 255);
+  position:relative;
+}
+
+
+/*---------------------------ESTILOS HEADER----------------------*/
+/*Estilos header generales*/
+header {
+    position:relative;
+    display: flex;
+    /*Alinear por columna*/
+    flex-direction: column;
+    justify-content: center;
+    /*Ancho del 100% de la pantalla*/
+    width: 100%;
+    /*Tamaño mínimo*/
+    min-width: 320px;
+    /*Altura*/
+    height: 290px;
+    /*Centrar texto*/
+    text-align: center;
+    /*Color de fondo*/
+    background: linear-gradient(232deg, #35858B, var(--primary-color));
+    /*Tamaño para que el efecto se aplique*/
+    background-size: 400%400%;
+    /*Estilos de animación*/
+    -webkit-animation: bgAnimateBitcoin 5s ease infinite;
+    -moz-animation: bgAnimateBitcoin 5s ease infinite;
+    animation: bgAnimateBitcoin 5s ease infinite;
+  }
+  @-webkit-keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+  @-moz-keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+  @keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+
+
+/*Estilos del contenedor del texto*/
+.header--title-container
+{
+  /*Ancho de 90%*/
+  width:90%;
+  /*No se hará más pequeño que esto*/
+  min-width: 288px;
+  /*No se hará más grande que esto*/
+  max-width: 900px;
+  /*Altura*/
+  height: 280px; 
+  /*Márgen superior para separarlo del logo*/
+  margin-top: 40px;
+  /*Centro del texto*/
+  text-align: center;
+  /*Centro del contenedor para que ocupe lo mismo en ambos lados de X*/
+  align-self: center;
+}
+
+/*Estilo del título Figuras Geométricas <h1>*/
+.header--title-container h1
+{
+  /*Tamaño de fuente*/
+  font-size: 4.5rem;
+  /*Color del texto*/
+  color: var(--light-color);
+  /*Tamañi en negrita*/
+  font-weight:700;
+  /*Interlineado del título*/
+  line-height: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  line-height: 0.88em;
+  outline:none;
+  letter-spacing: 1.6Px;
+  animation: animate 8s linear infinite;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.089));
+}
+
+@keyframes animate
+{
+  0%,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%
+  {
+    color:#fff;
+    text-shadow: none;
+  }
+  50%,40%,30%,20%,10%
+  {
+    color: #fff;
+    text-shadow: 
+    0 0 10px rgb(54, 54, 54),
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black,
+    0 0 160px black;
+  }
+}
+
+.header--title-container p
+{
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: 300;
+  line-height: 2.3rem;
+  color: #fff;
+}
+
+
+.contenedor-resultado, .result{
+  width: auto;
+}
+
+/*Estilo del logo separador de Cubo de Rubik*/
+.estadistica-logo
+{
+  /*Estilos del logo*/
+  background-image:url('/assets/icons/promedio.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*Esto para poder posicionarlo sobre el borde*/
+  position: absolute;
+  left: calc(50% - 25px);
+  /*Altura del botón*/
+  top: -30px;
+  display: block;
+  width: 50px;
+  height:50px;
+}
+
+
+/*------------------------------------ESTILOS -----------------------------------*/
+/*Seleccionar opción adecuada*/
+#mediana,#moda
+{
+    display:none;
+}
+
+.main-everything
+{
+    position: relative;
+    width: 100%;
+    height: (calc(100vh-280px-320px));
+    /*Padding para generar espacio y no tener problema con las tarjetas*/
+    padding:20px 10px;
+    align-self: center;
+    justify-content: center;
+}
+
+/*SECCIÓN DE ESCOGER LA FIGURA*/
+
+.select-stats
+{
+    font-weight: 600;
+    font-size: 2.6rem;
+    color:#072227;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.main-section--options
+{
+    /*Ancho de 90%*/
+  width:100%;
+  /*Altura*/
+  /*height: 280px;*/ 
+  /*Márgen superior para separarlo del logo*/
+  margin-top: 20px;
+  /*Centro del texto*/
+  text-align: center;
+  /*Centro del contenedor para que ocupe lo mismo en ambos lados de X*/
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botones-estadistica
+{ 
+    width:80%;
+    min-width: 288px;
+    max-width: 400px;
+    margin-top: 20px;
+    padding:20px;
+    justify-content: center;
+    font-size: 1.7rem;
+    border-style: none;
+    border-radius: 100px;
+    cursor:pointer;
+    border:4px solid var(--primary-color);
+    color:rgb(99, 99, 99);
+    overflow: hidden;
+    transition: 0.3s;
+    letter-spacing: 0.5rem;
+    display: block;
+}
+.botones-estadistica.media:hover
+{ 
+    border:4px solid white;
+    color:white;
+    background:#072227;
+    box-shadow: 0 0 10px #072227, 0 0 30px #072227, 0 0 50px #072227;
+    font-weight: bold;
+}
+.botones-estadistica.mediana:hover
+{ 
+    border:4px solid white;
+    color:white;
+    background:#35858B;
+    box-shadow: 0 0 10px #35858B, 0 0 30px #35858B, 0 0 50px #35858B;
+    font-weight: bold;
+}
+.botones-estadistica.moda:hover
+{ 
+    border:4px solid white;
+    color:white;
+    background:#4FBDBA;
+    box-shadow: 0 0 10px #4FBDBA, 0 0 30px #4FBDBA, 0 0 50px #4FBDBA;
+    font-weight: bold;
+}
+
+.main-section--estadistica
+{
+  width:100%;
+  /*Altura*/
+  /*height: 280px;*/ 
+  /*Márgen superior para separarlo del logo*/
+  margin-top: 30px;
+  /*Centro del texto*/
+  text-align: center;
+  /*Centro del contenedor para que ocupe lo mismo en ambos lados de X*/
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*SECCIÓN DE LA TARJETA DE CADA OPCIÓN*/
+/*Título*/
+.estadistica-titulo
+{
+    font-weight: bold;
+    font-size: 2.6rem;
+
+}
+.estadistica-titulo.media
+{
+    color:var(--primary-color);
+}
+.estadistica-titulo.mediana
+{
+    color:#35858B;
+}
+.estadistica-titulo.moda
+{
+    color:#4FBDBA;
+}
+
+/*Descripción*/
+.descripcion-estadistica
+{
+  width:auto;
+  margin:0 20px 0 20px;
+  left:50px;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color:var(--primary-color);
+  margin-bottom: 20px;
+}
+.descripcion-estadistica.media
+{
+  color:var(--primary-color);
+}
+
+/*Imagen*/
+.estadisticas
+{
+    margin-top:30px;
+    width: 85%;
+    height: 85%;
+}
+
+.main-section--estadistica .txt_field
+{
+  /*Ancho de 90%*/
+  width:100%;
+  min-width: 288px;
+  max-width: auto;
+  /*Altura*/
+  /*height: 280px;*/ 
+  /*Márgen superior para separarlo del logo*/
+  margin-top: -30px;
+  /*Centro del texto*/
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*Centro del contenedor para que ocupe lo mismo en ambos lados de X*/
+  align-self: center;
+}
+
+
+/*Texto de pregunta de datos*/
+.txt_field--label
+{
+  margin-top: 25px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.txt_field--label.media
+{
+  color:var(--primary-color);
+}
+.txt_field--label.mediana
+{
+  color:#35858B;
+}
+.txt_field--label.moda
+{
+  color:#4FBDBA;
+}
+
+
+.txt_field--input
+{
+  padding:5px;
+  margin-bottom: 15px;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.9rem;
+  border-style: none;
+  justify-content: center;
+  outline: none;
+  text-align: center;
+  width: 40%;
+  border:1px solid #07222748;
+  border-radius: 10px;
+}
+
+.txt_field--input.media
+{
+  color:var(--primary-color);
+}
+.txt_field--input.mediana
+{
+  color:#35858B;
+}
+.txt_field--input.moda
+{
+  color:#4FBDBA;
+}
+
+.buttons-estadistica-container
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.button-est,.button-calc
+{
+  padding:10px 0 10px 0;
+  width: 40%;
+  align-self: center;
+  text-align: center;
+  margin:10px 10px;
+  border:none;
+  border-radius:20px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.button-est.media,
+.button-calc
+{
+  color:var(--primary-color);
+  border:1px solid #58585833;
+}
+
+.button-est.media:hover,
+.button-calc:hover
+{
+  color:white;
+  background:var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color), 0 0 30px var(--primary-color), 0 0 50px var(--primary-color);
+  font-weight: bold;
+}
+
+.button-est.mediana,
+.button-calc-mediana
+{
+  color:#35858B;
+  border:1px solid #58585833;
+}
+
+.button-est.mediana:hover,
+.button-calc-mediana:hover
+{
+  color:white;
+  background:#35858B;
+  box-shadow: 0 0 10px #35858B, 0 0 30px #35858B, 0 0 50px #35858B;
+  font-weight: bold;
+}
+
+.button-est.moda,
+.button-calc-moda
+{
+  color:#4FBDBA;
+  border:1px solid #58585833;
+}
+
+.button-est.moda:hover,
+.button-calc-moda:hover
+{
+  color:white;
+  background:#4FBDBA;
+  box-shadow: 0 0 10px #4FBDBA, 0 0 30px #4FBDBA, 0 0 50px #4FBDBA;
+  font-weight: bold;
+}
+
+
+.labels-media
+{
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.label-values
+{
+  width: 80%;
+  color:var(--primary-color);
+  padding:5px;
+  margin:5px;
+  font-weight: bold;
+  font-size: 1.7rem;
+  border-style: none;
+  justify-content: center;
+  outline: none;
+  text-align: center;
+  min-width: 20%;
+  max-width: 25%;
+  border:1px solid #07222748;
+  border-radius: 10px;
+}
+
+.resultado
+{
+  font-size: 1.6rem;
+  margin-top: 20px;
+  color:var(--primary-color);
+  margin-bottom: 20px;
+}
+
+
+.estadistica-container{
+  width:100%;
+}
+/*------------------------------------ESTILOS FOOTER----------------------------------*/
+/*En este estilo separamos las redes sociales del logo*/
+footer
+{
+  display: flex;
+  width: 100%;
+  height:110px;
+  background: var(--primary-color);
+  background: linear-gradient(55deg, var(--primary-color) 22%, #35858B 69%, #072227 100%);
+  min-width: 320px;
+  margin-top: auto;
+}
+
+/*Mismos tamaños para ambos section*/
+footer section
+{
+  display: flex;
+  width:50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos para que las redes sociales salgan alineados*/
+.unorganized-media
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.unorganized-media li
+{
+  list-style: none;
+}
+
+.unorganized-media img
+{
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+}
+
+.logo-footer
+{
+  width: 85px;
+  height: 85px;
+}

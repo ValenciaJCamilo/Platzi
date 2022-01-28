@@ -1,0 +1,105 @@
+/*Título principal*/
+.header--title-container h1
+{
+  font-size: 8rem;
+  margin-top: 27px;
+}
+
+/*Subtítulo*/
+.header--title-container p
+{
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    margin-top: 60px;
+}
+
+
+/*Me ayuda para hacer aparecer todas las figuras*/
+#media,#mediana,#moda
+{
+    display:block;
+}
+
+/*Me ayuda a hacer desaparecer el título de seleccionar figura*/
+.select-stats
+{
+    display: none;
+}
+
+/*Me ayuda a esconder los botones de selección*/
+.botones-estadistica
+{ 
+    display: none;
+}
+
+/*Aparecen las figuras en una fila*/
+.main-section--estadistica 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.labels-media
+{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+
+.label-values
+{
+
+  color:var(--primary-color);
+  padding:5px;
+  margin:5px;
+  font-weight: bold;
+  font-size: 1.7rem;
+  border-style: none;
+  justify-content: center;
+  outline: none;
+  text-align: center;
+  border:1px solid #07222748;
+  border-radius: 10px;
+}
+
+.estadistica-container
+{
+  border:3px solid transparent;
+  border-radius: 10px;
+  border-bottom: -20%;
+  margin-top: -40px;
+  margin-left: 10px;
+  -webkit-box-shadow: inset 0px 0px 110px -21px rgba(7,34,39,0.24);
+  -moz-box-shadow: inset 0px 0px 110px -21px rgba(7,34,39,0.24);
+  box-shadow: inset 0px 0px 110px -21px rgba(7,34,39,0.24);
+
+}
+
+/*Redes sociales footer*/
+.unorganized-media img
+{
+  width: 50px;
+  height: 50px;
+}
+
+/*Logo footer*/
+.logo-footer
+{
+  width: 95px;
+  height: 95px;
+}
+
+footer
+{
+  display: flex;
+  width: 100%;
+  height:110px;
+  min-width: 320px;
+  margin-top: auto;
+}
