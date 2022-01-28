@@ -1,0 +1,222 @@
+:root 
+{
+  --primary-color: #1b4332;
+  --light-color: #fff;
+}
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Commissioner', sans-serif;
+    scroll-behavior: smooth;
+    background:white;
+}
+
+body{
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+/*Estilos main*/
+main
+{
+  width:100%;
+  /*Auto porque el mismo contenido va a ir definiendo la altura*/
+  height: auto;
+  /*Color de fondo*/
+  background: rgb(255, 255, 255);
+  position:relative;
+}
+
+
+/*---------------------------ESTILOS HEADER----------------------*/
+/*Estilos header generales*/
+header {
+    position:relative;
+    display: flex;
+    /*Alinear por columna*/
+    flex-direction: column;
+    justify-content: center;
+    /*Ancho del 100% de la pantalla*/
+    width: 100%;
+    /*Tamaño mínimo*/
+    min-width: 320px;
+    /*Altura*/
+    height: 290px;
+    /*Centrar texto*/
+    text-align: center;
+    /*Color de fondo*/
+    background: linear-gradient(232deg, #40916c, var(--primary-color));
+    /*Tamaño para que el efecto se aplique*/
+    background-size: 400%400%;
+    /*Estilos de animación*/
+    -webkit-animation: bgAnimateBitcoin 5s ease infinite;
+    -moz-animation: bgAnimateBitcoin 5s ease infinite;
+    animation: bgAnimateBitcoin 5s ease infinite;
+  }
+  @-webkit-keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+  @-moz-keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+  @keyframes bgAnimateBitcoin {
+    0%{background-position:0%50%}
+    50%{background-position:100%50%}
+    100%{background-position:0%50%}
+  }
+
+
+/*Estilos del contenedor del texto*/
+.header--title-container
+{
+  /*Ancho de 90%*/
+  width:90%;
+  /*No se hará más pequeño que esto*/
+  min-width: 288px;
+  /*No se hará más grande que esto*/
+  max-width: 900px;
+  /*Altura*/
+  height: 280px; 
+  /*Márgen superior para separarlo del logo*/
+  margin-top: 40px;
+  /*Centro del texto*/
+  text-align: center;
+  /*Centro del contenedor para que ocupe lo mismo en ambos lados de X*/
+  align-self: center;
+}
+
+/*Estilo del título Figuras Geométricas <h1>*/
+.header--title-container h1
+{
+  /*Tamaño de fuente*/
+  font-size: 4.5rem;
+  /*Color del texto*/
+  color: var(--light-color);
+  /*Tamañi en negrita*/
+  font-weight:700;
+  /*Interlineado del título*/
+  line-height: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  line-height: 0.88em;
+  outline:none;
+  letter-spacing: 1.6Px;
+  animation: animate 8s linear infinite;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.089));
+}
+
+@keyframes animate
+{
+  0%,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%
+  {
+    color:#fff;
+    text-shadow: none;
+  }
+  50%,40%,30%,20%,10%
+  {
+    color: #fff;
+    text-shadow: 
+    0 0 10px rgb(54, 54, 54),
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black,
+    0 0 160px black;
+  }
+}
+
+.header--title-container p
+{
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: 300;
+  line-height: 2.3rem;
+  color: #fff;
+}
+
+
+.contenedor-resultado, .result{
+  width: auto;
+}
+
+/*Estilo del logo separador de Cubo de Rubik*/
+.salario-logo
+{
+  /*Estilos del logo*/
+  background-image:url('/assets/icons/salario.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*Esto para poder posicionarlo sobre el borde*/
+  position: absolute;
+  left: calc(50% - 25px);
+  /*Altura del botón*/
+  top: -30px;
+  display: block;
+  width: 50px;
+  height:50px;
+}
+
+
+
+
+
+
+
+/*------------------------------------ESTILOS FOOTER----------------------------------*/
+/*En este estilo separamos las redes sociales del logo*/
+footer
+{
+  display: flex;
+  width: 100%;
+  height:110px;
+  background: var(--primary-color);
+  background: linear-gradient(55deg, var(--primary-color) 22%, #40916c 69%, var(--primary-color) 100%);
+  min-width: 320px;
+  margin-top: auto;
+}
+
+/*Mismos tamaños para ambos section*/
+footer section
+{
+  display: flex;
+  width:50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos para que las redes sociales salgan alineados*/
+.unorganized-media
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.unorganized-media li
+{
+  list-style: none;
+}
+
+.unorganized-media img
+{
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+}
+
+.logo-footer
+{
+  width: 85px;
+  height: 85px;
+}

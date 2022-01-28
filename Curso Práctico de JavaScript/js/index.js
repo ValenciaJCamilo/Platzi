@@ -14,7 +14,7 @@ window.sr=ScrollReveal();
         }
     });
 
-    sr.reveal('.rubik-logo, .geometria-logo, .descuento-logo, .estadistica-logo',{
+    sr.reveal('.rubik-logo, .geometria-logo, .descuento-logo, .estadistica-logo, .salario-logo',{
         delay:700,
         rotate:{
             x:1,

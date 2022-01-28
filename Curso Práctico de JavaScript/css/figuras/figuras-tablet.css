@@ -47,8 +47,14 @@
   border-radius: 10px;
   border-bottom: -20%;
   margin-top: -40px;
-  background-color:#6D70F5;
+  -webkit-box-shadow: inset 0px 0px 110px -21px #5558bd3d;
+  -moz-box-shadow: inset 0px 0px 110px -21px #5558bd59;
+  box-shadow: inset 0px 0px 110px -21px #5558bd65;
   margin-left: 10px;
+}
+
+.figuras{
+  margin-top: 0px;
 }
 
 /*Redes sociales footer*/
