@@ -242,10 +242,24 @@ function calcularModa(){
     //La moda es el último elemento del array "listarUsuario2Array"
     const moda = listarUsuario2Array[listarUsuario2Array.length - 1];
     const resultado2 = document.getElementById("resultadoModa");
-    resultado2.innerText = "La moda es " + moda[0] +' ya que se repite ' + moda[1] + ' veces' ;
+    function resModa()
+    {
+        let resultadoFinal= [];
+        for (let [key, value] of listarUsuario2Array) {
+            if (value == moda[1] && moda[1]>1){
+                resultadoFinal.push(key);
+            } 
+        }
+        if(resultadoFinal!=0){ 
+            const resultado2 = document.getElementById("resultadoModa");
+            resultado2.innerText = "La moda es: "+resultadoFinal;
+        } else
+        {
+            resultado2.innerText="Ups, no existen datos repetidos"
+        }
+    }
+    resModa();
 }
-
-
 
 
 function numeroDatos2 () {
