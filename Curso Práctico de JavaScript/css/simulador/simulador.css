@@ -170,6 +170,125 @@ header {
 
 
 
+/*------------------------------------ESTILOS MAIN----------------------------------*/
+.main-descuento--container
+{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    text-align: center;
+    width:100%;
+    align-self: center;
+    margin-top:30px;
+}
+
+.main-descuento--form
+{
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+}
+.descuento--titulo
+{
+    font-weight: 600;
+    font-size:2.6rem;
+    color:#3E3C55;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.descuento-img
+{
+    max-width:85%;
+    max-height: 85%;
+}
+
+.txt_field--label
+{
+    font-size:1.8rem;
+    margin-bottom:20px;
+    color:#3E3C55;
+}
+
+.txt_field-valor,.txt_field-descuento
+{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt_field-valor
+{
+    margin-top: -30px;
+    margin-bottom: -0px;
+}
+
+.txt_field--input
+{
+    margin-top: -10px;
+    padding: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    color: #40916c;
+    font-weight: bold;
+    font-size: 1.9rem;
+    border-style: none;
+    justify-content: center;
+    outline: none;
+    text-align: center;
+    width: 40%;
+    border: 1px solid #3e3c5542;
+    border-radius: 10px;
+}
+
+.button-descuento
+{
+    padding: 10px 0 10px 0;
+    width: 40%;
+    align-self: center;
+    text-align: center;
+    margin: 10px 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    overflow: hidden;
+    transition: 0.3s;
+    border:2px solid #3e3c5546;
+}
+
+.button-descuento:hover
+{
+    color:var(--light-color);
+    background:#3E3C55;
+    box-shadow: 0 0 10px white, 0 0 30px white, 0 0 50px white;
+    font-weight: bold;
+}
+
+.contenedor-resultado
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.individual-res
+{
+  margin:10px;
+}
+.result
+{
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 1.9rem;
+    color: #3E3C55;
+    font-weight: 700;
+
+}
 
 
 

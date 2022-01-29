@@ -1,0 +1,49 @@
+/*Título principal*/
+.header--title-container h1
+{
+  font-size: 8rem;
+  margin-top: -25px;
+}
+
+/*Subtítulo*/
+.header--title-container p
+{
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    margin-top: 10px;
+}
+
+.main-descuento--container
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt_field--input {
+    width: auto;
+}
+
+.button-descuento {
+    width: 240px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.contenedor-resultado {
+    width: 380px;
+}
+/*Redes sociales footer*/
+.unorganized-media img
+{
+  width: 50px;
+  height: 50px;
+}
+
+/*Logo footer*/
+.logo-footer
+{
+  width: 95px;
+  height: 95px;
+}
