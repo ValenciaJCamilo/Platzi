@@ -113,28 +113,9 @@ header {
   line-height: 0.88em;
   outline:none;
   letter-spacing: 1.6Px;
-  animation: animate 8s linear infinite;
   -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.089));
 }
 
-@keyframes animate
-{
-  0%,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%
-  {
-    color:#fff;
-    text-shadow: none;
-  }
-  50%,40%,30%,20%,10%
-  {
-    color: #fff;
-    text-shadow: 
-    0 0 10px rgb(54, 54, 54),
-    0 0 20px black,
-    0 0 40px black,
-    0 0 80px black,
-    0 0 160px black;
-  }
-}
 
 .header--title-container p
 {

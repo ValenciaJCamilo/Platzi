@@ -26,6 +26,7 @@ html
 {
     font-size: 62.5%;
     font-family: 'Commissioner', sans-serif;
+    scroll-behavior: smooth;
     /*Scroll suave al dar clic en "Conoce Nuestros Planes"*/
     scroll-behavior: smooth;
     /*Color de fondo gradiente*/
@@ -115,25 +116,6 @@ header {
   -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
   line-height: 0.88em;
   outline:none;
-  animation: animate 12s linear infinite;
-}
-@keyframes animate
-{
-  0%,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%
-  {
-    color: #F27182;
-    text-shadow: none;
-  }
-  50%,40%,30%,20%,10%
-  {
-    color: #FECF66;
-    text-shadow: 
-    0 0 10px #f3576c,
-    0 0 20px #f3576c,
-    0 0 40px #f3576c,
-    0 0 80px #f3576c,
-    0 0 160px #f3576c;
-  }
 }
 
 /*Estilo del párrafo "Este es tu sitio ideal..." <p>*/
