@@ -14,3 +14,6 @@
 - Puedes ver mis **apuntes**  [aquí](https://steep-bridge-4be.notion.site/Sistemas-de-Dise-o-c3fdf12760234226b23f03c42aa88063 "aquí") 
 
 - Puedes ver mi **diploma** [aquí](https://platzi.com/p/Valenciajcamilo/curso/1420-course/diploma/detalle/ "aquí")
+
+
+[![Gif](https://miro.medium.com/max/3000/1*0zr0h8EydOH9n7f9YbF_lA.gif "Gif")](https://miro.medium.com/max/3000/1*0zr0h8EydOH9n7f9YbF_lA.gif "Gif")
