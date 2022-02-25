@@ -15,5 +15,10 @@
 
 - Puedes ver mi **diploma** [aquí](https://platzi.com/p/Valenciajcamilo/course/2474-css-grid/diploma/detalle/ "aquí")
 
+------------
+
+En este curso se realiza una pequeña vista aplicando las propiedades de Grid. Se presenta a continuación.
+
+------------
 
 [![Gif](https://cloudfour.com/wp-content/uploads/2017/03/grid-responsive.gif "Gif")](https://cloudfour.com/wp-content/uploads/2017/03/grid-responsive.gif "Gif")
