@@ -31,6 +31,8 @@
 15. [Curso de Responsive Design: Maquetación Mobile First](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Responsive%20Design%20-%20Maquetaci%C3%B3n%20Mobile%20First "Curso de Responsive Design: Maquetación Mobile First")
 16. [Curso de Diseño para Developers](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Dise%C3%B1o%20para%20Programadores "Curso de Diseño para Developers")
 17. [Curso de Sistemas de Diseño](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Sistemas%20de%20Dise%C3%B1o "Curso de Sistemas de Diseño")
+18. [Curso de CSS Grid Básico](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20CSS%20Grid%20B%C3%A1sico "Curso de CSS Grid Básico")
+
 
 <h3>Intermedio</h3>
 
