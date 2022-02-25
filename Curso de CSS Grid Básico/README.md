@@ -19,6 +19,8 @@
 
 En este curso se realiza una pequeña vista aplicando las propiedades de Grid. Se presenta a continuación.
 
+[![Proyecto](https://github.com/ValenciaJCamilo/Platzi/blob/main/Curso%20de%20CSS%20Grid%20B%C3%A1sico/Proyecto/images/Proyecto.png?raw=true "Proyecto")](https://github.com/ValenciaJCamilo/Platzi/blob/main/Curso%20de%20CSS%20Grid%20B%C3%A1sico/Proyecto/images/Proyecto.png?raw=true "Proyecto")
+
 ------------
 
 [![Gif](https://cloudfour.com/wp-content/uploads/2017/03/grid-responsive.gif "Gif")](https://cloudfour.com/wp-content/uploads/2017/03/grid-responsive.gif "Gif")
