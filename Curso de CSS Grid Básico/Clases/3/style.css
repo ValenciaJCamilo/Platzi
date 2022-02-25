@@ -1,0 +1,36 @@
+.contenedor{
+    border:5px solid rgb(255, 0, 0);
+    background-color: yellow;
+
+    /*Para las grillas usamos GRID*/
+    display:grid; 
+
+    /*Aquí habrá una grilla de 3 columnas*/
+    /* grid-template-columns: 100px 200px 300px; */
+    grid-template-rows:100px 200px;
+
+    /*Aquí habrá una grilla de 2 filas*/
+    /* grid-template-rows: 150px 250px; */
+
+    /*Cuando no sabemos qué espacio usarán hacemos uso de GRID-AUTO-ROWS*/
+    /* grid-auto-rows: 200px; */
+    grid-auto-columns: 100px;
+
+    /*Aquí modificamos la manera en cómo se llena la grilla*/
+    grid-auto-flow: column;
+
+    /*Para crear espacios entre ellos*/
+    /*Espacio entre filas que queremos tener*/
+    row-gap: 100px;
+
+    /*Espacio entre columnas que queremos tener*/
+    column-gap:100px;
+
+    /*Espacio entre filas y columnas*/
+    gap: 200px;
+}
+
+.item{
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+}

@@ -1,0 +1,30 @@
+.contenedor{
+    /*Espacio entre fila y columna*/
+    gap:20px;
+    /*Damos un borde de 5px*/
+    border: 5px solid rgb(52, 221, 52);
+
+    /*Decimos que es grid*/
+    display: grid;
+    /*Todas las columnas serán de 150px*/
+    grid-auto-columns: 150px;
+    /*Todas las filas serán de 150px*/
+    grid-template-rows: 150px 150px 150px;
+    /*Se llenará automáticamente*/
+    grid-auto-flow: column;
+
+    /*Centro la grilla completa*/
+    justify-content: center;
+
+}
+
+.item{
+    /*Borde */
+    font-size: 4rem;
+    /*Display flex para acomodar el número*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    /*Color de fondo*/
+    background-color: rgb(68, 190, 68);
+}

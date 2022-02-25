@@ -1,0 +1,24 @@
+.contenedor{
+    /*Espacio entre fila y columna*/
+    gap:20px;
+    /*Damos un borde de 5px*/
+    border: 5px solid rgb(52, 221, 52);
+    /*Decimos que es grid*/
+    display: grid;
+    /*Todas las columnas serán de 150px*/
+    grid-auto-columns: 150px;
+    /*Todas las filas serán de 150px*/
+    grid-template-rows: 150px 150px;
+    /*Se llenará automáticamente*/
+    grid-auto-flow: column;
+    /*Centro la grilla completa*/
+    justify-content: center;
+    justify-items: end;
+    align-items: end;
+    background-color: rgb(43, 255, 0);
+}
+
+.item{
+    font-size: 4rem;
+    background-color: rgb(137, 0, 228);
+}

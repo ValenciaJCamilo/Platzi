@@ -1,0 +1,75 @@
+/*===============SECCIÓN 1=================*/
+.contenedor{
+    border:5px solid rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows:75px 75px 75px;
+    place-content: center;
+
+}
+
+.item{
+    font-size: 4rem;
+}
+
+.item-1{
+    border:5px #f8bbd0;
+    background-color: #bdbdbd;
+    /*Inicia en la columna 1 y finaliza en la 4*/
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item-2{
+    border:5px #a5335b;
+    background-color: #4a77b3;
+    /*Inicia en la fila 2 y finaliza en la 4*/
+    grid-row: 2/4;
+}
+.item-3{
+    border:5px #9fca3b;
+    background-color: #d35f1c;
+    /*Area total. Inicia en la fila 2 y columna 2 (2/2)
+    El final de nuestra grilla. Fila 4 y columna 4(4/4)*/
+    grid-area: 2 / 2 / 4 / 4;
+}
+
+
+
+/*===============SECCIÓN 2=================*/
+.contenedor1{
+    border:5px solid rgb(0, 255, 0);
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows:75px 75px 75px;
+    place-content: center;
+    /*La distribución en el área*/
+    grid-template-areas: 
+    "header header header"
+    "side main main"
+    "side main main";
+}
+
+.item1{
+    font-size: 4rem;
+}
+
+.item-11{
+    border:5px #f8bbd0;
+    background-color: #bdbdbd;
+    /*Definimos el template a usar*/
+    grid-area: header;
+}
+.item-22{
+    border:5px #a5335b;
+    background-color: #4a77b3;
+    /*Definimos el template a usar*/
+    grid-area: side;
+}
+.item-33{
+    border:5px #9fca3b;
+    background-color: #d35f1c;
+    /*Definimos el template a usar*/
+    grid-area: main;
+}
