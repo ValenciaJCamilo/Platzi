@@ -92,3 +92,15 @@
 
 [![Gif](https://static.wixstatic.com/media/97b295_5aaf0d7863b54c419b592beb587f93ee~mv2.gif "Gif")](https://static.wixstatic.com/media/97b295_5aaf0d7863b54c419b592beb587f93ee~mv2.gif "Gif")
 
+
+------------
+<h2>Desarrollo Web Backend con PHP <img src="https://static.platzi.com/media/learningpath/badges/6829a61e-5fdd-4855-9446-1304b22c9491.jpg" width="30px"></h2>
+
+
+1. [Curso de Programación Básica](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Programaci%C3%B3n%20B%C3%A1sica "Curso de Programación Básica")
+2. [Curso Básico de Algoritmos](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20B%C3%A1sico%20de%20Algoritmos%20y%20Pensamiento%20L%C3%B3gico "Curso Básico de Algoritmos")
+3. [Curso de Introducción a la Terminal y Línea de Comandos](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Introducci%C3%B3n%20a%20la%20Terminal%20y%20L%C3%ADnea%20de%20Comandos "Curso de Introducción a la Terminal y Línea de Comandos")
+4. [Curso Profesional de Git y GitHub](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Profesional%20de%20Git%20y%20GitHub "Curso Profesional de Git y GitHub")
+5. [Curso PHP: Instalación, Fundamentos y Operadores](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20PHP%20-%20Instalaci%C3%B3n%2C%20Fundamentos%20y%20Operadores "Curso PHP: Instalación, Fundamentos y Operadores")
+
+[![Gif](https://thumbs.gfycat.com/ExcitableBleakElephant-max-1mb.gif "Gif")](https://thumbs.gfycat.com/ExcitableBleakElephant-max-1mb.gif "Gif")
