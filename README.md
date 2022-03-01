@@ -41,6 +41,13 @@
 3. [Curso de ECMAScript 6+](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20ECMAScript%206%2B "Curso de ECMAScript 6+")
 
 
+<h3>Complementario</h3>
+
+1. [Curso de Fundamentos de Bases de Datos](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Fundamentos%20de%20Bases%20de%20Datos "Curso de Fundamentos de Bases de Datos")
+2. [Curso de SQL y MySQL](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20SQL%20y%20MySQL "Curso de SQL y MySQL")
+
+
+
 [![Gif](https://onlylinks.pro/wp-content/uploads/2021/01/main-qimg-fa7b4bdc3b2f73e749e5c2c646d4ae13.gif "Gif")](https://onlylinks.pro/wp-content/uploads/2021/01/main-qimg-fa7b4bdc3b2f73e749e5c2c646d4ae13.gif "Gif")
 
 ------------
