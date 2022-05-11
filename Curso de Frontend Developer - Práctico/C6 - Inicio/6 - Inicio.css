@@ -1,0 +1,130 @@
+/*Variables base para el proyecto*/
+:root {
+  --background-color: #a0a0a0;
+  --text-input: #e9e9e9;
+  --hospital-green1: #4083db;
+  --hospital-green2: #356cb4;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --sm: 16px;
+  --md: 19px;
+  --lg: 22px;
+}
+
+/*Tipo de letra de todo el proyecto*/
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/*Seteo los valores por defecto de estilo del navegador*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilo del contenedor de la tarjeta. Esto lo que hace es posicionar una tarjeta al lado de otra
+de manera automática*/
+.cards-container {
+  /*Display tipo grid*/
+  display: grid;
+  /*Llenado automático de columnas de las tarjetas*/
+  grid-template-columns: repeat(auto-fill, 240px);
+  /*Propiedad para dar un espaciado en todos lados entre las tarjetas*/
+  gap: 25px;
+  /*Centrar todas nuestas cards*/
+  place-content: center;
+}
+
+/*Establecemos el tamaño de la tarjeta contenedora de la imagen*/
+.product-card {
+  width: 240px;
+}
+
+/*Estlabecemos el tamaño de la imagen*/
+.product-card img {
+  /*Ancho de la imagen*/
+  width: 100%;
+  /*Alto de la imangen*/
+  height: 240px;
+  /*Borde de la imagen*/
+  border-radius: 15px;
+  /*Propiedad para que la imagen se adecue al tamaño predeterminado que le establecemos.
+    Sirve para que la imagen no se encoja automáticamente*/
+  object-fit: cover;
+  /*Para que al pasar por la tarjeta salga la manito*/
+  cursor:pointer;
+}
+
+/*Se alínea el texto con el carrito de compras*/
+.product-info {
+  /*Display de tipo flex*/
+  display: flex;
+  /*Space-between para alinear el texto con el icono*/
+  justify-content: space-between;
+  /*Centramos*/
+  align-items: center;
+  /*Ponemos un margen superior de 12px*/
+  margin-top:12px;
+}
+
+/*Estilo del carrito de compras*/
+.product-info figure img {
+  /*Ancho de la imagen*/
+  width: 35px;
+  /*Alto de la imagen*/
+  height: 35px;
+}
+
+/*Estilo del VALOR del producto*/
+.product-info p:nth-child(1)
+{
+    /*Texto en negrita*/
+    font-weight: bold;
+    /*Tamaño de letra*/
+    font-size: var(--md);
+    /*Margen inferior*/
+    margin-bottom: 4px;
+}
+
+/*Estilo del NOMBRE del producto*/
+.product-info p:nth-child(2)
+{
+    /*Tamaño de letra*/
+    font-size: var(--sm);
+    /*Color de texto*/
+    color:var(--background-color);
+}
+
+
+/*ESTILO PARA EL MÓVIL*/
+@media (max-width: 640px) {
+  /*Estilo del contenedor de la tarjeta. Esto lo que hace es posicionar una tarjeta al lado de otra
+de manera automática*/
+  .cards-container {
+    /*Display tipo grid*/
+    display: grid;
+    /*Llenado automático de columnas de las tarjetas*/
+    grid-template-columns: repeat(auto-fill, 140px);
+    /*Propiedad para dar un espaciado en todos lados entre las tarjetas*/
+    gap: 25px;
+  }
+
+  /*Establecemos el tamaño de la tarjeta contenedora de la imagen*/
+  .product-card {
+    width: 140px;
+  }
+
+  /*Estlabecemos el tamaño de la imagen*/
+  .product-card img {
+    /*Ancho de la imagen*/
+    width: 100%;
+    /*Alto de la imangen*/
+    height: 140px;
+    /*Borde de la imagen*/
+    border-radius: 15px;
+    /*Propiedad para que la imagen se adecue al tamaño predeterminado que le establecemos.
+    Sirve para que la imagen no se encoja automáticamente*/
+    object-fit: cover;
+  }
+}

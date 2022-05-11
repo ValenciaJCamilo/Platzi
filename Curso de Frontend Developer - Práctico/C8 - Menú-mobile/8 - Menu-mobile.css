@@ -1,0 +1,78 @@
+/*Variables base para el proyecto*/
+:root {
+  --background-color: #a0a0a0;
+  --text-input: #e9e9e9;
+  --hospital-green1: #4083db;
+  --hospital-green2: #356cb4;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --sm: 16px;
+  --md: 19px;
+  --lg: 22px;
+}
+
+/*Tipo de letra de todo el proyecto*/
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/*Seteo los valores por defecto de estilo del navegador*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Separamos toda la lista del borde de la pantalla*/
+.mobile-menu {
+  padding: 24px;
+}
+
+/*Estilo a las etiquetas anchor {a}*/
+.mobile-menu a {
+  /*Quitamos la línea decorativa*/
+  text-decoration: none;
+  /*Establecemos el color del texto negro*/
+  color: var(--black-color);
+  /*Le ponemos negrita*/
+  font-weight: bold;
+}
+
+/*Estilos lista desorganizada*/
+.mobile-menu ul {
+  /*Seteamos valores de padding*/
+  padding: 0;
+  /*Esto me da el espaciado entre cada lista
+      (Recordar que esto es en orden de las manecillas del reloj*/
+  margin: 24px 0 0 0;
+  /*Eliminamos punto de lista decorativa*/
+  list-style: none;
+}
+
+/*Linea separadora entre la primer y segunda lista*/
+.mobile-menu ul:nth-child(1) {
+  border-bottom: 1px solid var(--background-color);
+}
+
+/*Separar la tercer lista y llevarla hasta el final de la página*/
+.mobile-menu ul:nth-child(3) {
+  position: absolute;
+  bottom:0;
+}
+
+/*Espaciado de las listas. TODAS 24px*/
+.mobile-menu ul li {
+  margin-bottom: 24px;
+}
+
+/*Texto del email*/
+.mobile-menu .email {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/*Texto de Sign-out*/
+.mobile-menu .sign-out {
+  color: var(--hospital-green1);
+  font-size: 0.8rem;
+}
