@@ -74,7 +74,16 @@
 
 <h2>Bases de Datos <img src="https://static.platzi.com/media/learningpath/badges/10.png" width="30px"></h2>
 
+
+<h3>Básico</h3>
+
 1. [Curso de Fundamentos de Bases de Datos](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Fundamentos%20de%20Bases%20de%20Datos "Curso de Fundamentos de Bases de Datos")
+2. [Curso de Fundamentos de Ingeniería de Software](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Fundamentos%20de%20Ingenier%C3%ADa%20de%20Software "Curso de Fundamentos de Ingeniería de Software")
+3. [Curso de Introducción a la Terminal y Línea de Comandos](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Introducci%C3%B3n%20a%20la%20Terminal%20y%20L%C3%ADnea%20de%20Comandos "Curso de Introducción a la Terminal y Línea de Comandos")
+
+<h3>Intermedio</h3>
+
+1. [Curso de PostgreSQL](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20PostgreSQL "Curso de PostgreSQL")
 
 [![Gif](https://lh4.googleusercontent.com/A8Awrv13jAf66rIsQlfr3GDy8Y38JSQymElszPvV5-UoplsAkqdMKI8rwZup4LVWu6JLRSkYMRNZJ0_vRnAMlkhI7SGAJeaWLhL89PQ9O3jvwZGU6_mmxYdWjZ33GvUDwU1ahh0T "Gif")](https://lh4.googleusercontent.com/A8Awrv13jAf66rIsQlfr3GDy8Y38JSQymElszPvV5-UoplsAkqdMKI8rwZup4LVWu6JLRSkYMRNZJ0_vRnAMlkhI7SGAJeaWLhL89PQ9O3jvwZGU6_mmxYdWjZ33GvUDwU1ahh0T "Gif")
 
