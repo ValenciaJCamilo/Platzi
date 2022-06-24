@@ -7,7 +7,6 @@
 ------------
 
 <h1 align="center">TABLA DE CONTENIDO </h1>
-<h2 align="center"><img src="https://acegif.com/wp-content/gifs/book-95.gif" width="150px"></h2>
 
 ------------
 
