@@ -31,6 +31,7 @@
 16. [Curso de Diseño para Developers](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Dise%C3%B1o%20para%20Programadores "Curso de Diseño para Developers")
 17. [Curso de Sistemas de Diseño](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Sistemas%20de%20Dise%C3%B1o "Curso de Sistemas de Diseño")
 18. [Curso de CSS Grid Básico](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20CSS%20Grid%20B%C3%A1sico "Curso de CSS Grid Básico")
+19. [Curso Práctico de Maquetación en CSS](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Practico%20de%20Maquetacion%20en%20CSS "Curso Práctico de Maquetación en CSS")
 
 
 <h3>Intermedio</h3>
