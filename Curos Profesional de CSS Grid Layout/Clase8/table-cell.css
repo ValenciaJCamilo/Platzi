@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*Estilos elementos general*/
+.element {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+/*Para este display es importante que sea de tipo BLOQUE porque de resto no servirá*/
+.element1 {
+    background: rgb(255, 182, 65);
+    display: inline-block;
+}
+
+.element2 {
+    background: rgb(255, 1, 43);
+    display: inline-block;
+    color:white;
+}
+
+.element3 {
+    background: rgb(72, 255, 0);
+    display: inline-block;
+}
+
+/*Estilos contenedor general*/
+.container {
+    background: turquoise;
+    border: 1px solid white;
+    width: 180px;
+    height: 180px;
+}
+
+/*TOP LEFT*/
+.container1 {
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+/*CENTER LEFT*/
+.container2 {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+}
+/*BOTTOM LEFT*/
+.container3 {
+    display: table-cell;
+    text-align: left;
+    vertical-align: bottom;
+}
+/*TOP CENTER*/
+.container4 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+/*CENTER CENTER*/
+.container5 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+/*BOTTOM CENTER*/
+.container6 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+}
+/*TOP RIGHT*/
+.container7 {
+    display: table-cell;
+    text-align: right;
+    vertical-align: top;
+}
+/*CENTER RIGHT*/
+.container8 {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+/*BOTTOM RIGHT*/
+.container9 {
+    display: table-cell;
+    text-align: right;
+    vertical-align: bottom;
+}

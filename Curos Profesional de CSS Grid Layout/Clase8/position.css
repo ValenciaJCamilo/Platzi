@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    font-family: 'Lato', sans-serif;
+    width: 550px;
+}
+
+.container {
+    background: turquoise;
+    width: 180px;
+    height: 180px;
+    /*Se adhieren a él*/
+    position: relative;
+}
+
+.element {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.element1 {
+    background: papayawhip;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.element2 {
+    background: papayawhip;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    /*Distancia. Se calcula con base al tañaño del elemento. 0 para X y -50% en Y*/
+    transform: translate(0, -50%);
+}
+
+.element3 {
+    background: papayawhip;
+    position: absolute;
+    left: 0;
+    bottom:0;
+}
+
+.element4 {
+    background: pink;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.element5 {
+    background: pink;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.element6 {
+    background: pink;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+}
+
+.element7 {
+    background: lightcyan;
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%, 0);
+}
+
+.element8 {
+    background: lightcyan;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+}
+
+.element9 {
+    background: lightcyan;
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%, -100%);
+}

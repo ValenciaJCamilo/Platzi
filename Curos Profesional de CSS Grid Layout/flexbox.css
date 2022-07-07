@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    font-family: 'Lato', sans-serif;
+    width: 550px;
+}
+
+.container {
+    background: turquoise;
+    width: 180px;
+    height: 180px;
+}
+
+.element {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.element1 {
+    background: papayawhip;
+}
+
+.element2 {
+    background: pink;
+}
+
+.element3 {
+    background: lightcyan;
+}
+/*Top Left*/
+.container1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+/*Center Left*/
+.container2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*Bottom left*/
+.container3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+/*Center Top*/
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+/*Center center*/
+.container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Center bottom*/
+.container6 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/*Top right*/
+.container7 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+/*Center right*/
+.container8 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/*Bottom right*/
+.container9 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

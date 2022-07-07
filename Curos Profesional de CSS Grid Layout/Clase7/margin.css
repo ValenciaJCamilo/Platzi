@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.wrapper {
+    /*Uso de grid*/
+    display: grid;
+    /*3 columnas*/
+    grid-template-columns: repeat(3, 1fr);
+    /*Espaciados*/
+    gap: 5px;
+    /*Fuente*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*Ancho*/
+    width: 550px;
+}
+.container {
+    background: turquoise;
+    /*Ancho y largo cuadros principales*/
+    width: 180px;
+    height: 180px;
+}
+.element {
+    width: 60px;
+    height: 60px;
+    background: papayawhip;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.element1 {
+    margin: 0;
+}
+.element2 {
+    margin: 60px 0;
+}
+.element3 {
+    margin: 120px 0;
+}
+.element4 {
+    background: pink;
+    /*Auto alinea de forma horizontal*/
+    margin: 0 auto;
+}
+.element5 {
+    background: pink;
+    margin: 60px auto;
+}
+.element6 {
+    background: pink;
+    margin: 120px auto;
+}
+.element7 {
+    background: lightcyan;
+    margin: 0 120px;
+}
+.element8 {
+    background: lightcyan;
+    margin: 60px 120px;
+}
+.element9 {
+    background: lightcyan;
+    margin: 120px 120px;
+}
