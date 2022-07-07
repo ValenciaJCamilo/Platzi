@@ -7,7 +7,6 @@
 > Fecha de inicio: Junio 28, 2022
 > <br>
 > Fecha de finalización: Julio 6, 2022
-
 ------------
 - Puedes ver el **curso** [aquí](https://platzi.com/cursos/css-grid-layout/ "aquí")
 
