@@ -2,7 +2,7 @@
 
 # CSS GRID LAYOUR PROFESIONAL
 
-> *Docente:  Estefany Aguila*
+> *Docente:  Estefany Aguilar*
 > <br>
 > Fecha de inicio: Junio 28, 2022
 > <br>
