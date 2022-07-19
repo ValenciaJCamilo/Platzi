@@ -35,6 +35,8 @@
 20. [Curso Profesional de CSS Grid Layout](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Profesional%20de%20CSS%20Grid%20Layout "Curso Profesional de CSS Grid Layout")
 21. [Curso de Diseño Web con CSS Grid y Flexbox](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Dise%C3%B1o%20Web%20con%20CSS%20Grid%20y%20Flexbox "Curso de Diseño Web con CSS Grid y Flexbox")
 22. [Curso de Transformaciones y Transiciones en CSS](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Transformaciones%20y%20Transiciones%20en%20CSS "Curso de Transformaciones y Transiciones en CSS")
+23. [Curso de Animaciones con CSS](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20Animaciones%20con%20CSS "Curso de Animaciones con CSS")
+
 
 
 <h3>Intermedio</h3>
