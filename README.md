@@ -42,8 +42,9 @@
 <h3>Intermedio</h3>
 
 1. [Curso Básico de JavaScript](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20B%C3%A1sico%20de%20JavaScript "Curso Básico de JavaScript")
-2. [Curso Práctico de JavaScript](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Pr%C3%A1ctico%20de%20JavaScript "Curso Práctico de JavaScript")
-3. [Curso de ECMAScript 6+](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20ECMAScript%206%2B "Curso de ECMAScript 6+")
+2. [Nuevo Curso Práctico de JavaScript](https://github.com/ValenciaJCamilo/Platzi/tree/main/Nuevo%20Curso%20Pr%C3%A1ctico%20de%20JavaScript "Nuevo Curso Práctico de JavaScript")
+3. [Curso Práctico de JavaScript](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20Pr%C3%A1ctico%20de%20JavaScript "Curso Práctico de JavaScript")
+4. [Curso de ECMAScript 6+](https://github.com/ValenciaJCamilo/Platzi/tree/main/Curso%20de%20ECMAScript%206%2B "Curso de ECMAScript 6+")
 
 
 <h3>Complementario</h3>
