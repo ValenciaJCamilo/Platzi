@@ -1,0 +1,89 @@
+/*Variables base para el proyecto*/
+:root {
+    --background-color: #a0a0a0;
+    --text-input: #e9e9e9;
+    --hospital-green1: #4083db;
+    --hospital-green2: #356cb4;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --sm: 16px;
+    --md: 19px;
+    --lg: 22px;
+  }
+  
+  /*Tipo de letra de todo el proyecto*/
+  body {
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  /*Seteo los valores por defecto de estilo del navegador*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+/*Contenedor de la barra de navegación*/
+.desktop-menu
+{
+    /*Ancho de 100px*/
+    width: 100px;
+    /*Alto automático*/
+    height: auto;
+    /*Se crea un borde*/
+    border:1px solid var(--background-color);
+    /*Se genera un bordeado*/
+    border-radius: 6px;
+    padding:20px;
+}
+
+/*Se quita el punto por defecto de las listas
+desordenadas*/
+.desktop-menu ul
+{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+/*Alineamos a la derecha los textos*/
+.desktop-menu ul li
+{
+    text-align: end;
+}
+
+/*Texto 1 y 2 en negrita*/
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2)
+{
+    font-weight: bold;
+}
+
+/*Estilizamos el SIGN OUT*/
+.desktop-menu ul li:last-child
+{
+    padding-top:20px;
+    border-top: 1px solid var(--background-color);
+}
+
+/*Estilizamos el color y tamaño del SIGN OUT*/
+.desktop-menu ul li:last-child a
+{
+    color:var(--hospital-green1);
+    font-size: 0.8rem;
+}
+
+/*Estilizamos los otros dos elementos*/
+.desktop-menu ul li a
+{
+    /*Color del texto en negro*/
+    color:var(--black-color);
+    /*Se quita la línea de hipervínculo*/
+    text-decoration: none;
+    /*Se establece un margen inferior*/
+    margin-bottom: 20px;
+    /*Para que el margen se pueda aplicar, el elemento
+    debe cambiar y ser inline-block. Esto es porque en los 
+    elementos inline no se puede cambiar el márgen ni padding */
+    display:inline-block;
+}
+

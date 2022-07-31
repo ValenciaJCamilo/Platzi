@@ -1,0 +1,214 @@
+/*Variables base para el proyecto*/
+:root
+{
+    --background-color: #a0a0a0;
+    --text-input:#e9e9e9;
+    --hospital-green1:#4083db;
+    --hospital-green2:#356cb4;
+    --white-color:#ffffff;
+    --black-color:#000000;
+    --sm: 16px;
+    --md: 19px;
+    --lg: 22px;
+}
+
+/*Tipo de letra de todo el proyecto*/
+body
+{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Seteo los valores por defecto de estilo del navegador*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilo del contenedor padre*/
+.login {
+    /*Dimensiones totales*/
+    width: 100%;
+    height: 100vh;
+    /*Uso de GRID*/ 
+    display: grid;
+    /*Esto me centra en X y en Y*/
+    place-items: center;
+  }
+
+/*Estilo al contenedor texto y logo*/
+.form-container
+{
+    /*Uso del GRID*/
+    display: grid;
+    /*Título y subtitulo auto, es decir, que tome el tamaño que desee*/
+    grid-template-rows: auto 1fr auto;
+    /*Un ancho de 300px*/
+    width: 300px;
+    /*Alinea el logo del email*/
+    justify-items: center;
+}
+
+/*Estilo del logo*/
+.logo
+{
+  /*Aumentamos el tamaño del logo*/
+  width: 150px;
+  /*Le ponemos margen para hacer una separación entre él y el título*/
+  margin-bottom: 50px;
+  /*Centramos en la GRID que tenemos el logo */
+  justify-self: center;
+  /*Esto lo ponemos para que NO APAREZCA EN DESKTOP*/
+  display:none;
+}
+
+/*Estilo del form*/
+.form
+{
+  /*Con flex se posicionan uno al lado del otro*/
+  display: flex;
+  /*Le cambiamos la dirección*/
+  flex-direction: column;
+  /*Ponemos un márgen en la parte de abajo. 12px*/
+  margin-bottom: 12px;
+}
+
+/*Estilo del anchor Forgot Password*/
+.form a
+{
+    /*Cambio de color del texto*/
+    color:var(--hospital-green1);
+    /*Cambio de tamaño de texto*/
+    font-size: var(--sm);
+    /*Centrar el texto*/
+    text-align: center;
+    /*Quitar la línea de hipervinculo*/
+    text-decoration: none;
+    /*Separar el vínculo del botón Log in*/
+    margin-top: 30px;
+}
+
+/*Estilo del label*/
+.label
+{
+  /*Cambiamos el tamaño de la fuente*/
+  font-size: var(--sm);
+  /*Ponemos una negrita*/
+  font-weight: bold;
+  /*4 píxeles siguiente el estándar*/
+  margin-bottom: 4px;
+}
+
+/*Estilo del input (campo)*/
+.input
+{
+  /*Cambiamos el color de fondo de los campos*/
+  background-color: var(--text-input);
+  /*Quitamos el borde por defecto*/
+  border:none;
+  /*Redondeamos el borde a 8px*/
+  border-radius: 8px;
+  /*Le cambiamos la altura a los inputs a 35px*/
+  height: 35px;
+  /*Cambiamos el tamaño de letra*/
+  font-size: var(--md);
+  /*Le damos un pading de 6px a la caja para que no quede pegado el texto con la caja*/
+  padding: 6px;
+  /*Le pongo un márgen inferior de 20px a los inputs para que tengan un espaciado entre ellos */
+  margin-bottom: 20px;
+}
+
+/*Separar el espacio entre los input*/
+.input-email
+{
+  margin-bottom: 22px;
+}
+
+/*Estilizamos el botón Log in*/
+.primary-button
+{
+  /*Establecemos el color del botón*/
+  background-color: var(--hospital-green1);
+  /*Le damos unos bordes de 8px*/
+  border-radius: 8px;
+  /*Quitamos los border por defecto*/
+  border:none;
+  /*Establecemos el color del texto*/
+  color:var(--white-color);
+  /*Establecemos el ancho del botón para que ocupe el 100% en X*/
+  width:100%;
+  /*Nos ayuda para que al momento de pasar el cursor por encima, la flecha cambie
+  y pase a ser uma manita, de forma que sepamos que es un elemento para dar clic*/
+  cursor: pointer;
+  /*Establecemos el tamaño de funte del texto*/
+  font-size: var(--md);
+  /*Le damos una negrita al texto*/
+  font-weight: bold;
+  /*Ponemos más alto el botón, es decir, "engrosarlo" en Y*/
+  height: 50px;
+}
+
+.primary-button:hover
+{
+  background-color: var(--hospital-green2)
+}
+
+/*Estilizamos el botón Sign Up*/
+.secondary-button
+{
+  /*Establecemos el color del botón*/
+  background-color: var(--white-color);
+  /*Le damos unos bordes de 8px*/
+  border-radius: 8px;
+  /*Le ponemos borde*/
+  border:1px solid var(--hospital-green1);
+  /*Establecemos el color del texto*/
+  color:var(--hospital-green1);
+  /*Establecemos el ancho del botón para que ocupe el 100% en X*/
+  width:84%;
+  /*Nos ayuda para que al momento de pasar el cursor por encima, la flecha cambie
+  y pase a ser uma manita, de forma que sepamos que es un elemento para dar clic*/
+  cursor: pointer;
+  /*Establecemos el tamaño de funte del texto*/
+  font-size: var(--md);
+  /*Le damos una negrita al texto*/
+  font-weight: bold;
+  /*Ponemos más alto el botón, es decir, "engrosarlo" en Y*/
+  height: 50px;
+  /*Separamos el botón del anchor*/
+  margin-top: 50px;
+}
+
+.secondary-button:hover
+{
+  background-color: var(--hospital-green1);
+  color: var(--white-color);
+  /*Estilo de sombra degradada al botón. Es para practicar :)*/
+  box-shadow:0 0 5px #4083db, 0 0 5px #4083db, 0 0 50px #4083db, 0 0 5px #4083db;
+}
+
+/*Hacemos un media query para poder aparecer el logo en mobile.
+Hacemos uso de max-width porque los estilos de arriba funcionarán 
+para todas las medidas que sean después de esta que vamos a establecer.
+Si la pantalla es menor de 640px aparecerá el logo, de lo contrario desaparecerá*/
+@media (max-width: 640px)
+{
+  /*Hacemos aparecer el logo*/
+  .logo
+  {
+    display: block;
+  }
+
+  .secondary-button
+  {
+    /*Ajustamos el ancho del botón*/
+    width: 40%;
+    /*Posición absoluta para poder mover el elemento*/
+    position: absolute;
+    /*Seteamos el bottom*/
+    bottom: 0;
+    /*Ponemos márgen inferior*/
+    margin-bottom: 24px;
+  }
+}

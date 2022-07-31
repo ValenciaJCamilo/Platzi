@@ -1,0 +1,177 @@
+/*Variables base para el proyecto*/
+:root {
+  --background-color: #a0a0a0;
+  --text-input: #e9e9e9;
+  --hospital-green1: #4083db;
+  --hospital-green2: #356cb4;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --sm: 16px;
+  --md: 19px;
+  --lg: 22px;
+}
+
+/*Tipo de letra de todo el proyecto*/
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+
+/*Estilos para mobile*/
+.product-detail {
+  width: 360px;
+  padding-bottom: 24px;
+  position: absolute;
+  right: 0;
+}
+
+/*Estilo para botón de cerrar (X)*/
+.product-detail-close {
+/*Color de fondo*/
+  background: #4083db63;
+  /*Ancho*/
+  width: 14px;
+  /*Alto*/
+  height: 14px;
+  /*Posición absoluta para poderlo posicionar encima de la imagen*/
+  position: absolute;
+  /*Lo despegamos del borde de la imagen superior*/
+  top: 20px;
+  /*Lo despegamos de la izquierda de la imagen*/
+  left: 20px;
+  /*Uso de Z-index para que no se tape*/
+  z-index: 2;
+  /*Damos un espaciado interno*/
+  padding: 12px;
+  /*Bordes redondeados*/
+  border-radius: 50%;
+}
+
+/*Hacer aparecer la mano cuando se ponga por encima el cursor de la X*/
+.product-detail-close:hover {
+  cursor: pointer;
+}
+
+/*Estilo para imagen*/
+.product-detail > img:nth-child(2) {
+  /*Ancho del 100%*/
+  width: 100%;
+  /*Altura*/
+  height: 360px;
+  /*Cover para que la imagen no se deforme*/
+  object-fit: cover;
+  /*Bordes estilizados*/
+  border-radius: 0 0 20px 20px;
+}
+
+/*Aplicación de márgenes al apartado de la información del producto*/
+.product-info {
+  margin: 24px 24px 0 24px;
+}
+
+/*Estilos al valor del producto*/
+.product-info p:nth-child(1) {
+  /*Texto en negrita*/
+  font-weight: bold;
+  /*Tamaño de fuente*/
+  font-size: var(--md);
+  /*Sin margen superior*/
+  margin-top: 0;
+  /*Marger inferior de 4px para separar un poco del nombre del artículo*/
+  margin-bottom: 4px;
+}
+
+/*Estilo para el título del producto*/
+.product-info p:nth-child(2) {
+  /*Colo del texto*/
+  color: var(--background-color);
+  /*Tamaño de fuente*/
+  font-size: var(--md);
+  /*Sin margen superior*/
+  margin-top: 0;
+  /*Con margen superior para separarlo un poco de la descripción del producto*/
+  margin-bottom: 36px;
+}
+
+/*Estilo a la descripción del producto*/
+.product-info p:nth-child(3) {
+  /*Color del texto*/
+  color: var(--background-color);
+  /*Tamaño del texto*/
+  font-size: var(--sm);
+  /*Sin margen superior*/
+  margin-top: 0;
+  /*Con margen inferior para separar el texto del botón*/
+  margin-bottom: 36px;
+}
+
+/*Estilizamos el botón*/
+.primary-button {
+  /*Establecemos el color del botón*/
+  background-color: var(--hospital-green1);
+  /*Le damos unos bordes de 8px*/
+  border-radius: 8px;
+  /*Quitamos los border por defecto*/
+  border: none;
+  /*Establecemos el color del texto*/
+  color: var(--white-color);
+  /*Establecemos el ancho del botón para que ocupe el 100% en X*/
+  width: 100%;
+  /*Nos ayuda para que al momento de pasar el cursor por encima, la flecha cambie
+  y pase a ser uma manita, de forma que sepamos que es un elemento para dar clic*/
+  cursor: pointer;
+  /*Establecemos el tamaño de funte del texto*/
+  font-size: var(--md);
+  /*Le damos una negrita al texto*/
+  font-weight: bold;
+  /*Ponemos más alto el botón, es decir, "engrosarlo" en Y*/
+  height: 50px;
+}
+
+/*Centramos el carrito de compras junto al texto*/
+.add-to-cart-button {
+  display: flex;
+  /*Centramos en Y*/
+  align-items: center;
+  /*Centramos en X*/
+  justify-content: center;
+}
+
+/*Estilo de los puntos*/
+.dots {
+    /*Flex para alinear los puntos*/
+    display: flex;
+    /*Centro en X*/
+    justify-content: center;
+    /*Ancho y alto*/
+    width: 100%;
+    height: 20px;
+    /*Padding interno para separarlos un poco de la imagen*/
+    padding: 7.5px 0;
+}
+
+/*Estilo de los puntos en general*/
+.dot {
+    /*Alto y ancho*/
+    height: 7px;
+    width: 7px;
+    /*Margen para separar cada uno de los puntos*/
+    margin: 0 3px;
+    /*Border redondeados*/
+    border-radius: 50%;
+    /*Color de los puntos*/
+    background-color: rgb(216, 216, 216);
+}
+
+/*Estilo para el punto número 1: Hace referencia a que esa es la primer imagen*/
+.dot:nth-child(1) {
+    background-color: var(--hospital-green1);
+}
+
+/*Media query para el momento de cambiar el tamaño de la pantalla*/
+@media (max-width: 640px) {
+  .product-detail {
+    width: 100%;
+  }
+}
+
